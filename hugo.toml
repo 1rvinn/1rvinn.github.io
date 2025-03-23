@@ -3,7 +3,7 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "re-terminal"
-pagination.pagerSize = 5
+pagination.pagerSize = 9
 
 # Set the home page as default
 defaultContentLanguage = "en"
@@ -128,31 +128,6 @@ defaultContentLanguageInSubdir = false
         name = "f*cket list"
         url = "/fcketlist"
         weight = 7
-      [[languages.en.menu.main]]
-        identifier = "github"
-        name = "github"
-        url = "https://github.com/1rvinn"
-        weight = 8
-      [[languages.en.menu.main]]
-        identifier = "linkedin"
-        name = "linkedin"
-        url = "https://www.linkedin.com/in/irvin-sachdeva-95569716a/"
-        weight = 9
-      [[languages.en.menu.main]]
-        identifier = "medium"
-        name = "medium"
-        url = "https://medium.com/@irvinsachdeva5"
-        weight = 10
-      [[languages.en.menu.main]]
-        identifier = "instagram"
-        name = "instagram"
-        url = "https://www.instagram.com/_1rvin__/"
-        weight = 11
-      [[languages.en.menu.main]]
-        identifier = "mail"
-        name = "mail"
-        url = "mailto:irvinsachdeva5@gmail.com"
-        weight = 12
 
 [permalinks]
   home = "/"
