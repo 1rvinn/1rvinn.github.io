@@ -1,5 +1,9 @@
+---
+title: aperture.
+author: f*ck the destination. it’s all about the experience.
+---
 # aperture.
-*f\*ck the destination. it's all about the experience.* \
+_f*ck the destination. it’s all about the experience._ \
 \
 **hey there!** \
 **this is irvin, and welcome to aperture ——** _the lens of a 19 yo koinophobic studying at iit madras._ \

@@ -12,7 +12,6 @@ defaultContentLanguageInSubdir = false
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "home"
 
   # ["orange", "blue", "red", "green", "pink", "paper"]
   themeColor = "blue"
@@ -130,10 +129,4 @@ defaultContentLanguageInSubdir = false
         weight = 7
 
 [permalinks]
-  home = "/"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[aliases]
-  "/" = "/home"
+  "/" = "/"
