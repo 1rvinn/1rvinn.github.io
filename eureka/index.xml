@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>eureka! on </title>
-    <link>http://localhost:1313/eureka/</link>
+    <link>https://1rvinn.github.io/eureka/</link>
     <description>Recent content in eureka! on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost:1313/eureka/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://1rvinn.github.io/eureka/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
