@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crude on </title>
-    <link>https://1rvinn.github.io/crude/</link>
+    <link>http://localhost:1313/crude/</link>
     <description>Recent content in crude on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://1rvinn.github.io/crude/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost:1313/crude/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

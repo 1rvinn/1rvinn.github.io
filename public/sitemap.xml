@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://1rvinn.github.io/readtoreach/metamorphosis/</loc>
+    <loc>http://localhost:1313/readtoreach/metamorphosis/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/build/</loc>
+    <loc>http://localhost:1313/build/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/canvas/</loc>
+    <loc>http://localhost:1313/canvas/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/crude/</loc>
+    <loc>http://localhost:1313/crude/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/eureka/</loc>
+    <loc>http://localhost:1313/eureka/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/fcketlist/</loc>
+    <loc>http://localhost:1313/fcketlist/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/readtoreach/</loc>
+    <loc>http://localhost:1313/readtoreach/</loc>
   </url><url>
-    <loc>https://1rvinn.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
