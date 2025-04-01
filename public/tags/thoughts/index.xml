@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aperture. on </title>
-    <link>https://1rvinn.github.io/</link>
-    <description>Recent content in aperture. on </description>
+    <title>Thoughts on </title>
+    <link>https://1rvinn.github.io/tags/thoughts/</link>
+    <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>let yourself die</title>
       <link>https://1rvinn.github.io/crude/let-yourself-die/</link>

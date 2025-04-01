@@ -1,4 +1,5 @@
 ---
 title: 'build'
 ---
-this is build
+# build
+// blood, sweat and code - all my projects.

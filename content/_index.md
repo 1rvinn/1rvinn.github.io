@@ -27,7 +27,7 @@ aperture.
 │   // the world is your canvas - digital, physical and photographic art.
 │
 ├── read to reach
-│   // literature, literature, literature. and self-help (much needed).
+│   // lit-erature and self-help (much needed): my 'to-read' list.
 │
 └── f*cket list
     // everything i wanna do before death takes me.
