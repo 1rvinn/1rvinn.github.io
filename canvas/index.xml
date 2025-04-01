@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>canvas on </title>
-    <link>https://1rvinn.github.io/canvas/</link>
+    <link>http://localhost:1313/canvas/</link>
     <description>Recent content in canvas on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://1rvinn.github.io/canvas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost:1313/canvas/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

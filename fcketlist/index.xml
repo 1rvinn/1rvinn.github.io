@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>f*cket list on </title>
-    <link>https://1rvinn.github.io/fcketlist/</link>
+    <link>http://localhost:1313/fcketlist/</link>
     <description>Recent content in f*cket list on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://1rvinn.github.io/fcketlist/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost:1313/fcketlist/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
