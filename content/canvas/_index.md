@@ -3,3 +3,178 @@ title: 'canvas'
 ---
 # canvas
 // the world is your canvas - digital, physical and photographic art.
+
+<style>
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.polaroid {
+  background: rgba(35, 173, 253, 0.08);
+  backdrop-filter: blur(5px); 
+  padding: 1rem;
+  border: 1.5px solid #23affd;
+  display: inline-block;;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.polaroid:hover {
+  transform: scale(1.3);
+  z-index: 10;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.polaroid .caption {
+  font-family: "Courier New", monospace;
+  color: inherit;
+  text-align: left;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Polaroid */
+.modal-content {
+  background: #1e202c;
+  padding: 0rem;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+</style>
+
+
+<div class="gallery-container">
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/abstract.jpg" alt="Description 1">
+    <div class="caption">abstract art? nah, just the inside of a pen, captured creatively.</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/sunset.jpg" alt="Description 4">
+    <div class="caption">sun setting, strings buzzing. </div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/library.jpg" alt="Description 4">
+    <div class="caption">o when the sun kisses those shelves!</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/kingofstreets.jpg" alt="Description 4">
+    <div class="caption">king of the streets.</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/minar.jpg" alt="Description 4">
+    <div class="caption">charminar's minar</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/cagedinside.jpg" alt="Description 4">
+    <div class="caption">break out of the cage, for it's beautiful out there</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/coolcar.jpg" alt="Description 4">
+    <div class="caption">cool car</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/coolcar2.jpg" alt="Description 4">
+    <div class="caption">another cool car</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/chatwmoustache.jpg" alt="Description 4">
+    <div class="caption">chat with a chef moustache</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/coolquote.jpg" alt="Description 4">
+    <div class="caption">a quote i fw</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/davinci.jpg" alt="Description 4">
+    <div class="caption">perfect. as all things should be.</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/gazin2.jpg" alt="Description 4">
+    <div class="caption">gazing into the infinite. first road trip with the boys</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/poster1.jpg" alt="Description 4">
+    <div class="caption">my first digital poster</div>
+  </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/jobspaglu.jpg" alt="Description 4">
+    <div class="caption">entering my jobs paglu era.</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/minion.jpg" alt="Description 4">
+    <div class="caption">simpson</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/motionblur.jpg" alt="Description 4">
+    <div class="caption">i am speed.</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/motionblur2.jpg" alt="Description 4">
+    <div class="caption">i am speed. part2.</div>
+  </div>
+  <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/vintagegame.jpg" alt="Description 4">
+    <div class="caption">vintage game</div>
+  </div>
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script>
+function openModal(element) {
+  // Clone the clicked polaroid into the modal
+  let modalContent = document.getElementById("modalContent");
+  modalContent.innerHTML = element.outerHTML;
+  
+  document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>

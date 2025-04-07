@@ -3,12 +3,39 @@ title: 'read to reach'
 ---
 # read to reach
 // lit-erature and self-help (much needed): my 'to-read' list.
-``` code
-progress: 10/62
-currently reading: the godfather by mario puzo
-2025: 0, 2024: 5, 2023: 5
-```
+<style>
+    .progress-bar {
+      width: 100%;
+      background:rgb(30, 32, 44);
+      border-radius: 10px;
+      overflow: hidden;
+      height: 20px;
+      margin: 0.5rem 0;
+      border: 1px solid rgb(35, 175, 253);
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background:rgb(35, 175, 253, 50);
+      text-align: center;
+      font-weight: bold;
+      color: rgb(30, 32, 44);
+      line-height: 20px;
+      white-space: nowrap;
+    }
+</style>
 
+progress:
+<div class="progress-bar">
+    <div class="progress-bar-fill" style="width: calc((11 / 62) * 100%)">
+        11 / 62
+    </div>
+</div>
+
+``` code
+progress: 11/62
+currently reading: the psychology of money
+2025: 1, 2024: 5, 2023: 5
+```
 1.  ~the catcher in the rye~ [2023]
 2.  ~the lost symbol~ [2024]
 3. the trial
@@ -24,7 +51,7 @@ currently reading: the godfather by mario puzo
 13. 7 habits of highly successful people
 14. the go giver
 15. ~the alchemist~ [2024]
-16. the psychology of money
+16. the psychology of money* [currently reading]
 17. rework
 18. mindset
 19. the laws of human nature
@@ -70,4 +97,4 @@ currently reading: the godfather by mario puzo
 59. why - simon sinek
 60. leaders eat last - simon sinek
 61. the immortals of meluha - amish
-62. the godfather - mario puzo [currently reading]
+62. ~the godfather - mario puzo~ [2025]
