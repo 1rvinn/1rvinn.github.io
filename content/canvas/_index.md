@@ -135,7 +135,7 @@ title: 'canvas'
     <div class="caption">gazing into the infinite. first road trip with the boys</div>
   </div>
     <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/poster1.jpg" alt="Description 4">
+    <img src="/img/canvas/poster.jpg" alt="Description 4">
     <div class="caption">my first digital poster</div>
   </div>
     <div class="polaroid" onclick="openModal(this)">
@@ -147,11 +147,11 @@ title: 'canvas'
     <div class="caption">simpson</div>
   </div>
   <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/motionblur.jpg" alt="Description 4">
+    <img src="/img/canvas/motionblur1.jpg" alt="Description 4">
     <div class="caption">i am speed.</div>
   </div>
   <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/motionblur2.jpg" alt="Description 4">
+    <img src="/img/canvas/motionblurtwo.jpg" alt="Description 4">
     <div class="caption">i am speed. part2.</div>
   </div>
   <div class="polaroid" onclick="openModal(this)">
