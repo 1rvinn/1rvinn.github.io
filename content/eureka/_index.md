@@ -1,5 +1,5 @@
 ---
 title: 'eureka!'
 ---
-# eureka
+# eureka!
 // ideas and inclinations.
