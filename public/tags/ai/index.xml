@@ -6,7 +6,139 @@
     <description>Recent content in Ai on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>project proposal - federated learning</title>
+      <link>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
+&lt;p&gt;traditionally, local availability of training data has been an important pre-requisite for training ml models. however, this methodology has a variety of road blocks associated with it. the prime ones being lack of democratisation in model creation and lower development in fields with sensitive data like finance and healthcare. federated learning aims to solve these challenges by introducing an alternate way of training models - instead of data travelling to the model and the model getting trained, the model travels to data sources (silos, personal devices), gets trained and publishes the updates back to the central model.
+this enhances the privacy of ai based systems since the data has to never leave the device. furthermore, this means that people can have full control of their data and yet contirbute tot he development of ai, ie, now proprietary and sensitive data can also be used for training (both pre and post) purposes. this solves the problem of only big data companies being able to train big models, thus leading to more democratization in the field. secondly, it also promotes ai developments in the sensitive data fields like finance and healthcare, which traditionally have been underdeveloped due to privacy concerns.&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
+&lt;p&gt;traditionally, local availability of training data has been an important pre-requisite for training ml models. however, this methodology has a variety of road blocks associated with it. the prime ones being lack of democratisation in model creation and lower development in fields with sensitive data like finance and healthcare. federated learning aims to solve these challenges by introducing an alternate way of training models - instead of data travelling to the model and the model getting trained, the model travels to data sources (silos, personal devices), gets trained and publishes the updates back to the central model.
+this enhances the privacy of ai based systems since the data has to never leave the device. furthermore, this means that people can have full control of their data and yet contirbute tot he development of ai, ie, now proprietary and sensitive data can also be used for training (both pre and post) purposes. this solves the problem of only big data companies being able to train big models, thus leading to more democratization in the field. secondly, it also promotes ai developments in the sensitive data fields like finance and healthcare, which traditionally have been underdeveloped due to privacy concerns.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.dailydoseofds.com/content/images/2023/11/federated-gif.gif&#34; alt=&#34;federated learning&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a comic by google on the topic: &lt;a href=&#34;https://federated.withgoogle.com/&#34;&gt;https://federated.withgoogle.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;an interactive visualisation covering the basics: &lt;a href=&#34;https://pair.withgoogle.com/explorables/federated-learning/&#34;&gt;https://pair.withgoogle.com/explorables/federated-learning/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;an in depth overview: &lt;a href=&#34;https://queue.acm.org/detail.cfm?id=3501293&#34;&gt;https://queue.acm.org/detail.cfm?id=3501293&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/pdf/2107.10976&#34;&gt;https://arxiv.org/pdf/2107.10976&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a small writeup by me on the importance of FL: &lt;a href=&#34;https://1rvinn.github.io/eureka/fed/&#34;&gt;https://1rvinn.github.io/eureka/fed/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;this project will be an amalgamation of ai and security. focusing in depth on the following topics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;how models are trained [A]&lt;/li&gt;
+&lt;li&gt;working of neural nets [A]&lt;/li&gt;
+&lt;li&gt;comparision between traditionally trained nets vs FL trained ones&lt;/li&gt;
+&lt;li&gt;networking between devices and a central server [S]&lt;/li&gt;
+&lt;li&gt;privacy preserving methodologies and the mathematics involved [S]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A - ai focused topics, S - security focused topics&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;milestones-to-be-achieved&#34;&gt;milestones to be achieved:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;building the basis (a good part of this can be covered in the app phase) [3 weeks]
+&lt;ul&gt;
+&lt;li&gt;gain an idea about federated learning (only a high level overview)
+&lt;ul&gt;
+&lt;li&gt;key steps involved:
+&lt;ul&gt;
+&lt;li&gt;client selection&lt;/li&gt;
+&lt;li&gt;model distribution&lt;/li&gt;
+&lt;li&gt;update upload&lt;/li&gt;
+&lt;li&gt;aggregation, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaboration-space/blog-series/privacy-preserving&#34;&gt;understanding privacy considerations&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;model update attacks&lt;/li&gt;
+&lt;li&gt;trained model attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;current applications in the industry, future prospects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;start off by implementing it on ml models, using already existing frameworks like &lt;a href=&#34;https://flower.ai/&#34;&gt;flower&lt;/a&gt;/&lt;a href=&#34;https://developer.nvidia.com/flare&#34;&gt;nvidia flare&lt;/a&gt; [2 weeks]
+&lt;ul&gt;
+&lt;li&gt;understanding the library&lt;/li&gt;
+&lt;li&gt;implement on a basic ml model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;delving deeper
+&lt;ul&gt;
+&lt;li&gt;understanding fl in greater detail [3 months]
+&lt;ul&gt;
+&lt;li&gt;comprehensively understand the maths behind it&lt;/li&gt;
+&lt;li&gt;exploring different training methods like FedAvg, FedSGD etc.&lt;/li&gt;
+&lt;li&gt;security considerations
+&lt;ul&gt;
+&lt;li&gt;secure aggregation&lt;/li&gt;
+&lt;li&gt;differential privacy&lt;/li&gt;
+&lt;li&gt;homomorphic encryption&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;modeling federated learning from scratch
+&lt;ul&gt;
+&lt;li&gt;coding the process from scratch, including all the above stated steps (&amp;lsquo;key steps involved&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;implementing &amp;gt;=1 privacy preserving strategies (secure agg, diff priv., homo enc)&lt;/li&gt;
+&lt;li&gt;facilitating networking between edge devices and a central server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;implementation:
+&lt;ul&gt;
+&lt;li&gt;implement on the following networks (subject to change on the basis of our findings above): [3 months]
+&lt;ul&gt;
+&lt;li&gt;CNNs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2203.09943&#34;&gt;SLMs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;implement using existing libraries first [to be displayed in RC] and later from scratch.&lt;/li&gt;
+&lt;li&gt;compare their accuracies with that of normally trained neural nets [to be displayed in RC]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;look into fine-tuning llms for particular tasks using FL
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2409.05976&#34;&gt;FLoRA&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2102.00875&#34;&gt;https://arxiv.org/abs/2102.00875&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;this could be one of the first steps towards making specialised chatbots (possibly even agents) trained on personal private data (great financial use case).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;further improvements
+&lt;ul&gt;
+&lt;li&gt;coming up with solutions to the bottlenecks identified&lt;/li&gt;
+&lt;li&gt;a few unique approaches include
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.alphaxiv.org/abs/2209.06359v1&#34;&gt;federated pruning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2102.03448&#34;&gt;federated reconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;federated dropout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;future prospects
+&lt;ul&gt;
+&lt;li&gt;publishing our own library for federated learning - simplifying tasks like secure aggregation, differential privacy etc.&lt;/li&gt;
+&lt;li&gt;creating an agent specialized for a particular task - financial analysis, tax filing agents.&lt;/li&gt;
+&lt;li&gt;collaborating with hospitals to develop privacy preserving diagnostic models. &lt;a href=&#34;https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;^ similar collaborations with financial institutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>privacy, democratization in ai</title>
       <link>https://1rvinn.github.io/eureka/fed/</link>
