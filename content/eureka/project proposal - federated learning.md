@@ -18,8 +18,6 @@ this enhances the privacy of ai based systems since the data has to never leave 
 - an in depth overview: https://queue.acm.org/detail.cfm?id=3501293, https://arxiv.org/pdf/2107.10976
 - a small writeup by me on the importance of FL: https://1rvinn.github.io/eureka/fed/
 
----
-
 > this project will be an amalgamation of ai and security. focusing in depth on the following topics:
 > 1. how models are trained [A]
 > 2. working of neural nets [A]
@@ -29,7 +27,6 @@ this enhances the privacy of ai based systems since the data has to never leave 
 > 
 > A - ai focused topics, S - security focused topics
 
----
 #### milestones to be achieved:
 - building the basis (a good part of this can be covered in the app phase) [3 weeks]
 	- gain an idea about federated learning (only a high level overview)
@@ -74,7 +71,9 @@ this enhances the privacy of ai based systems since the data has to never leave 
 			- federated dropout
 - future prospects
 	- publishing our own library for federated learning - simplifying tasks like secure aggregation, differential privacy etc.
+	- an api based federated learning model which people can opt into for training
+		- eg:  small financial institutions can opt-in to train anti-fraud or loan default prediction models collaboratively.
+		- hospitals signing up to develop privacy preserving diagnostic models. [link](https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model)
 	- creating an agent specialized for a particular task - financial analysis, tax filing agents.
-	- collaborating with hospitals to develop privacy preserving diagnostic models. [link](https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model)
-	- ^ similar collaborations with financial institutions
+	- ^ requires collaborations with financial institutions
 
