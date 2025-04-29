@@ -30,7 +30,6 @@ this enhances the privacy of ai based systems since the data has to never leave 
 &lt;li&gt;an in depth overview: &lt;a href=&#34;https://queue.acm.org/detail.cfm?id=3501293&#34;&gt;https://queue.acm.org/detail.cfm?id=3501293&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/pdf/2107.10976&#34;&gt;https://arxiv.org/pdf/2107.10976&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;a small writeup by me on the importance of FL: &lt;a href=&#34;https://1rvinn.github.io/eureka/fed/&#34;&gt;https://1rvinn.github.io/eureka/fed/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;this project will be an amalgamation of ai and security. focusing in depth on the following topics:&lt;/p&gt;
 &lt;ol&gt;
@@ -41,7 +40,6 @@ this enhances the privacy of ai based systems since the data has to never leave 
 &lt;li&gt;privacy preserving methodologies and the mathematics involved [S]&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A - ai focused topics, S - security focused topics&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
 &lt;h4 id=&#34;milestones-to-be-achieved&#34;&gt;milestones to be achieved:&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;building the basis (a good part of this can be covered in the app phase) [3 weeks]
@@ -130,9 +128,14 @@ this enhances the privacy of ai based systems since the data has to never leave 
 &lt;li&gt;future prospects
 &lt;ul&gt;
 &lt;li&gt;publishing our own library for federated learning - simplifying tasks like secure aggregation, differential privacy etc.&lt;/li&gt;
+&lt;li&gt;an api based federated learning model which people can opt into for training
+&lt;ul&gt;
+&lt;li&gt;eg:  small financial institutions can opt-in to train anti-fraud or loan default prediction models collaboratively.&lt;/li&gt;
+&lt;li&gt;hospitals signing up to develop privacy preserving diagnostic models. &lt;a href=&#34;https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;creating an agent specialized for a particular task - financial analysis, tax filing agents.&lt;/li&gt;
-&lt;li&gt;collaborating with hospitals to develop privacy preserving diagnostic models. &lt;a href=&#34;https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;^ similar collaborations with financial institutions&lt;/li&gt;
+&lt;li&gt;^ requires collaborations with financial institutions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
