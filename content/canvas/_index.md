@@ -94,6 +94,10 @@ title: 'canvas'
     <img src="/img/canvas/sunset.jpg" alt="Description 4">
     <div class="caption">sun setting, strings buzzing. </div>
   </div>
+    <div class="polaroid" onclick="openModal(this)">
+    <img src="/img/canvas/poster1.JPG" alt="Description 4">
+    <div class="caption">my first digital poster</div>
+  </div>
   <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/library.jpg" alt="Description 4">
     <div class="caption">o when the sun kisses those shelves!</div>
@@ -108,7 +112,7 @@ title: 'canvas'
   </div>
     <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/cagedinside.jpg" alt="Description 4">
-    <div class="caption">break out of the cage, for it's beautiful out there</div>
+    <div class="caption">break out of the cage, for it's so beautiful out there</div>
   </div>
     <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/coolcar.jpg" alt="Description 4">
@@ -117,10 +121,6 @@ title: 'canvas'
   <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/coolcar2.jpg" alt="Description 4">
     <div class="caption">another cool car</div>
-  </div>
-    <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/chatwmoustache.jpg" alt="Description 4">
-    <div class="caption">chat with a chef moustache</div>
   </div>
   <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/coolquote.jpg" alt="Description 4">
@@ -134,29 +134,9 @@ title: 'canvas'
     <img src="/img/canvas/gazin2.jpg" alt="Description 4">
     <div class="caption">gazing into the infinite. first road trip with the boys</div>
   </div>
-    <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/poster.JPG" alt="Description 4">
-    <div class="caption">my first digital poster</div>
-  </div>
-    <div class="polaroid" onclick="openModal(this)">
+  <div class="polaroid" onclick="openModal(this)">
     <img src="/img/canvas/jobspaglu.jpg" alt="Description 4">
     <div class="caption">entering my jobs paglu era.</div>
-  </div>
-  <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/minion.jpg" alt="Description 4">
-    <div class="caption">simpson</div>
-  </div>
-  <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/motionblur1.JPG" alt="motionblur1">
-    <div class="caption">i am speed.</div>
-  </div>
-  <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/motionblurtwo.JPG" alt="Description 4">
-    <div class="caption">i am speed. part2.</div>
-  </div>
-  <div class="polaroid" onclick="openModal(this)">
-    <img src="/img/canvas/vintagegame.jpg" alt="Description 4">
-    <div class="caption">vintage game</div>
   </div>
 </div>
 

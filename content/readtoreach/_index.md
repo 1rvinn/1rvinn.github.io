@@ -24,15 +24,16 @@ title: 'read to reach'
     }
 </style>
 
-progress:
+progress [2025]:
+
 <div class="progress-bar">
-    <div class="progress-bar-fill" style="width: calc((11 / 62) * 100%)">
-        11 / 62
+    <div class="progress-bar-fill" style="width: calc((1 / 10) * 100%)">
+        1 / 10
     </div>
 </div>
 
 ``` code
-progress: 11/62
+target - 10 books in 2025
 currently reading: the psychology of money
 2025: 1, 2024: 5, 2023: 5
 ```
