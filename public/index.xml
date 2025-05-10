@@ -6,7 +6,29 @@
     <description>Recent content in aperture. on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>building my own browser</title>
+      <link>https://1rvinn.github.io/build/browser/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/browser/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
+&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
+&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;
+&lt;p&gt;doing a bit of research, i have realised that it is kinda hard to do it all from scratch, not only because it is going to be very long but also because of the compute inefficiency of the product you’ll get out with - very laggy, sucking all the juice out your ram.&lt;/p&gt;
+&lt;p&gt;i could build it on top of chromium, but that wont teach me a lot about browsers and networking.&lt;/p&gt;
+&lt;p&gt;so i have decided to do neither and both at the same time. i’ll follow the primer, understand the basics right and then switch over to building over chromium, which i believe is also going to be imperative if i want to integrate ai into it — could be wrong, i dont really know.&lt;/p&gt;
+&lt;p&gt;the best thing would still be to do it all from scratch, but let’s see where reading the primer leads me to and then make a decision likewise.&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    </item>
+    
     <item>
       <title>project proposal - federated learning</title>
       <link>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</link>
@@ -154,6 +176,1471 @@ this enhances the privacy of ai based systems since the data has to never leave 
     </item>
     
     <item>
+      <title>mindpalace</title>
+      <link>https://1rvinn.github.io/build/mindpalace/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/mindpalace/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;the idea:&lt;/strong&gt;
+the user should be able to input pdf(s) which get converted into mindmaps for easy learning. the same should be done for github repos. in addition, there should be an llm to ask questions. &lt;br&gt;
+useful for neurodiverse people; facilitates better learning for them&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;inspirations:&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;  1. docagram &lt;/summary&gt;
+&lt;p&gt;creates flow-chart summaries from web pages&lt;/p&gt;
+&lt;p&gt;flow:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;takes in data from web page sections&lt;/li&gt;
+&lt;li&gt;creates a summary of each of those sections&lt;/li&gt;
+&lt;li&gt;generates relationships between parts of the section&lt;/li&gt;
+&lt;li&gt;has 2 versions -
+&lt;ul&gt;
+&lt;li&gt;w/o gemini: uses summarizer api and prompt api for the 2 tasks respectively&lt;/li&gt;
+&lt;li&gt;w/ gemini&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;the idea:&lt;/strong&gt;
+the user should be able to input pdf(s) which get converted into mindmaps for easy learning. the same should be done for github repos. in addition, there should be an llm to ask questions. &lt;br&gt;
+useful for neurodiverse people; facilitates better learning for them&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;inspirations:&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;  1. docagram &lt;/summary&gt;
+&lt;p&gt;creates flow-chart summaries from web pages&lt;/p&gt;
+&lt;p&gt;flow:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;takes in data from web page sections&lt;/li&gt;
+&lt;li&gt;creates a summary of each of those sections&lt;/li&gt;
+&lt;li&gt;generates relationships between parts of the section&lt;/li&gt;
+&lt;li&gt;has 2 versions -
+&lt;ul&gt;
+&lt;li&gt;w/o gemini: uses summarizer api and prompt api for the 2 tasks respectively&lt;/li&gt;
+&lt;li&gt;w/ gemini&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;content:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%201.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;summary:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%202.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;summary v2 (used to generate the graph)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%203.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;graph/mermaid diagram:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%204.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;a shaded box displays the relationship, the unfilled boxes are entities&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gemini result&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%205.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;also have the ability to display all graphs together, can choose specific entitites to show as well if someone wants to learn topic wise&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt; 2. better learning for neurodiverse ppl&lt;/summary&gt;
+medium article - https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-for-neurodiverse-learners-1a74767359ff
+&lt;/details&gt;
+&lt;p&gt;can build upon these&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;19/02/25 initial plan:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+
+flowchart TD
+	A[document]---&gt;|segmentor|B[segments of data]---&gt;|summarizer|D[summarized segments of data]---&gt;|relationship determiner|E[mermaid diagram]
+	A---&gt;C[rag]---&gt;F[llm]
+	D---&gt;E
+&lt;/div&gt;
+
+&lt;p&gt;// want to create it on streamlit since minimal ui, simpler coding&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;update 1 (19/2/25):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;i feel like i should pivot this towards github. a tool that facilitates understanding of complex repos through mindmap generation and llm integration&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;for github repo, i need to parse the contents into an llm acceptable format. there are tools doing that already. i am not sure whether to use them/their apis or develop it completely on my own.
+&lt;ul&gt;
+&lt;li&gt;one of the ideas i came across recently was that of &lt;a href=&#34;https://www.entelligence.ai/explore&#34;&gt;entelligence.ai&lt;/a&gt; - they take in repos, integrate an llm, provide documentation and flow diagram.
+&lt;ul&gt;
+&lt;li&gt;the llm responses are really good - looks finetuned (??)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;maybe have both options - github and documents&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;multimodal support is crucial - it should be able to take in documents, pictures,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;reading--trying-out-stuff&#34;&gt;reading &amp;amp; trying out stuff&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(1) should i use beautiful soup to scrap github repo data? prolly not gonna work but never used it so lemme try it out once.&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;trying out beautiful soup &lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;(referring to https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-for-neurodiverse-learners-1a74767359ff)
+
+python code:
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+def scrape_text(url):
+    # Send a GET request to the URL
+    response = requests.get(url)
+
+    # If the GET request is successful, the status code will be 200
+    if response.status_code == 200:
+        # Get the content of the response
+        page_content = response.content
+
+        # Create a BeautifulSoup object and specify the parser
+        soup = BeautifulSoup(page_content, &amp;quot;html.parser&amp;quot;)
+
+        # Get the text of the soup object
+        text = soup.get_text()
+
+        # Return the text
+        return text
+    else:
+        return &amp;quot;Failed to scrape the website&amp;quot;
+
+url=input(&amp;quot;enter url:&amp;quot;)
+text=scrape_text(url)
+print(text)
+```
+
+returns text in the website.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;didn&amp;rsquo;t try it on github repos, can make it work somehow, will be hard tho. will look into it later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;(2) how did this guy make the functionality?&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;reading this medium article&lt;/summary&gt;
+https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-for-neurodiverse-learners-1a74767359ff
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;they’ve given the entire &lt;em&gt;input_text&lt;/em&gt; received after parsing to the model and asked to generate mermaid maps&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;i want mine to be better - it should generate summaries and mermaids for each section, determine the relation among the sections and generate a cohesive mermaid also&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;(3) checking how good chat gpt is with giving mermaid diags&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt; this section&#39;s gonna be long, tried out a variety of inputs and prompts&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;asked chatgpt to analyse my repo - via the repo link - and asked to give a mermaid code explaining it
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;output:&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+        graph TD
+            A[Start] --&gt; B[Load Configuration]
+            B --&gt; C[Read Input Data: Orders &amp; Locations]
+            C --&gt; D[Fetch Route Data from APIs]
+            D --&gt; E[Optimize Routes using Held-Karp Algorithm]
+            E --&gt; F[Calculate Emissions Based on Route]
+            F --&gt; G[Generate Optimized Route and Emissions Report]
+            G --&gt; H[Display Output to User]
+            H --&gt; I[End]
+            
+            %% Dependencies
+            D --&gt;|API Calls| J{TomTom API / HERE API}
+            J --&gt; D
+        &lt;/div&gt;
+
+&lt;p&gt;the output aint bad&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;then i used &lt;a href=&#34;https://gitingest.com/&#34;&gt;gitingest&lt;/a&gt; to get llm ready parseed version of my repo. gave it as context to gpt4o and asked it to give a mermaid code.&lt;/p&gt;
+&lt;p&gt;prompt: [llm ready parsed info (token length - 4.7k)] given the above description of a repository, write code for a mermaid diagram explaining the same&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;output:&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+            graph TD;
+                A[Repository: 1rvinn-fedexpedite] --&gt;|Contains| B[README.md]
+                A --&gt;|Contains| C[app.py]
+                A --&gt;|Contains| D[requirements.txt]
+                A --&gt;|Contains| E[images/]
+                A --&gt;|Contains| F[.streamlit/]
+                F --&gt; G[config.toml]
+                
+                subgraph &#34;Core Files&#34;
+                    B --&gt;|Provides| B1[Project Overview &amp; Setup Instructions]
+                    C --&gt;|Main Application| C1[Route Optimiser &amp; Emission Calculator]
+                    D --&gt;|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
+                    E --&gt;|Contains| E1[Visual Assets - Screenshots, Diagrams]
+                    G --&gt;|Defines| G1[Streamlit Theme &amp; UI Customisation]
+                end
+            
+                subgraph &#34;Application Workflow&#34;
+                    C1 --&gt;|Receives API Keys| H[TomTom API, HERE API]
+                    C1 --&gt;|Takes Inputs| I[Route Preferences, Vehicle Type, Fuel Type]
+                    I --&gt;|Uses| J[Held-Karp Algorithm for Optimisation]
+                    J --&gt;|Outputs| K[Optimal Route, Travel Time, Emission Data]
+                    K --&gt;|Visualised in| L[Google Maps, Folium Map]
+                end
+            
+            &lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;maybe ask it to give 2 separate diagrams for directory structure and code logic.&lt;/p&gt;
+&lt;p&gt;prompt: give 2 separate codes - one explaining the directory structure and the other explaining the code, logic and flow&lt;/p&gt;
+&lt;p&gt;output:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;og output: has errors&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                &lt;div class=&#34;mermaid&#34;&gt;
+                graph TD;
+                    %% Directory Structure
+                    subgraph &#34;Repository Structure&#34;
+                        A[Repository: 1rvinn-fedexpedite] --&gt;|Contains| B[README.md]
+                        A --&gt;|Contains| C[app.py]
+                        A --&gt;|Contains| D[requirements.txt]
+                        A --&gt;|Contains| E[images/]
+                        A --&gt;|Contains| F[.streamlit/]
+                        F --&gt; G[config.toml]
+                    end
+                
+                    subgraph &#34;Core Files&#34;
+                        B --&gt;|Provides| B1[Project Overview &amp; Setup Instructions]
+                        C --&gt;|Main Application| C1[Route Optimiser &amp; Emission Calculator]
+                        D --&gt;|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
+                        E --&gt;|Contains| E1[Visual Assets (Screenshots, Diagrams)]
+                        G --&gt;|Defines| G1[Streamlit Theme &amp; UI Customisation]
+                    end
+                &lt;/div&gt;
+
+                
+                &lt;div class=&#34;mermaid&#34;&gt;
+                graph TD;
+                    %% Application Logic and Flow
+                    A[User Input] --&gt;|Enter Route Details| B[Start Location &amp; Stops]
+                    B --&gt;|Fetch Coordinates| C[HERE API]
+                    B --&gt;|Select Vehicle Type| D[Emission Factors Calculation]
+                    
+                    subgraph &#34;Route Calculation&#34;
+                        C --&gt;|Compute Routes| E[TomTom API]
+                        E --&gt;|Applies| F[Held-Karp Algorithm]
+                        F --&gt;|Outputs| G[Optimised Route &amp; Travel Time]
+                    end
+                    
+                    subgraph &#34;Emissions Calculation&#34;
+                        D --&gt;|Compute Emissions| H[Vehicle Type, Engine Size, Fuel Type]
+                        H --&gt;|Uses Data| I[India GHG Emission Factors]
+                        I --&gt;|Outputs| J[Total Emissions (kg CO₂)]
+                    end
+                    
+                    subgraph &#34;Visualisation &amp; Results&#34;
+                        G --&gt;|Displays| K[Google Maps &amp; Folium]
+                        J --&gt;|Shows| L[Emissions Output]
+                        K &amp; L --&gt;|Final Output| M[User Dashboard]
+                    end
+                &lt;/div&gt;
+
+                
+                &lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;output divided into 2&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                
+                graph TD;
+                    %% Directory Structure
+                    subgraph &#34;Repository Structure&#34;
+                        A[Repository: 1rvinn-fedexpedite] --&gt;|Contains| B[README.md]
+                        A --&gt;|Contains| C[app.py]
+                        A --&gt;|Contains| D[requirements.txt]
+                        A --&gt;|Contains| E[images/]
+                        A --&gt;|Contains| F[.streamlit/]
+                        F --&gt; G[config.toml]
+                    end
+                
+                    subgraph &#34;Core Files&#34;
+                        B --&gt;|Provides| B1[Project Overview &amp; Setup Instructions]
+                        C --&gt;|Main Application| C1[Route Optimiser &amp; Emission Calculator]
+                        D --&gt;|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
+                        E --&gt;|Contains| E1[Visual Assets - Screenshots, Diagrams]
+                        G --&gt;|Defines| G1[Streamlit Theme &amp; UI Customisation]
+                    end
+                &lt;/div&gt;
+
+&lt;p&gt;^ this is good.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                graph TD;
+                    %% Application Logic and Flow
+                    A[User Input] --&gt;|Enter Route Details| B[Start Location &amp; Stops]
+                    B --&gt;|Fetch Coordinates| C[HERE API]
+                    B --&gt;|Select Vehicle Type| D[Emission Factors Calculation]
+                    
+                    subgraph &#34;Route Calculation&#34;
+                        C --&gt;|Compute Routes| E[TomTom API]
+                        E --&gt;|Applies| F[Held-Karp Algorithm]
+                        F --&gt;|Outputs| G[Optimised Route &amp; Travel Time]
+                    end
+                    
+                    subgraph &#34;Emissions Calculation&#34;
+                        D --&gt;|Compute Emissions| H[Vehicle Type, Engine Size, Fuel Type]
+                        H --&gt;|Uses Data| I[India GHG Emission Factors]
+                        I --&gt;|Outputs| J[Total Emissions - kg CO₂]
+                    end
+                    
+                    subgraph &#34;Visualisation &amp; Results&#34;
+                        G --&gt;|Displays| K[Google Maps &amp; Folium]
+                        J --&gt;|Shows| L[Emissions Output]
+                        K &amp; L --&gt;|Final Output| M[User Dashboard]
+                    end
+                &lt;/div&gt;
+
+&lt;p&gt;^ this one is really detailed. but i’m sure its taking inputs from the readme file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;trying without giving the readme file, as the readme already contains the flow.&lt;/p&gt;
+&lt;p&gt;prompt: [llm ready parsed info (token length - 4.7k)] given the above description of a repository, write code for a mermaid diagram explaining the same. give 2 separate codes - one explaining the directory structure and the other explaining the code, logic and flow&lt;/p&gt;
+&lt;p&gt;output:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;fixed output&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                graph TD
+                    A[1rvinn-fedexpedite]
+                    A --&gt; B[app.py]
+                    A --&gt; C[requirements.txt]
+                    A --&gt; D[images/]
+                    A --&gt; E[.streamlit/]
+                    E --&gt; F[config.toml]
+                &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+                flowchart TD
+                    A[Start: Streamlit App Initialization]
+                    B[Set page configuration &amp; initialize session state - stops, optimal_route]
+                    C[Display App Logo]
+                    D[Sidebar: Set Route Calculation Parameters - Traffic, etc.]
+                    E[Sidebar: Select Vehicle Details - Travel Mode, Car Type, Engine Size, Fuel Type]
+                    F[Sidebar: Choose Input Mode - Coordinates or Search for Destination]
+                    G{Input Mode Check}
+                    H[Enter Starting Location]
+                    I[If Search: Call HERE API to fetch coordinates]
+                    J[Add Stop - Coordinates/Search and update session state]
+                    K[Optional: Input Ending Location - flexible]
+                    L[Display Added Stops with option to Clear]
+                    M[Click Calculate Optimal Route]
+                    N[For each pair of locations: Call TomTom API to get route details]
+                    O[Solve the Traveling Salesman Problem using Held-Karp Algorithm]
+                    P[Generate Optimal Route Sequence, Total Distance &amp; Travel Time]
+                    Q[Align stop names with the optimal sequence]
+                    R[Generate Google Maps URL for the route]
+                    S[Calculate Emissions based on vehicle and distance]
+                    T[Display Results: Sequence, Total Time, Distance, Emissions]
+                    U[Visualize Route on a Folium Map with Markers]
+                    V[End]
+                
+                    A --&gt; B
+                    B --&gt; C
+                    C --&gt; D
+                    D --&gt; E
+                    E --&gt; F
+                    F --&gt; G
+                    G -- &#34;Coordinates&#34; --&gt; H
+                    G -- &#34;Search&#34; --&gt; I
+                    H --&gt; J
+                    I --&gt; J
+                    J --&gt; K
+                    K --&gt; L
+                    L --&gt; M
+                    M --&gt; N
+                    N --&gt; O
+                    O --&gt; P
+                    P --&gt; Q
+                    Q --&gt; R
+                    R --&gt; S
+                    S --&gt; T
+                    T --&gt; U
+                    U --&gt; V
+                &lt;/div&gt;
+
+&lt;p&gt;^ this is too ass.&lt;/p&gt;
+&lt;p&gt;asked to redo, gave this:&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                graph TD;
+                    A[Start - Streamlit App] --&gt;|Initialize Session| B[Session State Variables]
+                    A --&gt;|Load API Keys| C[TomTom &amp; HERE API Keys]
+                    A --&gt;|Set Streamlit Config| D[UI Configuration]
+                
+                    B --&gt; E[Sidebar Input]
+                    E --&gt;|User Inputs Start Location| F[Fetch Coordinates via HERE API]
+                    E --&gt;|User Inputs Stops| G[Add Stops]
+                    E --&gt;|User Selects Vehicle Type| H[Emission Calculation Parameters]
+                    E --&gt;|User Clicks Calculate Route| I[Calculate Optimal Route]
+                
+                    I --&gt; J[Calculate Route using TomTom API]
+                    J --&gt; K[Solve TSP for Optimal Path]
+                    K --&gt; L[Store Optimal Route in Session State]
+                
+                    L --&gt; M[Display Results]
+                    M --&gt;|Show Route Sequence| N[Show Optimal Stops]
+                    M --&gt;|Show Travel Time &amp; Distance| O[Calculate Emissions]
+                    M --&gt;|Show Google Maps Link| P[Generate Google Maps URL]
+                    M --&gt;|Display Route on Folium Map| Q[Render Map with Start, Stops, and End]
+                
+                    Q --&gt; R[End - Streamlit App]
+                    
+                &lt;/div&gt;
+
+&lt;p&gt;^ still ass.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+                graph TD;
+                    A[Start - Streamlit App] --&gt;|Initialize Session| B[Session State Variables]
+                    A --&gt;|Load API Keys| C[TomTom &amp; HERE API Keys]
+                    A --&gt;|Set Streamlit Config| D[UI Configuration]
+                
+                    B --&gt; E[Sidebar Input]
+                    E --&gt;|User Inputs Start Location| F[Fetch Coordinates via HERE API]
+                    E --&gt;|User Inputs Stops| G[Add Stops]
+                    E --&gt;|User Selects Vehicle Type| H[Emission Calculation Parameters]
+                    E --&gt;|User Clicks Calculate Route| I[Calculate Optimal Route]
+                
+                    I --&gt; J[Calculate Route using TomTom API]
+                    J --&gt; K[Solve TSP for Optimal Path]
+                    K --&gt; L[Store Optimal Route in Session State]
+                
+                    L --&gt; M[Display Results]
+                    M --&gt;|Show Route Sequence| N[Show Optimal Stops]
+                    M --&gt;|Show Travel Time &amp; Distance| O[Calculate Emissions]
+                    M --&gt;|Show Google Maps Link| P[Generate Google Maps URL]
+                    M --&gt;|Display Route on Folium Map| Q[Render Map with Start, Stops, and End]
+                
+                    Q --&gt; R[End - Streamlit App]
+                &lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;the outputs were sub standard despite using a sota model - 4o which has a big context window.&lt;/li&gt;
+&lt;li&gt;when i use an api, the output’s quality is bound to degrade.&lt;/li&gt;
+&lt;li&gt;the token size is also something that should be taken care of; some repos are excessively big and hence really big token sizes which would be hard to handle.&lt;/li&gt;
+&lt;li&gt;therefore, it is of utmost importance to divide the content into sections, provide summaries for each part and then ask the model to create a diagram.
+&lt;ul&gt;
+&lt;li&gt;need to test this hypothesis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;getting started with the real shit now&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;code to get llm ready parsed github data&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;using requests and base 64, got the following code running that prints the contents of a github repo given its name and the owner’s name. uses github api for it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; base64
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# GitHub repository details &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;BASE_URL &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://api.github.com/repos/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;OWNER&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;REPO&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/contents&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fetch_repo_contents&lt;/span&gt;(path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Recursively fetches all files in the GitHub repository.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;BASE_URL&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;path&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; path &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; BASE_URL
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    headers &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Authorization&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;token &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;GITHUB_TOKEN&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;} &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; GITHUB_TOKEN &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(url, headers&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;headers)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error fetching &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;url&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;get_file_content&lt;/span&gt;(file_url):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Fetches and decodes the content of a file from GitHub.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    headers &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Authorization&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;token &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;GITHUB_TOKEN&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;} &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; GITHUB_TOKEN &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(file_url, headers&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;headers)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        file_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; file_data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; base64&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;b64decode(file_data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;])&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;decode(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;, errors&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ignore&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; content
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error fetching file content: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;status_code&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;traverse_repo&lt;/span&gt;(path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Recursively traverses the GitHub repository and prints file contents.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    items &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; fetch_repo_contents(path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; items:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; items:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;📄 File: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;path&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; get_file_content(item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;url&amp;#34;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;--- START OF &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; ---&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(content[:&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;])  &lt;span style=&#34;color:#75715e&#34;&gt;# Print first 1000 chars for preview&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;--- END OF &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; ---&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dir&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;📂 Directory: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;path&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                traverse_repo(item[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;])  &lt;span style=&#34;color:#75715e&#34;&gt;# Recursive call for directories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Run the script&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;📂 Fetching repository contents for &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;OWNER&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;REPO&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;...&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;traverse_repo()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;^ need to make the following changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; need to change this to take in a url&lt;/p&gt;
+&lt;p&gt;must have ‘https://github.com/’ in the beginning - a possible scope of error&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; currently, it’s also printing image and hidden files/directories’ data, which it should skip&lt;/p&gt;
+&lt;p&gt;^ excluded the following extensions:&lt;/p&gt;
+&lt;p&gt;.png, .jpg, .jpeg, .gif, .svg, .ico, .webp, .pdf, .zip, .tar, .gz, .mp4, .mp3, .avi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; need it to also print the structure on top&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; must also print that it has exited a directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;issue: github api has a limited no. of requests (60) per hour per ip.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;one request is used per file/directory accessed&lt;/li&gt;
+&lt;li&gt;how to bypass this!!!!!!!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;update 10/3/25: lol i just had to pass my github auth token and the no of requests per hour increases from 60 to 5000&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;divide it into sections (or files); llm provides a technical summary of each section (or file); then these summaries and the structure is fed into the system to analyse the contents and give a mermaid diagram&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;can we integrate rag so that it’s able to refer to specifics within the code for a more detailed diagram.&lt;/p&gt;
+&lt;p&gt;^ dont really think this is required, since the mermaid diagram is only aimed at providing a high level summary of how the entire code works.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;can have mermaid diagrams per section (or file), then one combining them too&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;this kind of ui looks really good. plus if the creation could be animated then would look very cool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mindpalace/image%206.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[24/2/25]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;work on segmenter, summarizer, relation determiner and mermaid diag generator first.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+    flowchart 
+    A[user input]---&gt;B[pdf]---&gt;|parser - ocr/text extractor|E[segmentor]
+    A---&gt;C[text]---&gt;E
+    A---&gt;D[url]---&gt;|parser - beautiful soup/selenium|E
+    A---&gt;K[github repo]---&gt;|repo parser - graphql or gitingest|C[text]
+    E---&gt;|topic-wise segmented text packets|F[summarizer]
+    F---&gt;|topic-wise summarized packets|G[relationship determiner]---&gt;H---&gt;I[combined mermaid diag]
+    F---&gt;|summarized text per topic|H[mermaid diagram generator]---&gt;J[individual mermaid diagrams]
+    &lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;random idea but how would an ai model architecture visualizer be?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;code for ssrg:&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;iter 1&lt;/summary&gt;
+    - used this code
+&lt;pre&gt;&lt;code&gt;    ```python
+    import os
+    import re
+    import google.generativeai as genai
+    import json
+    
+    genai.configure(api_key=os.environ[&amp;quot;GEMINI_API_KEY&amp;quot;])
+    
+    # Create the model
+    generation_config = {
+        &amp;quot;temperature&amp;quot;: 1,
+        &amp;quot;top_p&amp;quot;: 0.95,
+        &amp;quot;top_k&amp;quot;: 40,
+        &amp;quot;max_output_tokens&amp;quot;: 8192,
+        &amp;quot;response_mime_type&amp;quot;: &amp;quot;text/plain&amp;quot;,
+    }
+    
+    def extract_json(text):
+        &amp;quot;&amp;quot;&amp;quot;Extracts valid JSON from Gemini API response.&amp;quot;&amp;quot;&amp;quot;
+        match = re.search(r&amp;quot;\{.*\}&amp;quot;, text, re.DOTALL)  # Find JSON inside { ... }
+        if match:
+            return match.group(0)  # Return only the JSON part
+        return None
+    
+    def ss(text):
+        model1 = genai.GenerativeModel(
+        model_name=&amp;quot;gemini-2.0-flash&amp;quot;,
+        generation_config=generation_config,
+        system_instruction=&amp;quot;You are an AI that extracts key topics from text and summarizes them.\n\n    - Identify the major topics.\n    - Provide a 2-3 sentence summary per topic.\n    - Return results in JSON format:\n    \n    {{\n      \&amp;quot;topics\&amp;quot;: [\n        {{\&amp;quot;topic\&amp;quot;: \&amp;quot;Topic 1\&amp;quot;, \&amp;quot;summary\&amp;quot;: \&amp;quot;Summary of topic 1\&amp;quot;}},\n        {{\&amp;quot;topic\&amp;quot;: \&amp;quot;Topic 2\&amp;quot;, \&amp;quot;summary\&amp;quot;: \&amp;quot;Summary of topic 2\&amp;quot;}}\n      ]\n    }} \n**output only JSON in plaintext format, nothing else&amp;quot;,
+        )
+    
+        chat_session = model1.start_chat(
+        history=[
+        ]
+        )
+        response = chat_session.send_message(text)
+    
+        return response.text
+    
+    def relation(summary):
+        model2 = genai.GenerativeModel(
+        model_name=&amp;quot;gemini-2.0-flash&amp;quot;,
+        generation_config=generation_config,
+        system_instruction=&amp;quot;You are an AI that identifies relationships between topics.\n\n    Given this JSON data of topics, determine relevant relationships:\n    \n    JSON Data: {segmented_data}\n    \n    Output format:\n    {{\n      \&amp;quot;relationships\&amp;quot;: [\n        {{\&amp;quot;from\&amp;quot;: \&amp;quot;Topic 1\&amp;quot;, \&amp;quot;to\&amp;quot;: \&amp;quot;Topic 2\&amp;quot;, \&amp;quot;relationship\&amp;quot;: \&amp;quot;How they are related\&amp;quot;}},\n        {{\&amp;quot;from\&amp;quot;: \&amp;quot;Topic 2\&amp;quot;, \&amp;quot;to\&amp;quot;: \&amp;quot;Topic 3\&amp;quot;, \&amp;quot;relationship\&amp;quot;: \&amp;quot;Another connection\&amp;quot;}}\n      ]\n    }} \n**output only JSON, nothing else**&amp;quot;,
+        )
+    
+        chat_session = model2.start_chat(
+        history=[
+        ]
+        )
+    
+        response = chat_session.send_message(summary)
+        return response.text
+    
+    def generate_mermaid_code(topics_json, relationships_json):
+        topics = json.loads(topics_json)[&amp;quot;topics&amp;quot;]
+        relationships = json.loads(relationships_json)[&amp;quot;relationships&amp;quot;]
+    
+        mermaid_code = &amp;quot;graph TD;\n&amp;quot;
+    
+        # Add topics as nodes
+        for i, topic in enumerate(topics):
+            mermaid_code += f&#39;  {chr(65+i)}[&amp;quot;{topic[&amp;quot;topic&amp;quot;]}&amp;quot;];\n&#39;
+    
+        # Add relationships as edges
+        for relation in relationships:
+            from_topic = relation[&amp;quot;from&amp;quot;]
+            to_topic = relation[&amp;quot;to&amp;quot;]
+            relation_text = relation[&amp;quot;relationship&amp;quot;]
+    
+            from_id = next(i for i, t in enumerate(topics) if t[&amp;quot;topic&amp;quot;] == from_topic)
+            to_id = next(i for i, t in enumerate(topics) if t[&amp;quot;topic&amp;quot;] == to_topic)
+    
+            mermaid_code += f&#39;  {chr(65+from_id)} --&amp;gt;|{relation_text}| {chr(65+to_id)};\n&#39;
+    
+        return mermaid_code
+    
+    # def generate_mind_map(text):
+    #     segmented_data = ss(text)
+    #     relationships_data = relation(segmented_data)
+    #     mermaid_diagram = generate_mermaid_code(segmented_data, relationships_data)
+    
+    #     return mermaid_diagram
+    
+    if __name__ == &amp;quot;__main__&amp;quot;:
+        input_text = input(&amp;quot;input: &amp;quot;)
+        
+        segmented_data = extract_json(ss(input_text))
+        print(f&amp;quot;1: {segmented_data}&amp;quot;)
+        relationships_data = extract_json(relation(segmented_data))
+        print(f&amp;quot;w: {relationships_data}&amp;quot;)
+        mermaid_diagram = generate_mermaid_code(segmented_data, relationships_data)
+    
+        print(&amp;quot;Generated Mermaid Diagram:\n&amp;quot;)
+        print(mermaid_diagram)
+    ```
+    
+    input:
+    
+    ```
+    Artificial Intelligence is revolutionizing industries.
+    In healthcare, AI assists with diagnostics and personalized treatments.
+    In finance, AI helps detect fraud and optimize trading strategies.
+    Machine learning models power these applications, improving accuracy.
+    ```
+    
+    output:
+    
+    &lt;div class=&#34;mermaid&#34;&gt;
+        graph TD;
+            A[&#34;AI Revolutionizing Industries&#34;];
+            B[&#34;AI in Healthcare&#34;];
+            C[&#34;AI in Finance&#34;];
+            B --&gt;|AI in Healthcare is a specific application area contributing to the broader AI Revolution across various industries.| A;
+            C --&gt;|AI in Finance is a specific application area contributing to the broader AI Revolution across various industries.| A;
+            B --&gt;|Both topics represent specific examples of how AI is applied in different sectors to improve efficiency and decision-making through data analysis.| C;
+        &lt;/div&gt;
+
+    
+    thoughts:
+    
+    - it identifies major topics well
+    - relationships are mid
+    - there is no particular flow to it
+- prompts
+    1. summarizer and segmentor
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Introduction and Applicability&#34;];
+        B[&#34;General Controls: Governance and Management of Security Risks&#34;];
+        A --&gt;|The &#39;Introduction and Applicability&#39; section sets the scope and effective date for the directions, while the &#39;General Controls&#39; section outlines the specific governance and management policies that Regulated Entities - REs - must implement to comply with these directions.| B;
+    &lt;/div&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;iter 2: changed the prompts a bit to increase no. of nodes and better connections&lt;/summary&gt;
+        - new prompts
+            - segmentor and summarizer:
+&lt;pre&gt;&lt;code&gt;            ```
+            Extract as many **short, precise** topics as possible from the given text.
+            
+                **Rules:**
+                - Each topic must be **concise (1-3 words max)**.
+                - Aim for **10+ topics** if the content allows.
+                - Summarize each topic in **one short sentence**.
+                - **Strictly return JSON format only.**
+            
+                **Example Output:**
+                ```json
+                {{
+                  &amp;quot;topics&amp;quot;: [
+                    {{&amp;quot;topic&amp;quot;: &amp;quot;AI in Medicine&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;AI enhances diagnostics and treatment&amp;quot;}},
+                    {{&amp;quot;topic&amp;quot;: &amp;quot;Fraud Detection&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;AI identifies financial fraud in real-time&amp;quot;}},
+                    {{&amp;quot;topic&amp;quot;: &amp;quot;Robotics&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;Autonomous robots optimize industrial tasks&amp;quot;}},
+                    {{&amp;quot;topic&amp;quot;: &amp;quot;Self-Driving Cars&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;AI enables autonomous vehicle navigation&amp;quot;}}
+                  ]
+                }}
+                ```
+            
+                **Text Input:** {text}
+            ```
+            
+        - relationship determiner
+            
+            ```
+            Identify **diverse** relationships between the given topics.
+            
+                **Rules:**
+                - Find as many **relevant connections** as possible.
+                - Use **short, precise** relationship descriptions.
+                - Relationships should not be **too obvious** (avoid generic links).
+                - **Strictly return JSON format only.**
+            
+                **Example Output:**
+                ```json
+                {{
+                  &amp;quot;relationships&amp;quot;: [
+                    {{&amp;quot;from&amp;quot;: &amp;quot;AI in Medicine&amp;quot;, &amp;quot;to&amp;quot;: &amp;quot;Machine Learning&amp;quot;, &amp;quot;relationship&amp;quot;: &amp;quot;Uses ML models&amp;quot;}},
+                    {{&amp;quot;from&amp;quot;: &amp;quot;Self-Driving Cars&amp;quot;, &amp;quot;to&amp;quot;: &amp;quot;Computer Vision&amp;quot;, &amp;quot;relationship&amp;quot;: &amp;quot;Relies on CV for object detection&amp;quot;}},
+                    {{&amp;quot;from&amp;quot;: &amp;quot;Fraud Detection&amp;quot;, &amp;quot;to&amp;quot;: &amp;quot;AI in Finance&amp;quot;, &amp;quot;relationship&amp;quot;: &amp;quot;Prevents financial crimes&amp;quot;}},
+                    {{&amp;quot;from&amp;quot;: &amp;quot;Robotics&amp;quot;, &amp;quot;to&amp;quot;: &amp;quot;AI Ethics&amp;quot;, &amp;quot;relationship&amp;quot;: &amp;quot;Raises ethical concerns&amp;quot;}}
+                  ]
+                }}
+                ```
+            
+                **Given Topic Data:**  
+                ```json
+                {segmented_data}
+                ```
+            
+                **Output only JSON. No extra text.**
+            ```
+            
+    - result
+        
+        &lt;div class=&#34;mermaid&#34;&gt;
+            graph TD;
+              A[&#34;Digital Payments&#34;];
+              B[&#34;Regulatory Framework&#34;];
+              C[&#34;Effective Date&#34;];
+              D[&#34;Regulated Entities&#34;];
+              E[&#34;Definitions&#34;];
+              F[&#34;Security Risks&#34;];
+              G[&#34;Board Approval&#34;];
+              H[&#34;Customer Data&#34;];
+              I[&#34;System Availability&#34;];
+              J[&#34;Dispute Resolution&#34;];
+              K[&#34;Policy Review&#34;];
+              L[&#34;User Acceptance Tests&#34;];
+              M[&#34;External Assessment&#34;];
+              A --&gt;|Subject to various security threats| F;
+              A --&gt;|Governed by legal guidelines| B;
+              B --&gt;|Defines the scope of entities covered| D;
+              C --&gt;|Determines when the legal framework becomes active| B;
+              E --&gt;|Provides clarity to the legal terms used| B;
+              F --&gt;|Threats can compromise customer information| H;
+              F --&gt;|Can lead to service outages| I;
+              G --&gt;|Needed for key decisions related to digital payments| A;
+              H --&gt;|May be needed to resolve disputes| J;
+              I --&gt;|Critical for reliable digital payment services| A;
+              K --&gt;|Ensures alignment with evolving legal standards| B;
+              L --&gt;|Validates usability before payment platform launch| A;
+              M --&gt;|Identifies vulnerabilities and mitigates risks| F;
+              G --&gt;|Required for changes to digital payment policies| K;
+              M --&gt;|Ensures security of digital payment systems| A;
+              D --&gt;|Must adhere to the guidelines for digital payments| A;
+            &lt;/div&gt;
+
+        
+        &lt;div class=&#34;mermaid&#34;&gt;
+            graph TD;
+              A[&#34;Graph Theory&#34;];
+              B[&#34;TSP&#34;];
+              C[&#34;Optimization&#34;];
+              D[&#34;Dijkstra&#39;s Algorithm&#34;];
+              E[&#34;Held-Karp&#34;];
+              F[&#34;Hackathon&#34;];
+              G[&#34;Route Optimization&#34;];
+              H[&#34;Real-Time Traffic&#34;];
+              I[&#34;Google Maps&#34;];
+              J[&#34;Streamlit&#34;];
+              K[&#34;Web Application&#34;];
+              L[&#34;Simplicity&#34;];
+              M[&#34;Product Focus&#34;];
+              N[&#34;Functionality&#34;];
+              A --&gt;|Provides the foundation for representing TSP problems| B;
+              B --&gt;|A classic optimization problem| C;
+              D --&gt;|Algorithm operating on graphs| A;
+              E --&gt;|Dynamic programming approach to solve TSP| B;
+              F --&gt;|Context for developing route optimization solutions| G;
+              G --&gt;|Can incorporate real-time traffic data for dynamic adjustments| H;
+              G --&gt;|Uses maps for calculating efficient routes| I;
+              K --&gt;|Built using the Streamlit framework| J;
+              F --&gt;|Deliverable of the hackathon| K;
+              G --&gt;|May be a practical application or extension of solving TSP| B;
+              H --&gt;|Supplement maps data for navigation| I;
+              K --&gt;|Focus on core functions over superfluous features| N;
+              F --&gt;|Simplicity was a key winning factor| L;
+              M --&gt;|Essential for success| F;
+              H --&gt;|Adds complexity to route optimization| C;
+              B --&gt;|Dijkstra&#39;s algorithm can be used in heuristics to solve TSP| D;
+              A --&gt;|Graph theory provides tools used in optimization problems| C;
+              G --&gt;|A route optimization feature can be included in the web application| K;
+              M --&gt;|Focusing on core functionality is key| N;
+              B --&gt;|TSP concepts are used in route optimization| G;
+              H --&gt;|Improves route quality in real-time| G;
+              N --&gt;|Often related aspects of the same solution| L;
+              F --&gt;|Requires product understanding| M;
+              K --&gt;|Integrates mapping services| I;
+              L --&gt;|Simple design can enhance functionality| N;
+              J --&gt;|Tool for building front-end interfaces| K;
+              D --&gt;|One possible algorithm for route calculation| G;
+              C --&gt;|The goal is to achieve the optimal path| G;
+              N --&gt;|Core feature of a product| M;
+            &lt;/div&gt;
+
+        
+    - thoughts:
+        - looks really good
+        - however i think the number of connections is too much
+        - flow is hard to understand
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;iter 3: tweaked the prompts to give a nice flow and reduce the number of connections&lt;/summary&gt;
+&lt;p&gt;changed rel to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;f&amp;#34;&amp;#34;&amp;#34;
+    **Task:** Organize topics into a clear mind map with a structured flow.
+
+    **Rules:**
+    - Identify a **main starting topic** (e.g., &amp;#34;AI Applications&amp;#34; or &amp;#34;Machine Learning&amp;#34;).
+    - Group related topics under **subcategories** (e.g., &amp;#34;AI in Healthcare&amp;#34; under &amp;#34;AI Applications&amp;#34;).
+    - Ensure **a natural progression** from general → specific.
+    - Limit connections to **meaningful** ones. Avoid excessive cross-links.
+    - **Strictly return JSON format only.**
+
+    **Example Output:**
+    ```json
+    {{
+        &amp;#34;root&amp;#34;: &amp;#34;Artificial Intelligence&amp;#34;,
+        &amp;#34;relationships&amp;#34;: [
+        {{&amp;#34;from&amp;#34;: &amp;#34;Artificial Intelligence&amp;#34;, &amp;#34;to&amp;#34;: &amp;#34;AI Applications&amp;#34;, &amp;#34;relationship&amp;#34;: &amp;#34;Broad category&amp;#34;}},
+        {{&amp;#34;from&amp;#34;: &amp;#34;AI Applications&amp;#34;, &amp;#34;to&amp;#34;: &amp;#34;AI in Healthcare&amp;#34;, &amp;#34;relationship&amp;#34;: &amp;#34;A major domain&amp;#34;}},
+        {{&amp;#34;from&amp;#34;: &amp;#34;AI Applications&amp;#34;, &amp;#34;to&amp;#34;: &amp;#34;AI in Finance&amp;#34;, &amp;#34;relationship&amp;#34;: &amp;#34;Used in banking&amp;#34;}},
+        {{&amp;#34;from&amp;#34;: &amp;#34;AI in Healthcare&amp;#34;, &amp;#34;to&amp;#34;: &amp;#34;Medical Diagnosis&amp;#34;, &amp;#34;relationship&amp;#34;: &amp;#34;Key use case&amp;#34;}},
+        {{&amp;#34;from&amp;#34;: &amp;#34;AI in Finance&amp;#34;, &amp;#34;to&amp;#34;: &amp;#34;Fraud Detection&amp;#34;, &amp;#34;relationship&amp;#34;: &amp;#34;Security application&amp;#34;}}
+        ]
+    }}
+    ```
+
+    **Given Topics:**
+    ```json
+    {summary}
+    ```
+
+    **Output only JSON. No extra text.**
+    &amp;#34;&amp;#34;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;output&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Graph Theory&#34;];
+        B[&#34;TSP&#34;];
+        C[&#34;Optimization&#34;];
+        D[&#34;Algorithms&#34;];
+        E[&#34;Hackathon&#34;];
+        F[&#34;Route Optimization&#34;];
+        G[&#34;Real-time Traffic&#34;];
+        H[&#34;APIs&#34;];
+        I[&#34;Streamlit&#34;];
+        J[&#34;Web Application&#34;];
+        K[&#34;Simplicity&#34;];
+        L[&#34;Product Focus&#34;];
+        M[&#34;Efficacy&#34;];
+        F --&gt;|Relies on| C;
+        F --&gt;|Implements| D;
+        D --&gt;|Utilizes concepts from| A;
+        D --&gt;|Solves| B;
+        F --&gt;|Data source| H;
+        H --&gt;|Provides| G;
+        F --&gt;|Interface is| J;
+        J --&gt;|Built with| I;
+        F --&gt;|Developed during| E;
+        F --&gt;|Driven by| L;
+        L --&gt;|Emphasizes| K;
+        L --&gt;|Aims for| M;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        Graph_Theory[&#34;Graph Theory&#34;];
+        TSP[&#34;TSP&#34;];
+        Optimization[&#34;Optimization&#34;];
+        Dijkstra&#39;s_Algorithm[&#34;Dijkstra&#39;s Algorithm&#34;];
+        Held-Karp[&#34;Held-Karp&#34;];
+        Hackathon[&#34;Hackathon&#34;];
+        Route_Optimization[&#34;Route Optimization&#34;];
+        Real-time_Traffic[&#34;Real-time Traffic&#34;];
+        Emission_Data[&#34;Emission Data&#34;];
+        APIs[&#34;APIs&#34;];
+        Streamlit[&#34;Streamlit&#34;];
+        Web_Application[&#34;Web Application&#34;];
+        Simplicity[&#34;Simplicity&#34;];
+        Product_Focus[&#34;Product Focus&#34;];
+        Web_Application --&gt;|Frontend framework| Streamlit;
+        Route_Optimization --&gt;|Based on| Graph_Theory;
+        Route_Optimization --&gt;|Uses mathematical| Optimization;
+        Route_Optimization --&gt;|Related to| TSP;
+        TSP --&gt;|Algorithm| Dijkstra&#39;s_Algorithm;
+        TSP --&gt;|Algorithm| Held-Karp;
+        Route_Optimization --&gt;|Considers| Real-time_Traffic;
+        Route_Optimization --&gt;|Calculates| Emission_Data;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Graph Theory&#34;];
+        B[&#34;TSP&#34;];
+        C[&#34;Optimization&#34;];
+        D[&#34;Dijkstra&#39;s Algorithm&#34;];
+        E[&#34;Held-Karp Algorithm&#34;];
+        F[&#34;Hackathon&#34;];
+        G[&#34;Route Optimization&#34;];
+        H[&#34;Real-time Traffic&#34;];
+        I[&#34;APIs&#34;];
+        J[&#34;Streamlit&#34;];
+        K[&#34;User Experience&#34;];
+        L[&#34;Simplicity&#34;];
+        M[&#34;Product&#34;];
+        N[&#34;Functionality&#34;];
+        O[&#34;Steve Jobs&#34;];
+        C --&gt;|Encompasses the TSP problem| B;
+        A --&gt;|Provides the foundation for| B;
+        D --&gt;|Can be a component of| G;
+        E --&gt;|Offers a solution approach| B;
+        H --&gt;|Influences dynamically| G;
+        G --&gt;|Was the challenge at the| F;
+        I --&gt;|Delivers real-time data| H;
+        I --&gt;|Provides data for| G;
+        J --&gt;|Aids in creating intuitive| K;
+        K --&gt;|Enhanced by| L;
+        M --&gt;|Prioritizes robust| N;
+        N --&gt;|Complements clean| L;
+        F --&gt;|Offered a lesson in| M;
+        O --&gt;|Is an inspiration for| M;
+        I --&gt;|Critical component used during| F;
+    
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Graph Theory&#34;];
+        B[&#34;TSP&#34;];
+        C[&#34;Dijkstra&#39;s Algorithm&#34;];
+        D[&#34;Held-Karp Algorithm&#34;];
+        E[&#34;FedEx Hackathon&#34;];
+        F[&#34;Real-time Traffic&#34;];
+        G[&#34;Search API&#34;];
+        H[&#34;Navigation API&#34;];
+        I[&#34;Streamlit&#34;];
+        J[&#34;Web Application&#34;];
+        K[&#34;Simplicity&#34;];
+        L[&#34;Product Understanding&#34;];
+        A --&gt;|Provides foundation for| B;
+        B --&gt;|Alternative solution approach - limited| C;
+        B --&gt;|Solves optimally for smaller instances| D;
+        E --&gt;|Inspired a real-world application of| B;
+        E --&gt;|Resulted in a| J;
+        J --&gt;|Built frontend using| I;
+        J --&gt;|Utilized for route guidance| H;
+        J --&gt;|Integrated for location finding| G;
+        H --&gt;|Considers for optimal routing| F;
+        E --&gt;|API provided data| F;
+        E --&gt;|Winning strategy emphasized| K;
+        E --&gt;|Essential for effective solution| L;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Graph Theory&#34;];
+        B[&#34;TSP&#34;];
+        C[&#34;Optimization&#34;];
+        D[&#34;Dijkstra&#39;s Algorithm&#34;];
+        E[&#34;Held-Karp&#34;];
+        F[&#34;FedEx Hackathon&#34;];
+        G[&#34;Route Optimization&#34;];
+        H[&#34;Real-Time Data&#34;];
+        I[&#34;API Integration&#34;];
+        J[&#34;Streamlit&#34;];
+        K[&#34;Web Application&#34;];
+        L[&#34;Simplicity&#34;];
+        M[&#34;Product Focus&#34;];
+        N[&#34;Functionality&#34;];
+        B --&gt;|Is a problem within| A;
+        C --&gt;|Seeks solutions through| B;
+        D --&gt;|Is an algorithm within| A;
+        D --&gt;|Can be a component of| G;
+        E --&gt;|Solves optimally using dynamic programming| B;
+        G --&gt;|Applies principles of| C;
+        F --&gt;|Focuses on problems related to| G;
+        H --&gt;|Enhances accuracy of| G;
+        I --&gt;|Provides sources for| H;
+        I --&gt;|Supplies data and services for| G;
+        J --&gt;|Facilitates rapid development of| K;
+        K --&gt;|The deliverable for| F;
+        K --&gt;|Interface for displaying and managing| G;
+        L --&gt;|A design principle applied to| K;
+        L --&gt;|Prioritized over complexity| N;
+        M --&gt;|Drives the user-centered design of| K;
+        M --&gt;|Guides the selection of features based on user needs| N;
+        N --&gt;|Key element for success in| F;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Digital Payments&#34;];
+        B[&#34;Regulation&#34;];
+        C[&#34;Applicability&#34;];
+        D[&#34;Policy Formulation&#34;];
+        E[&#34;Security Risks&#34;];
+        F[&#34;Customer Data&#34;];
+        G[&#34;Infrastructure&#34;];
+        H[&#34;Product Security&#34;];
+        I[&#34;Scalability&#34;];
+        J[&#34;Dispute Resolution&#34;];
+        K[&#34;Review Mechanism&#34;];
+        L[&#34;User Acceptance Tests&#34;];
+        M[&#34;External Assessment&#34;];
+        A --&gt;|Governed by regulatory directions| B;
+        B --&gt;|Specifies scope of rules| C;
+        A --&gt;|Requires regulated entities to create policies| D;
+        D --&gt;|Addresses governance and management of risks| E;
+        D --&gt;|Mandates confidentiality protection| F;
+        D --&gt;|Ensures availability of infrastructure| G;
+        D --&gt;|Focuses on building secure payment products| H;
+        D --&gt;|Incorporates capacity building| I;
+        D --&gt;|Ensures efficient handling of disputes| J;
+        D --&gt;|Includes processes for adequate review| K;
+        H --&gt;|Requires UAT before launch| L;
+        H --&gt;|Needs external validation| M;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Gitingest&#34;];
+        B[&#34;CLI Tool&#34;];
+        C[&#34;Python Package&#34;];
+        D[&#34;Browser Extension&#34;];
+        E[&#34;Self-Hosting&#34;];
+        F[&#34;Contributing&#34;];
+        G[&#34;Code of Conduct&#34;];
+        H[&#34;Security Policy&#34;];
+        I[&#34;pyproject.toml&#34;];
+        J[&#34;requirements.txt&#34;];
+        K[&#34;pre-commit&#34;];
+        L[&#34;Filesystem schema&#34;];
+        M[&#34;Query parsing&#34;];
+        N[&#34;Output formatting&#34;];
+        O[&#34;Server API&#34;];
+        P[&#34;GitHub Actions&#34;];
+        A --&gt;|Exposes functionality through| B;
+        A --&gt;|Provides as an importable| C;
+        A --&gt;|Offers for code analysis in browsers| D;
+        A --&gt;|Supports via Docker| E;
+        A --&gt;|Welcomes contributions to| F;
+        A --&gt;|Governed by| G;
+        A --&gt;|Maintains a| H;
+        A --&gt;|Automates CI/CD with| P;
+        B --&gt;|Uses for processing input sources| M;
+        B --&gt;|Utilizes for presenting results| N;
+        C --&gt;|Uses for processing input sources| M;
+        C --&gt;|Utilizes for presenting results| N;
+        E --&gt;|Accesses through a| O;
+        F --&gt;|Adheres to| G;
+        F --&gt;|Uses for testing contributions| P;
+        A --&gt;|Uses to manage project metadata| I;
+        A --&gt;|Defines Python dependencies in| J;
+        A --&gt;|Enforces code quality with| K;
+        A --&gt;|Operates based on a defined| L;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Gitingest Tool&#34;];
+        B[&#34;Code of Conduct&#34;];
+        C[&#34;Contributing&#34;];
+        D[&#34;Dockerfile&#34;];
+        E[&#34;MIT License&#34;];
+        F[&#34;Security Policy&#34;];
+        G[&#34;CLI Interface&#34;];
+        H[&#34;Repository Cloning&#34;];
+        I[&#34;Configuration&#34;];
+        J[&#34;Exception Handling&#34;];
+        K[&#34;File System Schema&#34;];
+        L[&#34;Ingestion Process&#34;];
+        M[&#34;Output Formatting&#34;];
+        N[&#34;Query Parsing&#34;];
+        O[&#34;Server Main&#34;];
+        P[&#34;FastAPI Server&#34;];
+        Q[&#34;Query Processing&#34;];
+        R[&#34;Server Utilities&#34;];
+        S[&#34;Web Application&#34;];
+        T[&#34;Github Actions&#34;];
+        A --&gt;|Offers command-line access| G;
+        A --&gt;|Provides API endpoints| P;
+        A --&gt;|Core analysis functionality| L;
+        A --&gt;|Usage is governed by| E;
+        A --&gt;|Project adheres to| B;
+        A --&gt;|Follows guidelines for contributions| C;
+        A --&gt;|Provides details for reporting vulnerabilities| F;
+        G --&gt;|Uses for input validation| N;
+        G --&gt;|Reads settings from| I;
+        P --&gt;|Entry point for| O;
+        P --&gt;|Manages backend requests| Q;
+        P --&gt;|Utilizes helper methods| R;
+        P --&gt;|Serves frontend components| S;
+        L --&gt;|Requires access to codebases| H;
+        L --&gt;|Represents file structures| K;
+        L --&gt;|Generates analysis results| M;
+        L --&gt;|Reports processing errors| J;
+        A --&gt;|Containerized using| D;
+        A --&gt;|Uses for CI/CD| T;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;FedEx Route Planner&#34;];
+        B[&#34;Streamlit App&#34;];
+        C[&#34;TomTom API&#34;];
+        D[&#34;HERE API&#34;];
+        E[&#34;Traffic Data&#34;];
+        F[&#34;Emission Factors&#34;];
+        G[&#34;Travel Mode&#34;];
+        H[&#34;Input Mode&#34;];
+        I[&#34;Optimal Route&#34;];
+        J[&#34;TSP Solving&#34;];
+        K[&#34;Route Visualization&#34;];
+        L[&#34;Emission Calculation&#34;];
+        A --&gt;|Implemented as| B;
+        A --&gt;|Aims to find| I;
+        A --&gt;|Integrates| L;
+        I --&gt;|Achieved through| J;
+        I --&gt;|Uses for route generation| C;
+        I --&gt;|Considers for route adjustments| E;
+        L --&gt;|Uses for estimation| F;
+        L --&gt;|Depends on| G;
+        B --&gt;|Offers configuration via| H;
+        B --&gt;|Provides user interface for| K;
+        H --&gt;|Uses for location to coordinate conversion| D;
+        K --&gt;|Employs for map display| C;
+        C --&gt;|Provides real-time| E;
+    &lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+    graph TD;
+        A[&#34;Public-Private Partnership&#34;];
+        B[&#34;Sports Sector&#34;];
+        C[&#34;Odisha State&#34;];
+        D[&#34;Economic Growth&#34;];
+        E[&#34;Policy Implementation&#34;];
+        F[&#34;Sports Development&#34;];
+        G[&#34;Tokyo Olympics&#34;];
+        H[&#34;Literature Review&#34;];
+        I[&#34;Research Method&#34;];
+        J[&#34;Global Perspectives&#34;];
+        K[&#34;Indian Context&#34;];
+        L[&#34;Infrastructure&#34;];
+        M[&#34;Transportation&#34;];
+        N[&#34;Healthcare&#34;];
+        O[&#34;Education &amp; Technology&#34;];
+        P[&#34;Odisha Model&#34;];
+        Q[&#34;High-Performance Centers&#34;];
+        R[&#34;Managerial Implications&#34;];
+        S[&#34;Legal Clearances&#34;];
+        T[&#34;Private Capital&#34;];
+        U[&#34;Goal Alignment&#34;];
+        A --&gt;|Increasingly used for infrastructure and development| B;
+        A --&gt;|Contributes to sectoral growth and athlete performance| D;
+        A --&gt;|Managerial implications for successful implementation| E;
+        A --&gt;|Informed by existing research across sectors| H;
+        A --&gt;|Models exist in Europe, North America, and South America| J;
+        A --&gt;|Used in infrastructure, transportation, tourism, education, and healthcare| K;
+        B --&gt;|Crucial for achieving national sporting ambitions| F;
+        B --&gt;|Serves as a role model for PPP implementation| C;
+        B --&gt;|India&#39;s success demonstrates the need for PPP in sports| G;
+        E --&gt;|Emphasizes legal clearances, capital access, goal alignment, and project management| R;
+        R --&gt;|Requires a robust framework for private organizations to plan risks| S;
+        R --&gt;|Benefits from transparency to increase investment confidence| T;
+        R --&gt;|Relies on understanding roles for project success| U;
+        K --&gt;|PPP faces challenges like regulatory issues and capital raising| L;
+        K --&gt;|PPP projects experience less time overrun| M;
+        K --&gt;|PPP improves delivery in backward districts| N;
+        K --&gt;|PPP reduces financial pressure on government-run schools| O;
+        C --&gt;|Sports policy aims to develop all socio-economic groups| P;
+        C --&gt;|Established HPCs in various sporting disciplines| Q;
+        I --&gt;|Utilizes academic databases and government documents to gather existing research| H;
+    &lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;p&gt;thoughts: i think these final prompts are good.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;combined thing&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;iter1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;made a streamlit front end&lt;/li&gt;
+&lt;li&gt;takes in pdfs&lt;/li&gt;
+&lt;li&gt;checks whether an image based pdf or text based&lt;/li&gt;
+&lt;li&gt;uses easyocr and pypdf2 for image and text based pdfs respectively&lt;/li&gt;
+&lt;li&gt;extracted text given to segmentor and summarizer&lt;/li&gt;
+&lt;li&gt;gives topics and summaries, displayed there&lt;/li&gt;
+&lt;li&gt;passed to relationship generator. generates relationships within each thing. prints them&lt;/li&gt;
+&lt;li&gt;one combined relationship generator. topic wise summaries given together, gives the relationships and prints the mermaid diagram&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;// problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;shows syntax error many times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;// now need to change it to give the content to relationship generator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iter2: content goes to the relationship generator. the topics are decided on the basis of major topics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iter3: segments on the basis of titles, gives content to both rel and summarizer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;change summarize prompt&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iter4: segments on its own, gives content to both rel and summarizer&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;there are 4 options available&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;segment and summarize together, ie the model decides the main topics. send topic wise summaries to relationship maker&lt;/li&gt;
+&lt;li&gt;segment on the basis of titles, and then summarize, ie the topics are decided on the basis of how they’re presented in the doc then send topic wise summaries&lt;/li&gt;
+&lt;li&gt;segment on the basis of titles, send content to summarizer to display summaries. relationship maker also gets content.&lt;/li&gt;
+&lt;li&gt;segment according to what it thinks the major topics are, then send content to summarizer and relationship maker.
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;content to rel&lt;/th&gt;
+          &lt;th&gt;no content to rel&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;titles&lt;/td&gt;
+          &lt;td&gt;iter3&lt;/td&gt;
+          &lt;td&gt;iter2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;own&lt;/td&gt;
+          &lt;td&gt;iter4&lt;/td&gt;
+          &lt;td&gt;iter1&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;benefits of extracting titles on its own are that big files get segregated into small topics that are easy to understand.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;failed to generate topics error cuz “s, \escape in json, expecting delimiter etc
+&lt;ul&gt;
+&lt;li&gt;either remove these problem creating elements or donot extract content.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;because of the reason listed above, we get rid of iter3, 4.&lt;/p&gt;
+&lt;p&gt;now in iter2, 1, i think it is more relevant if we do it file wise for github repos and otherwise for other pdfs.&lt;/p&gt;
+&lt;p&gt;iter 1 final&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;added the functionality to take in github repos&lt;/li&gt;
+&lt;li&gt;changed the prompts to be different for pdfs and repos&lt;/li&gt;
+&lt;li&gt;need to make the following fixes:
+&lt;ul&gt;
+&lt;li&gt;syntax error&lt;/li&gt;
+&lt;li&gt;mindmaps not viewable nicely&lt;/li&gt;
+&lt;li&gt;ui/ux changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[17/3/25]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;integrated mistral’s ocr&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;omg it looks so good, i changed text based pdfs to also go through mistrals ocr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;cleaned the code, divided into various files and enabled the functions to be imported from there&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;need to make ui changes&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;need to create .env&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;run the prompts through chatgpt and get better ones&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;need to structure json&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;need to integrate caching&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[18/3/25]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the mermaid diagrams arent being represented nicely, they’re usually being cut off at the bottom unless i make the container size atypically large, which makes it very out of place.
+&lt;ul&gt;
+&lt;li&gt;tried numerous work arounds, nothing seemed to work&lt;/li&gt;
+&lt;li&gt;then randomly came across a python library that helps to display mermaid code in streamlit and it worked like a charm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;trying to get better prompts
+&lt;ul&gt;
+&lt;li&gt;explained the pipeline to chatgpt, gave current prompts and asked it to generate newer and more precise ones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;need to improve the colour scheme&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;made prompt changes, ui changes, looks really cool. just need to integrate rag now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/AIAnytime/Project-WebSage&#34;&gt;Project-WebSage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;^ rag based llm integration for website search&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[26/3/25]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deployed on streamlit&lt;/li&gt;
+&lt;li&gt;looks so fking good; i can access it through my phone, any of my browsers, literally anywhere and the best part is taht it comes with batteries included- no need to put any api keys &amp;lt;333&lt;/li&gt;
+&lt;li&gt;fixes
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;api keys should be locally sourced&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;the embeddings stay the same despite a new repo been given&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;the embeddings remain same across different devices - the same repo was being referred to on my phone for llm chat despite a different pdf that i had entered initially.&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;changed such that new embeddings are generated each time a file is given&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;still shows the CachedWidgetWarning&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;put the widget generate outside the cached function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;syntax error&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;not loading ask ai for pdfs&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;fixed it by resetting variables whenever the input mode is changed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;update readme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[27/3/25]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;minor fixes&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; change size of chat dialog&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; change k factor&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; change prompt to ignore useless files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;final-pipeline&#34;&gt;final pipeline:&lt;/h4&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+flowchart TD;
+A[user input]--&gt;|&#34;github repo&#34;|B[github_scraper.py]
+A --&gt; |&#34;pdf document&#34;|C[pdf_ocr.py]
+B--&gt;|&#34;content&#34;|H
+C--&gt;|&#34;content&#34;|H
+H[&#34;content json&#34;]--&gt;D[segmentor_summarizer.py]
+H--&gt;|embeddings|I[vector store]
+I--&gt;|&#34;context&#34;|J[&#34;ask ai rag&#34;]
+D--&gt;|&#34;major topics and summaries&#34;|E[relationship_generator.py]
+E--&gt;|&#34;relationships json&#34;|F[generator.py]
+F--&gt;|mermaid code|G[streamlit frontend]
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;finally. its all done. finally. got it ready. up and running, up and running beautifully. on the web. anybody from any corner of the world can use it anywhere at any corner of the world. no need for api keys, no need for downloads. just one click and you enter your mindpalace.&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;launched it on linkedin. put it on a bunch of subreddits and also on hacker news. got a bunch of positive reviews, including those from my close friends. (added more on my learnings from mindpalace in the 9/4/25 blog &lt;a href=&#34;https://1rvinn.github.io/crude/090425&#34;&gt;here.&lt;/a&gt;)&lt;/p&gt;
+&lt;iframe src=&#34;https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7311414641471983616?collapsed=1&#34; height=&#34;551&#34; width=&#34;504&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;&#34; title=&#34;Embedded post&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;strong&gt;update [8/4/25]:&lt;/strong&gt; &lt;br&gt;
+&lt;br&gt;
+on a friend&amp;rsquo;s feedback, i added the functionality of saving the mindmaps as images. used the &lt;a href=&#34;https://kroki.io/&#34;&gt;kroki&lt;/a&gt; api endpoint to convert mermaid code into pngs and made them available for download.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>let yourself die</title>
       <link>https://1rvinn.github.io/crude/let-yourself-die/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
@@ -238,7 +1725,7 @@ Additionally, now there is a greater variety of data available to train these mo
 Also, it means that the model is trained on individual devices, which implies that the computational and energy requirements are divided across devices, thus offloading the burden on the central server.
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/build/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;strong&gt;homomorphic encryption:&lt;/strong&gt;
@@ -246,7 +1733,7 @@ Also, it means that the model is trained on individual devices, which implies th
 in the current paradigm, this is how data encryption looks like during LLM inference:
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/build/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
 &lt;br&gt;
 the inference is done on decrypted data, which leads to a loophole that can be exploited by cyber attackers. Not only this, but it can also lead to other security issues like the LLM learning about personal details and prompt injections as elaborated in [1].
 &lt;br&gt;

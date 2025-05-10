@@ -207,7 +207,7 @@ Additionally, now there is a greater variety of data available to train these mo
 Also, it means that the model is trained on individual devices, which implies that the computational and energy requirements are divided across devices, thus offloading the burden on the central server.
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/build/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;strong&gt;homomorphic encryption:&lt;/strong&gt;
@@ -215,7 +215,7 @@ Also, it means that the model is trained on individual devices, which implies th
 in the current paradigm, this is how data encryption looks like during LLM inference:
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/build/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
 &lt;br&gt;
 the inference is done on decrypted data, which leads to a loophole that can be exploited by cyber attackers. Not only this, but it can also lead to other security issues like the LLM learning about personal details and prompt injections as elaborated in [1].
 &lt;br&gt;
