@@ -6,13 +6,33 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
       <link>https://1rvinn.github.io/tags/ai/</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       
       <guid>https://1rvinn.github.io/tags/ai/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Browser</title>
+      <link>https://1rvinn.github.io/tags/browser/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/browser/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://1rvinn.github.io/tags/network/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/network/</guid>
       <description></description>
       <content></content>
     </item>
@@ -28,11 +48,11 @@
     </item>
     
     <item>
-      <title>Network</title>
-      <link>https://1rvinn.github.io/tags/network/</link>
-      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <title>Github</title>
+      <link>https://1rvinn.github.io/tags/github/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/tags/network/</guid>
+      <guid>https://1rvinn.github.io/tags/github/</guid>
       <description></description>
       <content></content>
     </item>
