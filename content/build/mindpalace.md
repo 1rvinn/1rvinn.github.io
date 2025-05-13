@@ -1,10 +1,36 @@
 ---
 title: "mindpalace"
 date: "2025-02-18"
-description: "test"
+description: "find it hard to understand long github repos and pdfs? struggle no more, just enter your mindpalace. mindpalace helps you understand the repo/pdf visually by providing concise explanations along with mindmaps. and the ask ai feature allows you to ask anything about it. hop into your mindpalace - understand visually, understand better"
 tags: ["ai", "github"]
 mermaid: true
 ---
+
+---
+
+<div style='text-align:center;'>
+    <h3 style="color: #23affd;"> // the final thing </h3>
+
+find it hard to understand long github repos and pdfs?
+
+struggle no more, just enter your mindpalace.
+
+mindpalace helps you understand the repo/pdf visually by providing concise explanations along with mindmaps. and the ask ai feature allows you to ask anything about it. hop into your mindpalace - understand visually, understand better
+
+try it out here: https://mindpalace.streamlit.app 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SyELL3N9h5c?si=zy4PU5eZPHyrX7sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+</div>
+
+---
+
+<div style='text-align:center;'>
+    <br>
+    <h3 style="color: #23affd;"> // building it out - the journey</h3>
+</div>
 
 > **the idea:**
 > the user should be able to input pdf(s) which get converted into mindmaps for easy learning. the same should be done for github repos. in addition, there should be an llm to ask questions. \
@@ -17,7 +43,6 @@ useful for neurodiverse people; facilitates better learning for them
 creates flow-chart summaries from web pages
 
 flow:
-
 ![image.png](/img/build/mindpalace/image.png)
 
 - takes in data from web page sections
@@ -64,15 +89,15 @@ can build upon these
 
 
 **19/02/25 initial plan:**
+<div style='text-align:center;'>
+    {{< mermaid >}}
 
-{{< mermaid >}}
-
-flowchart TD
-	A[document]--->|segmentor|B[segments of data]--->|summarizer|D[summarized segments of data]--->|relationship determiner|E[mermaid diagram]
-	A--->C[rag]--->F[llm]
-	D--->E
-{{< /mermaid >}}
-
+    flowchart TD
+        A[document]--->|segmentor|B[segments of data]--->|summarizer|D[summarized segments of data]--->|relationship determiner|E[mermaid diagram]
+        A--->C[rag]--->F[llm]
+        D--->E
+    {{< /mermaid >}}
+</div>
 
 // want to create it on streamlit since minimal ui, simpler coding
 
@@ -147,28 +172,29 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
 ---
 
 **(3) checking how good chat gpt is with giving mermaid diags**
+
 <details>
 <summary> this section's gonna be long, tried out a variety of inputs and prompts</summary>
 
 - asked chatgpt to analyse my repo - via the repo link - and asked to give a mermaid code explaining it
     - output:
-        
-        {{< mermaid >}}
-        graph TD
-            A[Start] --> B[Load Configuration]
-            B --> C[Read Input Data: Orders & Locations]
-            C --> D[Fetch Route Data from APIs]
-            D --> E[Optimize Routes using Held-Karp Algorithm]
-            E --> F[Calculate Emissions Based on Route]
-            F --> G[Generate Optimized Route and Emissions Report]
-            G --> H[Display Output to User]
-            H --> I[End]
-            
-            %% Dependencies
-            D -->|API Calls| J{TomTom API / HERE API}
-            J --> D
-        {{< /mermaid >}}
-        
+        <div style='text-align:center;'>
+            {{< mermaid >}}
+            graph TD
+                A[Start] --> B[Load Configuration]
+                B --> C[Read Input Data: Orders & Locations]
+                C --> D[Fetch Route Data from APIs]
+                D --> E[Optimize Routes using Held-Karp Algorithm]
+                E --> F[Calculate Emissions Based on Route]
+                F --> G[Generate Optimized Route and Emissions Report]
+                G --> H[Display Output to User]
+                H --> I[End]
+                
+                %% Dependencies
+                D -->|API Calls| J{TomTom API / HERE API}
+                J --> D
+            {{< /mermaid >}}
+        </div>
         the output aint bad
         
     - then i used [gitingest](https://gitingest.com/) to get llm ready parseed version of my repo. gave it as context to gpt4o and asked it to give a mermaid code.
@@ -176,34 +202,35 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
         prompt: [llm ready parsed info (token length - 4.7k)] given the above description of a repository, write code for a mermaid diagram explaining the same
         
         - output:
-            
-            {{< mermaid >}}
-            graph TD;
-                A[Repository: 1rvinn-fedexpedite] -->|Contains| B[README.md]
-                A -->|Contains| C[app.py]
-                A -->|Contains| D[requirements.txt]
-                A -->|Contains| E[images/]
-                A -->|Contains| F[.streamlit/]
-                F --> G[config.toml]
+            <div style='text-align:center;'>
+                {{< mermaid >}}
+                graph TD;
+                    A[Repository: 1rvinn-fedexpedite] -->|Contains| B[README.md]
+                    A -->|Contains| C[app.py]
+                    A -->|Contains| D[requirements.txt]
+                    A -->|Contains| E[images/]
+                    A -->|Contains| F[.streamlit/]
+                    F --> G[config.toml]
+                    
+                    subgraph "Core Files"
+                        B -->|Provides| B1[Project Overview & Setup Instructions]
+                        C -->|Main Application| C1[Route Optimiser & Emission Calculator]
+                        D -->|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
+                        E -->|Contains| E1[Visual Assets - Screenshots, Diagrams]
+                        G -->|Defines| G1[Streamlit Theme & UI Customisation]
+                    end
                 
-                subgraph "Core Files"
-                    B -->|Provides| B1[Project Overview & Setup Instructions]
-                    C -->|Main Application| C1[Route Optimiser & Emission Calculator]
-                    D -->|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
-                    E -->|Contains| E1[Visual Assets - Screenshots, Diagrams]
-                    G -->|Defines| G1[Streamlit Theme & UI Customisation]
-                end
-            
-                subgraph "Application Workflow"
-                    C1 -->|Receives API Keys| H[TomTom API, HERE API]
-                    C1 -->|Takes Inputs| I[Route Preferences, Vehicle Type, Fuel Type]
-                    I -->|Uses| J[Held-Karp Algorithm for Optimisation]
-                    J -->|Outputs| K[Optimal Route, Travel Time, Emission Data]
-                    K -->|Visualised in| L[Google Maps, Folium Map]
-                end
-            
-            {{< /mermaid >}}
-            
+                    subgraph "Application Workflow"
+                        C1 -->|Receives API Keys| H[TomTom API, HERE API]
+                        C1 -->|Takes Inputs| I[Route Preferences, Vehicle Type, Fuel Type]
+                        I -->|Uses| J[Held-Karp Algorithm for Optimisation]
+                        J -->|Outputs| K[Optimal Route, Travel Time, Emission Data]
+                        K -->|Visualised in| L[Google Maps, Folium Map]
+                    end
+                
+                {{< /mermaid >}}
+            </div>
+
         - maybe ask it to give 2 separate diagrams for directory structure and code logic.
             
             prompt: give 2 separate codes - one explaining the directory structure and the other explaining the code, logic and flow
@@ -211,59 +238,61 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
             output:
             
             - og output: has errors
+
+                <div style='text-align:center;'>
+                    {{< mermaid >}}
+                        {{< mermaid >}}
+                        graph TD;
+                            %% Directory Structure
+                            subgraph "Repository Structure"
+                                A[Repository: 1rvinn-fedexpedite] -->|Contains| B[README.md]
+                                A -->|Contains| C[app.py]
+                                A -->|Contains| D[requirements.txt]
+                                A -->|Contains| E[images/]
+                                A -->|Contains| F[.streamlit/]
+                                F --> G[config.toml]
+                            end
+                        
+                            subgraph "Core Files"
+                                B -->|Provides| B1[Project Overview & Setup Instructions]
+                                C -->|Main Application| C1[Route Optimiser & Emission Calculator]
+                                D -->|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
+                                E -->|Contains| E1[Visual Assets (Screenshots, Diagrams)]
+                                G -->|Defines| G1[Streamlit Theme & UI Customisation]
+                            end
+                        {{< /mermaid >}}
                 
-                {{< mermaid >}}
-                {{< mermaid >}}
-                graph TD;
-                    %% Directory Structure
-                    subgraph "Repository Structure"
-                        A[Repository: 1rvinn-fedexpedite] -->|Contains| B[README.md]
-                        A -->|Contains| C[app.py]
-                        A -->|Contains| D[requirements.txt]
-                        A -->|Contains| E[images/]
-                        A -->|Contains| F[.streamlit/]
-                        F --> G[config.toml]
-                    end
-                
-                    subgraph "Core Files"
-                        B -->|Provides| B1[Project Overview & Setup Instructions]
-                        C -->|Main Application| C1[Route Optimiser & Emission Calculator]
-                        D -->|Dependencies| D1[Streamlit, Folium, Requests, Streamlit Folium]
-                        E -->|Contains| E1[Visual Assets (Screenshots, Diagrams)]
-                        G -->|Defines| G1[Streamlit Theme & UI Customisation]
-                    end
-                {{< /mermaid >}}
-                
-                {{< mermaid >}}
-                graph TD;
-                    %% Application Logic and Flow
-                    A[User Input] -->|Enter Route Details| B[Start Location & Stops]
-                    B -->|Fetch Coordinates| C[HERE API]
-                    B -->|Select Vehicle Type| D[Emission Factors Calculation]
-                    
-                    subgraph "Route Calculation"
-                        C -->|Compute Routes| E[TomTom API]
-                        E -->|Applies| F[Held-Karp Algorithm]
-                        F -->|Outputs| G[Optimised Route & Travel Time]
-                    end
-                    
-                    subgraph "Emissions Calculation"
-                        D -->|Compute Emissions| H[Vehicle Type, Engine Size, Fuel Type]
-                        H -->|Uses Data| I[India GHG Emission Factors]
-                        I -->|Outputs| J[Total Emissions (kg CO₂)]
-                    end
-                    
-                    subgraph "Visualisation & Results"
-                        G -->|Displays| K[Google Maps & Folium]
-                        J -->|Shows| L[Emissions Output]
-                        K & L -->|Final Output| M[User Dashboard]
-                    end
-                {{< /mermaid >}}
-                
-                {{< /mermaid >}}
+                        {{< mermaid >}}
+                        graph TD;
+                            %% Application Logic and Flow
+                            A[User Input] -->|Enter Route Details| B[Start Location & Stops]
+                            B -->|Fetch Coordinates| C[HERE API]
+                            B -->|Select Vehicle Type| D[Emission Factors Calculation]
+                            
+                            subgraph "Route Calculation"
+                                C -->|Compute Routes| E[TomTom API]
+                                E -->|Applies| F[Held-Karp Algorithm]
+                                F -->|Outputs| G[Optimised Route & Travel Time]
+                            end
+                            
+                            subgraph "Emissions Calculation"
+                                D -->|Compute Emissions| H[Vehicle Type, Engine Size, Fuel Type]
+                                H -->|Uses Data| I[India GHG Emission Factors]
+                                I -->|Outputs| J[Total Emissions (kg CO₂)]
+                            end
+                            
+                            subgraph "Visualisation & Results"
+                                G -->|Displays| K[Google Maps & Folium]
+                                J -->|Shows| L[Emissions Output]
+                                K & L -->|Final Output| M[User Dashboard]
+                            end
+                        {{< /mermaid >}}
+                    {{< /mermaid >}}
+                </div>
                 
             - output divided into 2
                 
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 
                 graph TD;
@@ -285,9 +314,11 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                         G -->|Defines| G1[Streamlit Theme & UI Customisation]
                     end
                 {{< /mermaid >}}
+                </div>
                 
                 ^ this is good.
                 
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 graph TD;
                     %% Application Logic and Flow
@@ -313,6 +344,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                         K & L -->|Final Output| M[User Dashboard]
                     end
                 {{< /mermaid >}}
+                </div>
                 
                 ^ this one is really detailed. but i’m sure its taking inputs from the readme file.
                 
@@ -324,6 +356,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                 
             - fixed output
                 
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 graph TD
                     A[1rvinn-fedexpedite]
@@ -333,7 +366,10 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                     A --> E[.streamlit/]
                     E --> F[config.toml]
                 {{< /mermaid >}}
+                </div>
                 
+
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 flowchart TD
                     A[Start: Streamlit App Initialization]
@@ -382,11 +418,13 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                     T --> U
                     U --> V
                 {{< /mermaid >}}
+                </div>
                 
                 ^ this is too ass.
                 
                 asked to redo, gave this:
                 
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 graph TD;
                     A[Start - Streamlit App] -->|Initialize Session| B[Session State Variables]
@@ -412,9 +450,11 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                     Q --> R[End - Streamlit App]
                     
                 {{< /mermaid >}}
+                </div>
                 
                 ^ still ass.
                 
+                <div style='text-align:center;'>
                 {{< mermaid >}}
                 graph TD;
                     A[Start - Streamlit App] -->|Initialize Session| B[Session State Variables]
@@ -439,6 +479,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                 
                     Q --> R[End - Streamlit App]
                 {{< /mermaid >}}
+                </div>
 </details>
 
 - the outputs were sub standard despite using a sota model - 4o which has a big context window.
@@ -543,6 +584,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
 **[24/2/25]**
 - work on segmenter, summarizer, relation determiner and mermaid diag generator first.
     
+    <div style='text-align:center;'>
     {{< mermaid >}}
     flowchart 
     A[user input]--->B[pdf]--->|parser - ocr/text extractor|E[segmentor]
@@ -553,6 +595,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
     F--->|topic-wise summarized packets|G[relationship determiner]--->H--->I[combined mermaid diag]
     F--->|summarized text per topic|H[mermaid diagram generator]--->J[individual mermaid diagrams]
     {{< /mermaid >}}
+    </div>
     
 > random idea but how would an ai model architecture visualizer be?
     
@@ -671,6 +714,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
         
         output:
         
+        <div style='text-align:center;'>
         {{< mermaid >}}
         graph TD;
             A["AI Revolutionizing Industries"];
@@ -680,6 +724,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
             C -->|AI in Finance is a specific application area contributing to the broader AI Revolution across various industries.| A;
             B -->|Both topics represent specific examples of how AI is applied in different sectors to improve efficiency and decision-making through data analysis.| C;
         {{< /mermaid >}}
+        </div>
         
         thoughts:
         
@@ -689,12 +734,15 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
     - prompts
         1. summarizer and segmentor
     
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Introduction and Applicability"];
         B["General Controls: Governance and Management of Security Risks"];
         A -->|The 'Introduction and Applicability' section sets the scope and effective date for the directions, while the 'General Controls' section outlines the specific governance and management policies that Regulated Entities - REs - must implement to comply with these directions.| B;
     {{< /mermaid >}}
+    </div>
+
 </details>
         
 <details>
@@ -759,6 +807,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
                 
         - result
             
+            <div style='text-align:center;'>
             {{< mermaid >}}
             graph TD;
               A["Digital Payments"];
@@ -791,7 +840,9 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
               M -->|Ensures security of digital payment systems| A;
               D -->|Must adhere to the guidelines for digital payments| A;
             {{< /mermaid >}}
+            </div>
             
+            <div style='text-align:center;'>
             {{< mermaid >}}
             graph TD;
               A["Graph Theory"];
@@ -838,6 +889,7 @@ https://medium.com/@elle.neal_71064/mind-mapping-with-ai-an-accessible-approach-
               C -->|The goal is to achieve the optimal path| G;
               N -->|Core feature of a product| M;
             {{< /mermaid >}}
+            </div>
             
         - thoughts:
             - looks really good
@@ -886,6 +938,7 @@ f"""
     
 - output
     
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Graph Theory"];
@@ -914,8 +967,10 @@ f"""
         L -->|Emphasizes| K;
         L -->|Aims for| M;
     {{< /mermaid >}}
+    </div>
 
 
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         Graph_Theory["Graph Theory"];
@@ -941,8 +996,9 @@ f"""
         Route_Optimization -->|Considers| Real-time_Traffic;
         Route_Optimization -->|Calculates| Emission_Data;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Graph Theory"];
@@ -977,8 +1033,9 @@ f"""
         I -->|Critical component used during| F;
     
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Graph Theory"];
@@ -1006,8 +1063,9 @@ f"""
         E -->|Winning strategy emphasized| K;
         E -->|Essential for effective solution| L;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Graph Theory"];
@@ -1043,8 +1101,9 @@ f"""
         M -->|Guides the selection of features based on user needs| N;
         N -->|Key element for success in| F;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Digital Payments"];
@@ -1073,8 +1132,9 @@ f"""
         H -->|Requires UAT before launch| L;
         H -->|Needs external validation| M;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Gitingest"];
@@ -1113,8 +1173,9 @@ f"""
         A -->|Enforces code quality with| K;
         A -->|Operates based on a defined| L;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Gitingest Tool"];
@@ -1157,8 +1218,9 @@ f"""
         A -->|Containerized using| D;
         A -->|Uses for CI/CD| T;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["FedEx Route Planner"];
@@ -1187,8 +1249,9 @@ f"""
         K -->|Employs for map display| C;
         C -->|Provides real-time| E;
     {{< /mermaid >}}
+    </div>
 
-
+    <div style='text-align:center;'>
     {{< mermaid >}}
     graph TD;
         A["Public-Private Partnership"];
@@ -1233,6 +1296,7 @@ f"""
         C -->|Established HPCs in various sporting disciplines| Q;
         I -->|Utilizes academic databases and government documents to gather existing research| H;
     {{< /mermaid >}}
+    </div>
 </details>
 
 thoughts: i think these final prompts are good.
@@ -1352,6 +1416,7 @@ cleaned the code, divided into various files and enabled the functions to be imp
 
 #### final pipeline:
 
+<div style='text-align:center;'>
 {{< mermaid >}}
 flowchart TD;
 A[user input]-->|"github repo"|B[github_scraper.py]
@@ -1365,6 +1430,7 @@ D-->|"major topics and summaries"|E[relationship_generator.py]
 E-->|"relationships json"|F[generator.py]
 F-->|mermaid code|G[streamlit frontend]
 {{< /mermaid >}}
+</div>
 
 
 > **finally. its all done. finally. got it ready. up and running, up and running beautifully. on the web. anybody from any corner of the world can use it anywhere at any corner of the world. no need for api keys, no need for downloads. just one click and you enter your mindpalace.**
@@ -1373,7 +1439,6 @@ launched it on linkedin. put it on a bunch of subreddits and also on hacker news
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7311414641471983616?collapsed=1" height="551" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
-\
 **update [8/4/25]:** \
 \
 on a friend's feedback, i added the functionality of saving the mindmaps as images. used the [kroki](https://kroki.io/) api endpoint to convert mermaid code into pngs and made them available for download.
