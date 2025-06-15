@@ -44,7 +44,7 @@ defaultContentLanguageInSubdir = false
   updatedDatePrefix = "Updated"
 
   # set all headings to their default size (depending on browser settings)
-  oneHeadingSize = false # default
+  oneHeadingSize = true # default
 
   # whether to show a page's estimated reading time
   readingTime = true # default
@@ -103,30 +103,25 @@ defaultContentLanguageInSubdir = false
         url = "/crude"
         weight = 2
       [[languages.en.menu.main]]
-        identifier = "eureka"
-        name = "eureka!"
-        url = "/eureka"
-        weight = 3
-      [[languages.en.menu.main]]
         identifier = "build"
         name = "build"
         url = "/build"
-        weight = 4
+        weight = 3
       [[languages.en.menu.main]]
         identifier = "canvas"
         name = "canvas"
         url = "/canvas"
-        weight = 5
+        weight = 4
       [[languages.en.menu.main]]
         identifier = "read_to_reach"
         name = "read to reach"
         url = "/readtoreach"
-        weight = 6
+        weight = 5
       [[languages.en.menu.main]]
         identifier = "fcket_list"
         name = "f*cket list"
         url = "/fcketlist"
-        weight = 7
+        weight = 6
 
 [permalinks]
   "/" = "/"

@@ -21,3 +21,11 @@ so i have decided to do neither and both at the same time. i’ll follow the pri
 the best thing would still be to do it all from scratch, but let’s see where reading the primer leads me to and then make a decision likewise.
 
 ---
+
+---
+**[update] 12/06/25**
+
+have built a very bare bones version that can display basic web pages (only text lmao not even html). ik, very far away from my final goal, but i have realised how hard it is to build a browser and definitely wouldn't be able to make the one of my dreams from scratch - will have to capitalise on the chromium infra (now i understand the imp of open source). \\
+but the process is v.v. cool cuz im learning a hell lot about how the internet functions. it aint all a blackbox anymore.
+
+---

@@ -26,15 +26,20 @@
 &lt;p&gt;so i have decided to do neither and both at the same time. i’ll follow the primer, understand the basics right and then switch over to building over chromium, which i believe is also going to be imperative if i want to integrate ai into it — could be wrong, i dont really know.&lt;/p&gt;
 &lt;p&gt;the best thing would still be to do it all from scratch, but let’s see where reading the primer leads me to and then make a decision likewise.&lt;/p&gt;
 &lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[update] 12/06/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;have built a very bare bones version that can display basic web pages (only text lmao not even html). ik, very far away from my final goal, but i have realised how hard it is to build a browser and definitely wouldn&amp;rsquo;t be able to make the one of my dreams from scratch - will have to capitalise on the chromium infra (now i understand the imp of open source). \
+but the process is v.v. cool cuz im learning a hell lot about how the internet functions. it aint all a blackbox anymore.&lt;/p&gt;
+&lt;hr&gt;
 </content>
     </item>
     
     <item>
       <title>project proposal - federated learning</title>
-      <link>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</link>
+      <link>https://1rvinn.github.io/crude/project-proposal---federated-learning/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</guid>
+      <guid>https://1rvinn.github.io/crude/project-proposal---federated-learning/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
@@ -1695,10 +1700,10 @@ on a friend&amp;rsquo;s feedback, i added the functionality of saving the mindma
     
     <item>
       <title>privacy, democratization in ai</title>
-      <link>https://1rvinn.github.io/eureka/fed/</link>
+      <link>https://1rvinn.github.io/crude/fed/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/eureka/fed/</guid>
+      <guid>https://1rvinn.github.io/crude/fed/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;recently, while reading about the recent developments in the field i realised an array of issues that, in my opinion, are being overlooked in the current paradigm:&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -1747,7 +1752,7 @@ Additionally, now there is a greater variety of data available to train these mo
 Also, it means that the model is trained on individual devices, which implies that the computational and energy requirements are divided across devices, thus offloading the burden on the central server.
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;strong&gt;homomorphic encryption:&lt;/strong&gt;
@@ -1755,7 +1760,7 @@ Also, it means that the model is trained on individual devices, which implies th
 in the current paradigm, this is how data encryption looks like during LLM inference:
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
 &lt;br&gt;
 the inference is done on decrypted data, which leads to a loophole that can be exploited by cyber attackers. Not only this, but it can also lead to other security issues like the LLM learning about personal details and prompt injections as elaborated in [1].
 &lt;br&gt;

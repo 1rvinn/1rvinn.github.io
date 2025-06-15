@@ -6,13 +6,162 @@
     <description>Recent content in Cysec on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/cysec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/cysec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mitm attacks</title>
+      <link>https://1rvinn.github.io/build/mitm_attacks/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/mitm_attacks/</guid>
+      <description>&lt;p&gt;having gained some knowhow of network security, i thought it was time to do some cool shit — let the hacking begin!&lt;/p&gt;
+&lt;p&gt;i came across a video by network chuck on sniffing packets, by executing what is known as a man in the middle attack, and decided to do it myself.&lt;/p&gt;
+&lt;p&gt;mitm allows us to sniff all network packets being sent from a device to the router and vice-versa.&lt;/p&gt;
+&lt;p&gt;essentially, how this attack works is by bluffing your router into believing that your (the hacker’s) device is the target device and the target device into believing that your (the hacker’s) device is the router. this happens through arp (address resolution protocol) poisoning.&lt;/p&gt;</description>
+      <content>&lt;p&gt;having gained some knowhow of network security, i thought it was time to do some cool shit — let the hacking begin!&lt;/p&gt;
+&lt;p&gt;i came across a video by network chuck on sniffing packets, by executing what is known as a man in the middle attack, and decided to do it myself.&lt;/p&gt;
+&lt;p&gt;mitm allows us to sniff all network packets being sent from a device to the router and vice-versa.&lt;/p&gt;
+&lt;p&gt;essentially, how this attack works is by bluffing your router into believing that your (the hacker’s) device is the target device and the target device into believing that your (the hacker’s) device is the router. this happens through arp (address resolution protocol) poisoning.&lt;/p&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+flowchart LR
+A[&#34;router&#34;]---&gt;|&#34;packet&#34;|B[&#34;your device&#34;]---&gt;|&#34;packet&#34;|C[&#34;target device&#34;]
+C[&#34;target device&#34;]---&gt;|&#34;packet&#34;|B[&#34;your device&#34;]---&gt;|&#34;packet&#34;|A[&#34;router&#34;]
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;so now, every packet that was supposed to be sent to the router to be further forwarded to the internet now firstly goes through your device which then forwards it to the router to be sent further, and everything coming from the internet through the router firstly enters your device and then is forwarded to the target device.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;executing it out:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;i need three major tools for this -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;nmap: for fixing my crosshair on the target — analysing the network and identifying the connected devices&lt;/li&gt;
+&lt;li&gt;ettercap: for executing arp poisioning&lt;/li&gt;
+&lt;li&gt;wireshark: for analysing the packets being exchanged&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;getting my private ip -&lt;/p&gt;
+&lt;p&gt;ran ifconfig, got a huge response, out of which the ‘en0’ part is important:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;why en0? because that is used to refer to your wifi interface (en1 is used for lan)(generally).&lt;/p&gt;
+&lt;p&gt;what can we gauge out of this? -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ether&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%201.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this is my device’s mac address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inet6&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%202.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this is my local ipv6 address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;inet&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%203.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this gives a bunch of information. 192.168.1.6 is my local ipv4 address.&lt;/p&gt;
+&lt;p&gt;0xffffff00 is the netmask, which is in hex format. we’ll convert this into the 8bit format. since one hex character is 4 bit (0 to 2^4-1), we divide the hex into groups of 2 to get - ff ff ff 00, which when converted gives 255.255.255.0 - this implies that the first &lt;strong&gt;24&lt;/strong&gt; bits are for the network and the last 8 for devices - .0 to .255&lt;/p&gt;
+&lt;p&gt;further .255 is the broadcast address, which means anything directed to .255 is broadcasted to all devices connected to the network. // can some attack happen via this?&lt;/p&gt;
+&lt;p&gt;since .0 is reserved for the network id and .255 for broadcast, .1-.254 can be occupied by devices.&lt;/p&gt;
+&lt;p&gt;now, how do we get the network subnet?&lt;/p&gt;
+&lt;p&gt;the whole ip network - 192.168.0.0/16&lt;/p&gt;
+&lt;p&gt;a subnet - 192.168.1.0/24&lt;/p&gt;
+&lt;p&gt;a device - 192.168.1.1&lt;/p&gt;
+&lt;p&gt;// the part after ‘/’ implies the number of bits saved for the network.&lt;/p&gt;
+&lt;p&gt;so our subnet is 192.168.1.0/24&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enumeration -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;ran the follwoing nmap command to view a list of devices connected to my network and list the open/closed ports associated with that device.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nmap -sN &amp;lt;subnet_for_my_home_network&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the flag -sN implies a stealth TCP null scan, ie, it does not use standard TCP flags like SYN, ACK. if the response is none that implies that the port is open. in case the response is RST(reset), it implies that the port is closed. why? because tcp’s rfc says that if a packet does not match the existing connection and does not have a header like SYN or FIN then the system should respond with an RST if the port is closed.&lt;/p&gt;
+&lt;p&gt;i got the following response:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/Screenshot_2025-05-26_at_15.07.10.png&#34; alt=&#34;Screenshot 2025-05-26 at 15.07.10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this gives me the ip addresses and mac ids of the devices connected on my network&lt;/p&gt;
+&lt;p&gt;// on further reading, i understood that a no response doesn’t always necessarily imply that the port is open, it might as well be being blocked by a firewall.&lt;/p&gt;
+&lt;p&gt;// i also got to know that i can get the list of devices through the ‘-sn’ flag than the ‘-sN’ flag. the key differences b/w -sn and -sN are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-sn does a device scan through icmp echo requests (ping), does not scan ports&lt;/li&gt;
+&lt;li&gt;-sN scans ports by sending tcp null requests, we get the device info along with port info&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;so then i ran this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nmap -sn &amp;lt;subnet_for_my_home_network&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;got the following response:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%204.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this gives all the devices connected to my network. .9 is my phone (iphone also specified in the previous response), .7 my alexa (says amazon technologies) and .6 is my laptop.&lt;/p&gt;
+&lt;p&gt;what’s weird is that other devices connected to my network are not being displayed.&lt;/p&gt;
+&lt;p&gt;^^ need to look into this&lt;/p&gt;
+&lt;p&gt;let’s attack my phone — ipv4: 192.168.1.9&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;executing the attack&lt;/p&gt;
+&lt;p&gt;well executing it is pretty chill, all i have to do is run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo ettercap -T -S -i en0 -M arp:remote /192.168.1.1// /192.168.1.9//
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;well that’s a very long one, here’s what it all means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-T&lt;/strong&gt;: for text only interface&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-S&lt;/strong&gt;: for sm shi i didnt understand&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-i&lt;/strong&gt;: for specifying the interface&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-M&lt;/strong&gt;: for man in the middle attacks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;arp:remote /&lt;ip1&gt;// /&lt;ip2&gt;//&lt;/strong&gt;: arp signifies that it must be done via arp spoofing, ip1 is the router’s ip and ip2 the target device’s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;here is what happened after that:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%205.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%206.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;// this is definitely something i couldnt make sense of so i opened it on wireshark.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sniffing the packets via wireshark&lt;/p&gt;
+&lt;p&gt;opened wireshark, opened the ‘eth0’ interface, and applied the following filter to see traffic coming in/going out from my phone&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%207.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;i opened &lt;a href=&#34;http://www.youtube.com&#34;&gt;www.youtube.com&lt;/a&gt; on my phone and saw packets being exchanged with 172.217.166.14 which on lookup turned out to be google’s server. the application data was ofc encrypted and i couldnt figure out what it was.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%208.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%209.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then i tried a few different websites like &lt;a href=&#34;http://amazon.in&#34;&gt;amazon.in&lt;/a&gt; which interacted with a no. of ips all of which belonged to amazon web services.&lt;/p&gt;
+&lt;p&gt;but this isnt going to let me find out what exact websites the target is going to.&lt;/p&gt;
+&lt;p&gt;provided, they are secured. in case they arent, ie, in the case of http websites (i visited &lt;a href=&#34;http://www.testingmcafeesites.com/&#34;&gt;http://www.testingmcafeesites.com&lt;/a&gt;), you can directly see the application data being transferred in plain text.&lt;/p&gt;
+&lt;p&gt;i added the following filter to see only http protocol packets:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2010.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then followed the http stream of the latest one&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/e938b04f-1de0-4544-af88-44fa6fba3905.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;and got this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2011.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;^^ this essentially gives away the entire response being returned from the site in plain text. this is why http isnt secure.&lt;/p&gt;
+&lt;p&gt;another way to get to know about the websites being visited is by looking at the dns requests. i updated the filter to only view dns requests and visited instagram, my personal webpage, and - uhm - a little questionable site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2012.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then i visited patrick collisions &lt;a href=&#34;https://patrickcollison.com/advice&#34;&gt;advice&lt;/a&gt; and that too is visible.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2013.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;well yea, i guess that’s it for mitm attacks. very fun, but would’ve been better if i’d’ve executed it on a different device than my own phone. will figure out why nmap’s not showing other devices and see what could be done to fix that.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;update-&lt;/p&gt;
+&lt;p&gt;i found a better way to do this and that is by using bettercap. just the commands used change, the basic principles remain the same.&lt;/p&gt;
+&lt;p&gt;there’s no need for nmap now as bettercap itself can show me the devices connected to my router.&lt;/p&gt;
+&lt;p&gt;sudo bettercap —&amp;gt; net.probe on —&amp;gt; net.show&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2014.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2015.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then go over to wireshark to analyse the packets.&lt;/p&gt;
+&lt;p&gt;lol i just intercepted my dad’s computer&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>project proposal - federated learning</title>
-      <link>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</link>
+      <link>https://1rvinn.github.io/crude/project-proposal---federated-learning/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/eureka/project-proposal---federated-learning/</guid>
+      <guid>https://1rvinn.github.io/crude/project-proposal---federated-learning/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
@@ -144,10 +293,10 @@ this enhances the privacy of ai based systems since the data has to never leave 
     
     <item>
       <title>privacy, democratization in ai</title>
-      <link>https://1rvinn.github.io/eureka/fed/</link>
+      <link>https://1rvinn.github.io/crude/fed/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/eureka/fed/</guid>
+      <guid>https://1rvinn.github.io/crude/fed/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;recently, while reading about the recent developments in the field i realised an array of issues that, in my opinion, are being overlooked in the current paradigm:&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
@@ -196,7 +345,7 @@ Additionally, now there is a greater variety of data available to train these mo
 Also, it means that the model is trained on individual devices, which implies that the computational and energy requirements are divided across devices, thus offloading the burden on the central server.
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;strong&gt;homomorphic encryption:&lt;/strong&gt;
@@ -204,7 +353,7 @@ Also, it means that the model is trained on individual devices, which implies th
 in the current paradigm, this is how data encryption looks like during LLM inference:
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src=&#34;https://1rvinn.github.io/img/eureka/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
 &lt;br&gt;
 the inference is done on decrypted data, which leads to a loophole that can be exploited by cyber attackers. Not only this, but it can also lead to other security issues like the LLM learning about personal details and prompt injections as elaborated in [1].
 &lt;br&gt;

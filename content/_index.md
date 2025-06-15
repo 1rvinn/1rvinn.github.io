@@ -4,7 +4,7 @@ title: aperture.
 # aperture.
 ---
 **hey there!** \
-**this is irvin, and welcome to aperture ——** _the lens of a 19 yo koinophobic studying at iit madras._ \
+**this is irvin, and welcome to aperture ——** _the lens of a 20 yo koinophobic studying at iit madras._ \
 \
 the name '_aperture_' represents the field of view of the lens i view the world with. 
 and my life's goal? - to just keep explanding this aperture, _**expanding those horizons, conquering it all.**_ \
@@ -13,10 +13,7 @@ so here is where you'll find ***me*** - my passions, my ideas and my cathartic &
 aperture.
 │
 ├── crude
-│   // dilly-dallying through life - presenting my perspectives, crude and raw.
-│
-├── eureka!
-│   // ideas and inclinations.
+│   // presenting my perspectives, ideas & inclinations - crude and raw.
 │
 ├── build
 │   // blood, sweat and code - all my projects.
