@@ -6,7 +6,153 @@
     <description>Recent content in crude on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/crude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/crude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>project proposal - federated learning</title>
+      <link>https://1rvinn.github.io/crude/project-proposal---federated-learning/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/crude/project-proposal---federated-learning/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
+&lt;p&gt;traditionally, local availability of training data has been an important pre-requisite for training ml models. however, this methodology has a variety of road blocks associated with it. the prime ones being lack of democratisation in model creation and lower development in fields with sensitive data like finance and healthcare. federated learning aims to solve these challenges by introducing an alternate way of training models - instead of data travelling to the model and the model getting trained, the model travels to data sources (silos, personal devices), gets trained and publishes the updates back to the central model.
+this enhances the privacy of ai based systems since the data has to never leave the device. furthermore, this means that people can have full control of their data and yet contirbute tot he development of ai, ie, now proprietary and sensitive data can also be used for training (both pre and post) purposes. this solves the problem of only big data companies being able to train big models, thus leading to more democratization in the field. secondly, it also promotes ai developments in the sensitive data fields like finance and healthcare, which traditionally have been underdeveloped due to privacy concerns.&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;this project aims at exploring a novel framework for training neural networks - federated learning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;brief-about-federated-learning&#34;&gt;brief about federated learning:&lt;/h4&gt;
+&lt;p&gt;traditionally, local availability of training data has been an important pre-requisite for training ml models. however, this methodology has a variety of road blocks associated with it. the prime ones being lack of democratisation in model creation and lower development in fields with sensitive data like finance and healthcare. federated learning aims to solve these challenges by introducing an alternate way of training models - instead of data travelling to the model and the model getting trained, the model travels to data sources (silos, personal devices), gets trained and publishes the updates back to the central model.
+this enhances the privacy of ai based systems since the data has to never leave the device. furthermore, this means that people can have full control of their data and yet contirbute tot he development of ai, ie, now proprietary and sensitive data can also be used for training (both pre and post) purposes. this solves the problem of only big data companies being able to train big models, thus leading to more democratization in the field. secondly, it also promotes ai developments in the sensitive data fields like finance and healthcare, which traditionally have been underdeveloped due to privacy concerns.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.dailydoseofds.com/content/images/2023/11/federated-gif.gif&#34; alt=&#34;federated learning&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a comic by google on the topic: &lt;a href=&#34;https://federated.withgoogle.com/&#34;&gt;https://federated.withgoogle.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;an interactive visualisation covering the basics: &lt;a href=&#34;https://pair.withgoogle.com/explorables/federated-learning/&#34;&gt;https://pair.withgoogle.com/explorables/federated-learning/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;an in depth overview: &lt;a href=&#34;https://queue.acm.org/detail.cfm?id=3501293&#34;&gt;https://queue.acm.org/detail.cfm?id=3501293&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/pdf/2107.10976&#34;&gt;https://arxiv.org/pdf/2107.10976&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a small writeup by me on the importance of FL: &lt;a href=&#34;https://1rvinn.github.io/eureka/fed/&#34;&gt;https://1rvinn.github.io/eureka/fed/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;this project will be an amalgamation of ai and security. focusing in depth on the following topics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;how models are trained [A]&lt;/li&gt;
+&lt;li&gt;working of neural nets [A]&lt;/li&gt;
+&lt;li&gt;comparision between traditionally trained nets vs FL trained ones&lt;/li&gt;
+&lt;li&gt;networking between devices and a central server [S]&lt;/li&gt;
+&lt;li&gt;privacy preserving methodologies and the mathematics involved [S]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A - ai focused topics, S - security focused topics&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;milestones-to-be-achieved&#34;&gt;milestones to be achieved:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;building the basis (a good part of this can be covered in the app phase) [3 weeks]
+&lt;ul&gt;
+&lt;li&gt;gain an idea about federated learning (only a high level overview)
+&lt;ul&gt;
+&lt;li&gt;key steps involved:
+&lt;ul&gt;
+&lt;li&gt;client selection&lt;/li&gt;
+&lt;li&gt;model distribution&lt;/li&gt;
+&lt;li&gt;update upload&lt;/li&gt;
+&lt;li&gt;aggregation, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaboration-space/blog-series/privacy-preserving&#34;&gt;understanding privacy considerations&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;model update attacks&lt;/li&gt;
+&lt;li&gt;trained model attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;current applications in the industry, future prospects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;start off by implementing it on ml models, using already existing frameworks like &lt;a href=&#34;https://flower.ai/&#34;&gt;flower&lt;/a&gt;/&lt;a href=&#34;https://developer.nvidia.com/flare&#34;&gt;nvidia flare&lt;/a&gt; [2 weeks]
+&lt;ul&gt;
+&lt;li&gt;understanding the library&lt;/li&gt;
+&lt;li&gt;implement on a basic ml model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;delving deeper
+&lt;ul&gt;
+&lt;li&gt;understanding fl in greater detail [3 months]
+&lt;ul&gt;
+&lt;li&gt;comprehensively understand the maths behind it&lt;/li&gt;
+&lt;li&gt;exploring different training methods like FedAvg, FedSGD etc.&lt;/li&gt;
+&lt;li&gt;security considerations
+&lt;ul&gt;
+&lt;li&gt;secure aggregation&lt;/li&gt;
+&lt;li&gt;differential privacy&lt;/li&gt;
+&lt;li&gt;homomorphic encryption&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;modeling federated learning from scratch
+&lt;ul&gt;
+&lt;li&gt;coding the process from scratch, including all the above stated steps (&amp;lsquo;key steps involved&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;implementing &amp;gt;=1 privacy preserving strategies (secure agg, diff priv., homo enc)&lt;/li&gt;
+&lt;li&gt;facilitating networking between edge devices and a central server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;implementation:
+&lt;ul&gt;
+&lt;li&gt;implement on the following networks (subject to change on the basis of our findings above): [3 months]
+&lt;ul&gt;
+&lt;li&gt;CNNs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2203.09943&#34;&gt;SLMs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;implement using existing libraries first [to be displayed in RC] and later from scratch.&lt;/li&gt;
+&lt;li&gt;compare their accuracies with that of normally trained neural nets [to be displayed in RC]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;look into fine-tuning llms for particular tasks using FL
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2409.05976&#34;&gt;FLoRA&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2102.00875&#34;&gt;https://arxiv.org/abs/2102.00875&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;this could be one of the first steps towards making specialised chatbots (possibly even agents) trained on personal private data (great financial use case).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;further improvements
+&lt;ul&gt;
+&lt;li&gt;coming up with solutions to the bottlenecks identified&lt;/li&gt;
+&lt;li&gt;a few unique approaches include
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.alphaxiv.org/abs/2209.06359v1&#34;&gt;federated pruning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2102.03448&#34;&gt;federated reconstruction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;federated dropout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;future prospects
+&lt;ul&gt;
+&lt;li&gt;publishing our own library for federated learning - simplifying tasks like secure aggregation, differential privacy etc.&lt;/li&gt;
+&lt;li&gt;an api based federated learning model which people can opt into for training
+&lt;ul&gt;
+&lt;li&gt;eg:  small financial institutions can opt-in to train anti-fraud or loan default prediction models collaboratively.&lt;/li&gt;
+&lt;li&gt;hospitals signing up to develop privacy preserving diagnostic models. &lt;a href=&#34;https://aibusiness.com/verticals/intel-and-upenn-to-use-federated-ai-for-privacy-preserving-brain-tumor-research#:~:text=Instead%20of%20moving%20data%20to,into%20a%20single%2C%20larger%20model&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;creating an agent specialized for a particular task - financial analysis, tax filing agents.&lt;/li&gt;
+&lt;li&gt;^ requires collaborations with financial institutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>on webrtc</title>
+      <link>https://1rvinn.github.io/crude/webrtc/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/crude/webrtc/</guid>
+      <description>&lt;p&gt;got to know about a very interesting framework today - the webrtc. it is a google developed method that facilitates exchange of data and information between browsers by establishing a web p2p connection. and the best part about it is that it doesn’t require a server to transfer data. yes, it does require one to establish the newtork but that’s it. after the connection is setup, all transfer happens from the sender’s browser to the receiver’s without the play of any server in between. crazy innit? there have been a few implementations of this framework - browser to browser chat, video call and, the most interesting of them all, file transfer. there is a project called file.pizza which saves data and time by reducing the 2 step - upload, download cycle to a single step - transfer. only when the receiver requests for the file does the file gets transfered. no need to upload it to a mutually accessible place and downloading it, rather just get your unique file pizza link and share it over to the person accessing the file. however, a few drawbacks of this include the sender having to keep the link open until the receiver dowloads it and having to repeat the process over again everytime you want someone to download it, since the link gets terminated with the session’s end. it is but, at the end of the day, an interesting approach. i’m thinking of other applications of this, there are certain very intuitive ones - texting, video, mails - the entire sphere of information transfer - which is better this way by virtue of low data requirement and more security due to the lack of a central sever (kinda unsure about this point since there could always be attacks on the way). but these are only the very basic implementations of the framework. there has to be something novel, something that can leverage this platform to solve a bigger issue. [TBC]&lt;/p&gt;</description>
+      <content>&lt;p&gt;got to know about a very interesting framework today - the webrtc. it is a google developed method that facilitates exchange of data and information between browsers by establishing a web p2p connection. and the best part about it is that it doesn’t require a server to transfer data. yes, it does require one to establish the newtork but that’s it. after the connection is setup, all transfer happens from the sender’s browser to the receiver’s without the play of any server in between. crazy innit? there have been a few implementations of this framework - browser to browser chat, video call and, the most interesting of them all, file transfer. there is a project called file.pizza which saves data and time by reducing the 2 step - upload, download cycle to a single step - transfer. only when the receiver requests for the file does the file gets transfered. no need to upload it to a mutually accessible place and downloading it, rather just get your unique file pizza link and share it over to the person accessing the file. however, a few drawbacks of this include the sender having to keep the link open until the receiver dowloads it and having to repeat the process over again everytime you want someone to download it, since the link gets terminated with the session’s end. it is but, at the end of the day, an interesting approach. i’m thinking of other applications of this, there are certain very intuitive ones - texting, video, mails - the entire sphere of information transfer - which is better this way by virtue of low data requirement and more security due to the lack of a central sever (kinda unsure about this point since there could always be attacks on the way). but these are only the very basic implementations of the framework. there has to be something novel, something that can leverage this platform to solve a bigger issue. [TBC]&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>let yourself die</title>
       <link>https://1rvinn.github.io/crude/let-yourself-die/</link>
@@ -35,6 +181,88 @@
 &lt;p&gt;and you can fly to where you want to be.&lt;/p&gt;
 &lt;p&gt;attain freedom hereby,&lt;/p&gt;
 &lt;p&gt;let yourself die.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>privacy, democratization in ai</title>
+      <link>https://1rvinn.github.io/crude/fed/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/crude/fed/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;recently, while reading about the recent developments in the field i realised an array of issues that, in my opinion, are being overlooked in the current paradigm:&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;monopolisation&lt;/strong&gt; &lt;br&gt;
+Due to the humongous data requirement for pre-training, we see big-data companies like the &amp;lsquo;Googles&amp;rsquo; and &amp;lsquo;Microsofts&amp;rsquo; of the world having an unfair competitive edge over other smaller corporations or entities in developing such models. This not only means a handful of companies have control over such a quintessential field but also implies:
+&lt;br&gt;
+[D] soft power - greater soft power over all AI-based content, which could further transcend into propagating bias through content and controlling widespread opinions about sensitive topics across the entire world.
+&lt;br&gt;
+[P] access to user data - with the advent of time, as AI becomes an indispensable part of our lives, these handful corporations will have even greater access to user data across different use cases, making them even more powerful. Not only this but these days, the most popular LLMs use consumer data for further training, while only mentioning this very subtly in their privacy policy. This makes room for a plethora of data security leaks on the cloud where this data is hosted and other data attacks such as prompt injection.
+&lt;br&gt;
+[D] by virtue of huge data and state-of-the-art compute requirements, it is only the firms with a rich history in tech and high levels of disposable income to spend, who can establish themselves in this area, making it discriminatorily hard for smaller firms to emerge in this field. This also means a geopolitical issue for 2nd and 3rd world countries being completely dependent upon the 1st world for such foundational models.&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;recently, while reading about the recent developments in the field i realised an array of issues that, in my opinion, are being overlooked in the current paradigm:&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;monopolisation&lt;/strong&gt; &lt;br&gt;
+Due to the humongous data requirement for pre-training, we see big-data companies like the &amp;lsquo;Googles&amp;rsquo; and &amp;lsquo;Microsofts&amp;rsquo; of the world having an unfair competitive edge over other smaller corporations or entities in developing such models. This not only means a handful of companies have control over such a quintessential field but also implies:
+&lt;br&gt;
+[D] soft power - greater soft power over all AI-based content, which could further transcend into propagating bias through content and controlling widespread opinions about sensitive topics across the entire world.
+&lt;br&gt;
+[P] access to user data - with the advent of time, as AI becomes an indispensable part of our lives, these handful corporations will have even greater access to user data across different use cases, making them even more powerful. Not only this but these days, the most popular LLMs use consumer data for further training, while only mentioning this very subtly in their privacy policy. This makes room for a plethora of data security leaks on the cloud where this data is hosted and other data attacks such as prompt injection.
+&lt;br&gt;
+[D] by virtue of huge data and state-of-the-art compute requirements, it is only the firms with a rich history in tech and high levels of disposable income to spend, who can establish themselves in this area, making it discriminatorily hard for smaller firms to emerge in this field. This also means a geopolitical issue for 2nd and 3rd world countries being completely dependent upon the 1st world for such foundational models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;climate impact&lt;/strong&gt; &lt;br&gt;
+[D] these foundational models require huge loads of compute requirements for pre-training. This means great amounts of energy requirements, so much so that companies like Microsoft have rented complete nuclear reactors to satisfy the energy hunger of their AI programmes. This move is completely counterintuitive to the sustainability efforts being done to reverse climate change.
+&lt;br&gt;
+[S] this tradeoff, considering the first set of harms [1] as well, is completely unjustified and will only lead humanity to its doom.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;low Levels of Development in the essential fields of Healthcare and Finance&lt;/strong&gt; &lt;br&gt;
+[P] since these models require unrestricted access to data to be trained, coupled with the issue that healthcare and financial data being highly private, we haven&amp;rsquo;t seen any major breakthroughs in these areas. AI has immense potential to change the lives of millions provided there is enough sustainable development in these fields, but the only thing that is holding us back is access to highly private data which is a justified concern given the first set of issues [1].&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;with all these concerns in mind, I came across this interesting framework called Federated Learning. coupled with a very interesting encryption scheme - homomorphic encryption - it can solve all the above-listed problems.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;federated learning:&lt;/strong&gt; &lt;br&gt;
+In the current paradigm, the data travels to the model, and the model is trained. But what if the model travels to the data for training? That is, there is no transfer of data, therefore no room for data leaks, privacy issues and greater accessibility for smaller companies without data to compete with big giants.
+&lt;br&gt;
+This also needs better innovation as the race now changes to creating novel architectures rather than winning with more data.
+&lt;br&gt;
+Additionally, now there is a greater variety of data available to train these models including personal data - healthcare, financial data. This means better foundation models and more innovation in these underdeveloped areas.
+&lt;br&gt;
+Also, it means that the model is trained on individual devices, which implies that the computational and energy requirements are divided across devices, thus offloading the burden on the central server.
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed1.png&#34; alt=&#34;federated learning&#34;&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;strong&gt;homomorphic encryption:&lt;/strong&gt;
+&lt;br&gt;
+in the current paradigm, this is how data encryption looks like during LLM inference:
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src=&#34;https://1rvinn.github.io/img/crude/fed/fed2.png&#34; alt=&#34;homomorphic encryption&#34;&gt;
+&lt;br&gt;
+the inference is done on decrypted data, which leads to a loophole that can be exploited by cyber attackers. Not only this, but it can also lead to other security issues like the LLM learning about personal details and prompt injections as elaborated in [1].
+&lt;br&gt;
+homomorphic encryption prevents this by supporting calculations to be made on encrypted data itself, mitigating any data security threats.
+&lt;br&gt;
+additionally, being based upon lattice-based cryptography, it is resilient to the rise of quantum computers which pose a threat to existing encryption schemes like the RSA.
+&lt;br&gt;
+\&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;if you notice, I have segregated the above problems into three categories - [D]: Democratization of AI, [P]: Privacy, [S]: Sustainability.
+&lt;br&gt;
+&lt;br&gt;
+these 3 issues are often always overlooked whenever there is a big innovation, but later, people realise the importance of working on these - the same happened in the case of Internet, with heavy spending on cybersecurity, sustainability and privacy being prevalent only these days.
+&lt;br&gt;
+&lt;br&gt;
+the above two frameworks can solve all these issues, empowering even a small startup from Maharashtra in India to compete with OpenAI based out of San Francisco. I truly believe this could be a revolutionary step for democratising AI development and boosting security.&lt;/p&gt;&lt;/blockquote&gt;
 </content>
     </item>
     
