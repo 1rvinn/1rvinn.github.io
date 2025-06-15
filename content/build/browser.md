@@ -1,7 +1,7 @@
 ---
-title: 'building my own browser'
+title: 'browseher'
 date: "2025-05-10"
-description: 'i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it.'
+description: 'building my own browser'
 tags: ["ai", "browser", "network"]
 ---
 
