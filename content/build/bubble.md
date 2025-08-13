@@ -11,12 +11,10 @@ mermaid: true
 <div style='text-align:center;'>
     <h3 style="color: #23affd;"> // the final thing </h3>
 
-
-
 check it out here: https://github.com/1rvinn/bubble_v2
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WdP8bOORbTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WdP8bOORbTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <br>
 </div>
@@ -98,11 +96,13 @@ let me just have text input for starters.
 
 the flow should look like this:
 
-```mermaid
-flowchart LR;
-A[shortcut]--->|opens overlay|B[app interface]--->|user entered prompt|D[llm]
-B--->|last frame screenshot|D--->|response|B
-```
+<div style='text-align:center;'>
+    {{< mermaid >}}
+        flowchart LR;
+        A[shortcut]--->|opens overlay|B[app interface]--->|user entered prompt|D[llm]
+        B--->|last frame screenshot|D--->|response|B
+    {{< /mermaid >}}
+</div>
 
 visual highlighting of the steps involved might be complex. but koina, kar lenge.
 
@@ -370,11 +370,13 @@ i need to firstly analyse how agents work.
 
 as of now, i have come up with the following pipeline:
 
-```mermaid
-graph TD
-  screen --> |screenshot or live screencast|omniparser --> |identifies, maps key ui elements|llm
-  prompt --> llm --> |action to be performed|visual_cues -->|user| action --> |real time feedback|screen
-```
+<div style='text-align:center;'>
+    {{< mermaid >}}
+        graph TD;
+        screen --> |screenshot or live screencast|omniparser --> |identifies, maps key ui elements|llm
+        prompt --> llm --> |action to be performed|visual_cues -->|user| action --> |real time feedback|screen
+    {{< /mermaid >}}
+</div>
 
 however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s). 
 
@@ -422,15 +424,17 @@ i have tried to understand how different computer use agents work and have linke
 
 the pipeline i had made above, wasnt very off. the area’s where it was off, were actually the areas i was confused in. so i’ll make the requisite changes, and let the hacking begin!
 
-```mermaid
-graph TD
-  user-->|keyboard shortcut|A[user interface] --> |user prompt|B[planner llm]
-  A-->|screenshot*|B
-  B-->|task plan|C[task list]-->|single task|D[llm]
-  A-->|screenshot*|D-->|detailed action description + button/field indices|E[visual cue]
-  D-->|pixel coords of action spot|E[visual cue]-->A
-  D-->|update|C
-```
+<div style='text-align:center;'>
+    {{< mermaid >}}
+        graph TD;
+        user-->|keyboard shortcut|A[user interface] --> |user prompt|B[planner llm]
+        A-->|screenshot*|B
+        B-->|task plan|C[task list]-->|single task|D[llm]
+        A-->|screenshot*|D-->|detailed action description + button/field indices|E[visual cue]
+        D-->|pixel coords of action spot|E[visual cue]-->A
+        D-->|update|C
+    {{< /mermaid >}}
+</div>
 
 +feedback loop to be added
 
@@ -733,15 +737,17 @@ pretty much ready for the submission.
 
 here is the final pipeline being used:
 
-```mermaid
-flowchart TD;
-A[user prompt]-->D[atomic task generator]
-C[current screen state]-->D
-B[task history]-->D
-D-->|next atomic task to be executed|E[element selector]
-C-->F[omniparser]-->|annotated image|E-->|element coordinates|G[gui/frontend]
-D-->|task description|G-->|execution success/failure|B
-```
+<div style='text-align:center;'>
+    {{< mermaid >}}
+        flowchart TD;
+        A[user prompt]-->D[atomic task generator]
+        C[current screen state]-->D
+        B[task history]-->D
+        D-->|next atomic task to be executed|E[element selector]
+        C-->F[omniparser]-->|annotated image|E-->|element coordinates|G[gui/frontend]
+        D-->|task description|G-->|execution success/failure|B
+    {{< /mermaid >}}
+</div>
 
 here are a few snapshots:
 

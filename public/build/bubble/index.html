@@ -217,7 +217,7 @@
 <div style='text-align:center;'>
     <h3 style="color: #23affd;"> // the final thing </h3>
 <p>check it out here: <a href="https://github.com/1rvinn/bubble_v2">https://github.com/1rvinn/bubble_v2</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WdP8bOORbTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WdP8bOORbTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <br>
 </div>
@@ -269,10 +269,15 @@ for the gemma 3n hackathon by google deepmind, i intend on making a local ai bas
 <p>so now, i need to think of a pipeline for screen capture at the final frame and user input.</p>
 <p>let me just have text input for starters.</p>
 <p>the flow should look like this:</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart LR;
-A[shortcut]---&gt;|opens overlay|B[app interface]---&gt;|user entered prompt|D[llm]
-B---&gt;|last frame screenshot|D---&gt;|response|B
-</code></pre><p>visual highlighting of the steps involved might be complex. but koina, kar lenge.</p>
+<div style='text-align:center;'>
+    <div class="mermaid">
+        flowchart LR;
+        A[shortcut]--->|opens overlay|B[app interface]--->|user entered prompt|D[llm]
+        B--->|last frame screenshot|D--->|response|B
+    </div>
+
+</div>
+<p>visual highlighting of the steps involved might be complex. but koina, kar lenge.</p>
 <hr>
 <p>[1800 hrs]</p>
 <p>found a way to run multimodal gemma 3n locally, using hugging face transformers.</p>
@@ -496,10 +501,15 @@ B---&gt;|last frame screenshot|D---&gt;|response|B
 <p>[8 july 2025][1701 hrs]</p>
 <p>i need to firstly analyse how agents work.</p>
 <p>as of now, i have come up with the following pipeline:</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
-  screen --&gt; |screenshot or live screencast|omniparser --&gt; |identifies, maps key ui elements|llm
-  prompt --&gt; llm --&gt; |action to be performed|visual_cues --&gt;|user| action --&gt; |real time feedback|screen
-</code></pre><p>however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).</p>
+<div style='text-align:center;'>
+    <div class="mermaid">
+        graph TD;
+        screen --> |screenshot or live screencast|omniparser --> |identifies, maps key ui elements|llm
+        prompt --> llm --> |action to be performed|visual_cues -->|user| action --> |real time feedback|screen
+    </div>
+
+</div>
+<p>however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).</p>
 <p>what i am thinking would be the best is having a list of broad steps to be outputted first, followed by detailed descriptions for each step one by one, being displayed after the previous one has been executed.</p>
 <p>i think creating an agent is easier than creating a guide as now, people have autonomy to do things, which means, one ill step and the ai gets confused and starts malfunctioning.</p>
 <p>ok let it be. i’ll study more about agents and then see where this goes.</p>
@@ -525,14 +535,19 @@ B---&gt;|last frame screenshot|D---&gt;|response|B
 <p>[9 july 2025][1615 hrs]</p>
 <p>i have tried to understand how different computer use agents work and have linked a few repos, screenshots and descriptions above of the ones i found useful.</p>
 <p>the pipeline i had made above, wasnt very off. the area’s where it was off, were actually the areas i was confused in. so i’ll make the requisite changes, and let the hacking begin!</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
-  user--&gt;|keyboard shortcut|A[user interface] --&gt; |user prompt|B[planner llm]
-  A--&gt;|screenshot*|B
-  B--&gt;|task plan|C[task list]--&gt;|single task|D[llm]
-  A--&gt;|screenshot*|D--&gt;|detailed action description + button/field indices|E[visual cue]
-  D--&gt;|pixel coords of action spot|E[visual cue]--&gt;A
-  D--&gt;|update|C
-</code></pre><p>+feedback loop to be added</p>
+<div style='text-align:center;'>
+    <div class="mermaid">
+        graph TD;
+        user-->|keyboard shortcut|A[user interface] --> |user prompt|B[planner llm]
+        A-->|screenshot*|B
+        B-->|task plan|C[task list]-->|single task|D[llm]
+        A-->|screenshot*|D-->|detailed action description + button/field indices|E[visual cue]
+        D-->|pixel coords of action spot|E[visual cue]-->A
+        D-->|update|C
+    </div>
+
+</div>
+<p>+feedback loop to be added</p>
 <p>*screenshots pass through omniparser</p>
 <p><img src="/img/build/bubble/145e733e-62f7-4fdb-9326-59b17d4e0132.png" alt="image.png"></p>
 <p>^^ easier to understand. i still love pen an pencil over these plastic keycaps.</p>
@@ -790,14 +805,19 @@ B) control the webpage (not relevant now)</li>
 </ul>
 <p>pretty much ready for the submission.</p>
 <p>here is the final pipeline being used:</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD;
-A[user prompt]--&gt;D[atomic task generator]
-C[current screen state]--&gt;D
-B[task history]--&gt;D
-D--&gt;|next atomic task to be executed|E[element selector]
-C--&gt;F[omniparser]--&gt;|annotated image|E--&gt;|element coordinates|G[gui/frontend]
-D--&gt;|task description|G--&gt;|execution success/failure|B
-</code></pre><p>here are a few snapshots:</p>
+<div style='text-align:center;'>
+    <div class="mermaid">
+        flowchart TD;
+        A[user prompt]-->D[atomic task generator]
+        C[current screen state]-->D
+        B[task history]-->D
+        D-->|next atomic task to be executed|E[element selector]
+        C-->F[omniparser]-->|annotated image|E-->|element coordinates|G[gui/frontend]
+        D-->|task description|G-->|execution success/failure|B
+    </div>
+
+</div>
+<p>here are a few snapshots:</p>
 <p><img src="/img/build/bubble/image9.png" alt="image.png"></p>
 <p><img src="/img/build/bubble/image10.png" alt="image.png"></p>
 <p><img src="/img/build/bubble/image11.png" alt="image.png"></p>

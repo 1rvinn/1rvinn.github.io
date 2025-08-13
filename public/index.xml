@@ -6,7 +6,26 @@
     <description>Recent content in aperture. on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai sec intern</title>
+      <link>https://1rvinn.github.io/crude/ai_sec/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/crude/ai_sec/</guid>
+      <description>&lt;p&gt;so i&amp;rsquo;ve finally started an ai security intern. will keep on updating my findings and learnings here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;worked on llmguard [2025-08-11]&lt;/li&gt;
+&lt;li&gt;working on promptfoo [2025-08-13]*&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;p&gt;so i&amp;rsquo;ve finally started an ai security intern. will keep on updating my findings and learnings here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;worked on llmguard [2025-08-11]&lt;/li&gt;
+&lt;li&gt;working on promptfoo [2025-08-13]*&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>bubble</title>
       <link>https://1rvinn.github.io/build/bubble/</link>
@@ -17,7 +36,7 @@
 &lt;div style=&#39;text-align:center;&#39;&gt;
     &lt;h3 style=&#34;color: #23affd;&#34;&gt; // the final thing &lt;/h3&gt;
 &lt;p&gt;check it out here: &lt;a href=&#34;https://github.com/1rvinn/bubble_v2&#34;&gt;https://github.com/1rvinn/bubble_v2&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/watch?v=WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;/div&gt;
@@ -32,7 +51,7 @@ for the gemma 3n hackathon by google deepmind, i intend on making a local ai bas
 &lt;div style=&#39;text-align:center;&#39;&gt;
     &lt;h3 style=&#34;color: #23affd;&#34;&gt; // the final thing &lt;/h3&gt;
 &lt;p&gt;check it out here: &lt;a href=&#34;https://github.com/1rvinn/bubble_v2&#34;&gt;https://github.com/1rvinn/bubble_v2&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/watch?v=WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;/div&gt;
@@ -84,10 +103,15 @@ for the gemma 3n hackathon by google deepmind, i intend on making a local ai bas
 &lt;p&gt;so now, i need to think of a pipeline for screen capture at the final frame and user input.&lt;/p&gt;
 &lt;p&gt;let me just have text input for starters.&lt;/p&gt;
 &lt;p&gt;the flow should look like this:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart LR;
-A[shortcut]---&amp;gt;|opens overlay|B[app interface]---&amp;gt;|user entered prompt|D[llm]
-B---&amp;gt;|last frame screenshot|D---&amp;gt;|response|B
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;visual highlighting of the steps involved might be complex. but koina, kar lenge.&lt;/p&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;div class=&#34;mermaid&#34;&gt;
+        flowchart LR;
+        A[shortcut]---&gt;|opens overlay|B[app interface]---&gt;|user entered prompt|D[llm]
+        B---&gt;|last frame screenshot|D---&gt;|response|B
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;visual highlighting of the steps involved might be complex. but koina, kar lenge.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;[1800 hrs]&lt;/p&gt;
 &lt;p&gt;found a way to run multimodal gemma 3n locally, using hugging face transformers.&lt;/p&gt;
@@ -311,10 +335,15 @@ B---&amp;gt;|last frame screenshot|D---&amp;gt;|response|B
 &lt;p&gt;[8 july 2025][1701 hrs]&lt;/p&gt;
 &lt;p&gt;i need to firstly analyse how agents work.&lt;/p&gt;
 &lt;p&gt;as of now, i have come up with the following pipeline:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
-  screen --&amp;gt; |screenshot or live screencast|omniparser --&amp;gt; |identifies, maps key ui elements|llm
-  prompt --&amp;gt; llm --&amp;gt; |action to be performed|visual_cues --&amp;gt;|user| action --&amp;gt; |real time feedback|screen
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).&lt;/p&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;div class=&#34;mermaid&#34;&gt;
+        graph TD;
+        screen --&gt; |screenshot or live screencast|omniparser --&gt; |identifies, maps key ui elements|llm
+        prompt --&gt; llm --&gt; |action to be performed|visual_cues --&gt;|user| action --&gt; |real time feedback|screen
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).&lt;/p&gt;
 &lt;p&gt;what i am thinking would be the best is having a list of broad steps to be outputted first, followed by detailed descriptions for each step one by one, being displayed after the previous one has been executed.&lt;/p&gt;
 &lt;p&gt;i think creating an agent is easier than creating a guide as now, people have autonomy to do things, which means, one ill step and the ai gets confused and starts malfunctioning.&lt;/p&gt;
 &lt;p&gt;ok let it be. i’ll study more about agents and then see where this goes.&lt;/p&gt;
@@ -340,14 +369,19 @@ B---&amp;gt;|last frame screenshot|D---&amp;gt;|response|B
 &lt;p&gt;[9 july 2025][1615 hrs]&lt;/p&gt;
 &lt;p&gt;i have tried to understand how different computer use agents work and have linked a few repos, screenshots and descriptions above of the ones i found useful.&lt;/p&gt;
 &lt;p&gt;the pipeline i had made above, wasnt very off. the area’s where it was off, were actually the areas i was confused in. so i’ll make the requisite changes, and let the hacking begin!&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
-  user--&amp;gt;|keyboard shortcut|A[user interface] --&amp;gt; |user prompt|B[planner llm]
-  A--&amp;gt;|screenshot*|B
-  B--&amp;gt;|task plan|C[task list]--&amp;gt;|single task|D[llm]
-  A--&amp;gt;|screenshot*|D--&amp;gt;|detailed action description + button/field indices|E[visual cue]
-  D--&amp;gt;|pixel coords of action spot|E[visual cue]--&amp;gt;A
-  D--&amp;gt;|update|C
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;+feedback loop to be added&lt;/p&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;div class=&#34;mermaid&#34;&gt;
+        graph TD;
+        user--&gt;|keyboard shortcut|A[user interface] --&gt; |user prompt|B[planner llm]
+        A--&gt;|screenshot*|B
+        B--&gt;|task plan|C[task list]--&gt;|single task|D[llm]
+        A--&gt;|screenshot*|D--&gt;|detailed action description + button/field indices|E[visual cue]
+        D--&gt;|pixel coords of action spot|E[visual cue]--&gt;A
+        D--&gt;|update|C
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;+feedback loop to be added&lt;/p&gt;
 &lt;p&gt;*screenshots pass through omniparser&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/145e733e-62f7-4fdb-9326-59b17d4e0132.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;^^ easier to understand. i still love pen an pencil over these plastic keycaps.&lt;/p&gt;
@@ -605,14 +639,19 @@ B) control the webpage (not relevant now)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;pretty much ready for the submission.&lt;/p&gt;
 &lt;p&gt;here is the final pipeline being used:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart TD;
-A[user prompt]--&amp;gt;D[atomic task generator]
-C[current screen state]--&amp;gt;D
-B[task history]--&amp;gt;D
-D--&amp;gt;|next atomic task to be executed|E[element selector]
-C--&amp;gt;F[omniparser]--&amp;gt;|annotated image|E--&amp;gt;|element coordinates|G[gui/frontend]
-D--&amp;gt;|task description|G--&amp;gt;|execution success/failure|B
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;here are a few snapshots:&lt;/p&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;div class=&#34;mermaid&#34;&gt;
+        flowchart TD;
+        A[user prompt]--&gt;D[atomic task generator]
+        C[current screen state]--&gt;D
+        B[task history]--&gt;D
+        D--&gt;|next atomic task to be executed|E[element selector]
+        C--&gt;F[omniparser]--&gt;|annotated image|E--&gt;|element coordinates|G[gui/frontend]
+        D--&gt;|task description|G--&gt;|execution success/failure|B
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;here are a few snapshots:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image9.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image10.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image11.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
