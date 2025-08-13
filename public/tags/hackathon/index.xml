@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackathon on </title>
+    <link>https://1rvinn.github.io/tags/hackathon/</link>
+    <description>Recent content in Hackathon on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fedexpedite</title>
+      <link>https://1rvinn.github.io/build/fedexpedite/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/fedexpedite/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions &amp;amp; maximise efficiency!
+ps: won 1st place in the fedex smart hackathon.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div id=&#34;ppt-slider&#34; style=&#34;max-width:600px; margin:auto;&#34;&gt;
+     &lt;img id=&#34;slide-img&#34; src=&#34;https://1rvinn.github.io/img/build/fedexpedite/1.png&#34; style=&#34;width:100%&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;display: flex; justify-content: center; gap: 10px; margin-top: 10px;&#34;&gt;
+         &lt;button onclick=&#34;prevSlide()&#34;&gt;Prev&lt;/button&gt;
+         &lt;button onclick=&#34;nextSlide()&#34;&gt;Next&lt;/button&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+let slideIndex = 1;
+const slides = [
+	&#34;/img/build/fedexpedite/1.png&#34;,
+	&#34;/img/build/fedexpedite/2.png&#34;,
+	&#34;/img/build/fedexpedite/3.png&#34;,
+    &#34;/img/build/fedexpedite/4.png&#34;,
+    &#34;/img/build/fedexpedite/5.png&#34;,
+    &#34;/img/build/fedexpedite/6.png&#34;,
+    &#34;/img/build/fedexpedite/7.png&#34;,
+    &#34;/img/build/fedexpedite/8.png&#34;,
+    &#34;/img/build/fedexpedite/9.png&#34;,
+    &#34;/img/build/fedexpedite/10.png&#34;,
+    &#34;/img/build/fedexpedite/11.png&#34;,
+    &#34;/img/build/fedexpedite/12.png&#34;,
+    &#34;/img/build/fedexpedite/13.png&#34;,
+    &#34;/img/build/fedexpedite/14.png&#34;,
+    &#34;/img/build/fedexpedite/15.png&#34;,
+    &#34;/img/build/fedexpedite/16.png&#34;,
+    &#34;/img/build/fedexpedite/17.png&#34;
+];
+function showSlide(n) {
+	const img = document.getElementById(&#39;slide-img&#39;);
+	if (n &lt; 1) slideIndex = slides.length;
+	else if (n &gt; slides.length) slideIndex = 1;
+	else slideIndex = n;
+	img.src = slides[slideIndex - 1];
+}
+function prevSlide() { showSlide(slideIndex - 1); }
+function nextSlide() { showSlide(slideIndex + 1); }
+&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/1rvinn/FedExpedite&#34;&gt;github repo&lt;/a&gt;&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions &amp;amp; maximise efficiency!
+ps: won 1st place in the fedex smart hackathon.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div id=&#34;ppt-slider&#34; style=&#34;max-width:600px; margin:auto;&#34;&gt;
+     &lt;img id=&#34;slide-img&#34; src=&#34;https://1rvinn.github.io/img/build/fedexpedite/1.png&#34; style=&#34;width:100%&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;display: flex; justify-content: center; gap: 10px; margin-top: 10px;&#34;&gt;
+         &lt;button onclick=&#34;prevSlide()&#34;&gt;Prev&lt;/button&gt;
+         &lt;button onclick=&#34;nextSlide()&#34;&gt;Next&lt;/button&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+let slideIndex = 1;
+const slides = [
+	&#34;/img/build/fedexpedite/1.png&#34;,
+	&#34;/img/build/fedexpedite/2.png&#34;,
+	&#34;/img/build/fedexpedite/3.png&#34;,
+    &#34;/img/build/fedexpedite/4.png&#34;,
+    &#34;/img/build/fedexpedite/5.png&#34;,
+    &#34;/img/build/fedexpedite/6.png&#34;,
+    &#34;/img/build/fedexpedite/7.png&#34;,
+    &#34;/img/build/fedexpedite/8.png&#34;,
+    &#34;/img/build/fedexpedite/9.png&#34;,
+    &#34;/img/build/fedexpedite/10.png&#34;,
+    &#34;/img/build/fedexpedite/11.png&#34;,
+    &#34;/img/build/fedexpedite/12.png&#34;,
+    &#34;/img/build/fedexpedite/13.png&#34;,
+    &#34;/img/build/fedexpedite/14.png&#34;,
+    &#34;/img/build/fedexpedite/15.png&#34;,
+    &#34;/img/build/fedexpedite/16.png&#34;,
+    &#34;/img/build/fedexpedite/17.png&#34;
+];
+function showSlide(n) {
+	const img = document.getElementById(&#39;slide-img&#39;);
+	if (n &lt; 1) slideIndex = slides.length;
+	else if (n &gt; slides.length) slideIndex = 1;
+	else slideIndex = n;
+	img.src = slides[slideIndex - 1];
+}
+function prevSlide() { showSlide(slideIndex - 1); }
+function nextSlide() { showSlide(slideIndex + 1); }
+&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/1rvinn/FedExpedite&#34;&gt;github repo&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

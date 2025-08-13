@@ -6,7 +6,27 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai</title>
+      <link>https://1rvinn.github.io/tags/ai/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/ai/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://1rvinn.github.io/tags/dev/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/dev/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>Cysec</title>
       <link>https://1rvinn.github.io/tags/cysec/</link>
@@ -28,29 +48,9 @@
     </item>
     
     <item>
-      <title>Ai</title>
-      <link>https://1rvinn.github.io/tags/ai/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://1rvinn.github.io/tags/ai/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Browser</title>
-      <link>https://1rvinn.github.io/tags/browser/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://1rvinn.github.io/tags/browser/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
       <title>Network</title>
       <link>https://1rvinn.github.io/tags/network/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>https://1rvinn.github.io/tags/network/</guid>
       <description></description>
@@ -83,6 +83,26 @@
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       
       <guid>https://1rvinn.github.io/tags/thoughts/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Hackathon</title>
+      <link>https://1rvinn.github.io/tags/hackathon/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/hackathon/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Browser</title>
+      <link>https://1rvinn.github.io/tags/browser/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/tags/browser/</guid>
       <description></description>
       <content></content>
     </item>

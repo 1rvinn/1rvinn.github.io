@@ -6,7 +6,663 @@
     <description>Recent content in build on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/build/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bubble</title>
+      <link>https://1rvinn.github.io/build/bubble/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/bubble/</guid>
+      <description>&lt;hr&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;h3 style=&#34;color: #23affd;&#34;&gt; // the final thing &lt;/h3&gt;
+&lt;p&gt;check it out here: &lt;a href=&#34;https://github.com/1rvinn/bubble_v2&#34;&gt;https://github.com/1rvinn/bubble_v2&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/watch?v=WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;br&gt;
+    &lt;h3 style=&#34;color: #23affd;&#34;&gt; // building it out - the journey&lt;/h3&gt;
+&lt;/div&gt;
+for the gemma 3n hackathon by google deepmind, i intend on making a local ai based screen overlay helper that allows people to call it to command wherever and whenever they face an issue in their day to day tasks. 
+&lt;p&gt;the vision is pretty similar to google’s gemini live screen streaming, but with an added layer of ui - a screen overlay that displays the key troubleshooting steps/guide along with proper highlighting of the important elements to be accessed in the process.&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;h3 style=&#34;color: #23affd;&#34;&gt; // the final thing &lt;/h3&gt;
+&lt;p&gt;check it out here: &lt;a href=&#34;https://github.com/1rvinn/bubble_v2&#34;&gt;https://github.com/1rvinn/bubble_v2&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/watch?v=WdP8bOORbTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#39;text-align:center;&#39;&gt;
+    &lt;br&gt;
+    &lt;h3 style=&#34;color: #23affd;&#34;&gt; // building it out - the journey&lt;/h3&gt;
+&lt;/div&gt;
+for the gemma 3n hackathon by google deepmind, i intend on making a local ai based screen overlay helper that allows people to call it to command wherever and whenever they face an issue in their day to day tasks. 
+&lt;p&gt;the vision is pretty similar to google’s gemini live screen streaming, but with an added layer of ui - a screen overlay that displays the key troubleshooting steps/guide along with proper highlighting of the important elements to be accessed in the process.&lt;/p&gt;
+&lt;p&gt;what this possibly could look like is people in photoshop, autocad or matlab, being stuck with finding a particular feature, unable to move ahead. now, instead of laboriously looking for a solution across google, youtube, stack-exchanges and chatgpt, they access our tool via a shortcut, describe their issue in natural language and get the requisite solution along with visual and auditory cues.&lt;/p&gt;
+&lt;p&gt;this could further transition into the opportunity of integrating this with core apps such as the ones aforementioned and provide real time assistants (this could be a business opportunity right here).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[2 july 2025] [1700 hrs]&lt;/p&gt;
+&lt;p&gt;i looked at gemini live and also ran it via the terminal using their api. it is pretty much the barebones version of what i wanna achieve, still there is a lot to be done.&lt;/p&gt;
+&lt;p&gt;this is how it works using their api:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;uses pyaudio to capture audio&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;records screen/video frames using cv2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;then uses this to create a session with gemini live and the streaming starts&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;aio&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;live&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;connect(model, config)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/google-gemini/cookbook/blob/main/quickstarts/Get_started_LiveAPI.py&#34;&gt;https://github.com/google-gemini/cookbook/blob/main/quickstarts/Get_started_LiveAPI.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;^^ this is the code for the api implementation&lt;/p&gt;
+&lt;p&gt;now, the issue is, this wont work with local models, gemma 3n in this case. why? because gemma does not support this streaming feature which is being leveraged above.&lt;/p&gt;
+&lt;p&gt;and local ai, irrespective of the hackathons instructions, is important. you wouldnt want to share everything you do on your pc with google servers sitting around the globe in california.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[2 july 2025] [2300 hrs]&lt;/p&gt;
+&lt;p&gt;cool so gemma 3n does not accept video inputs. and well, even if it did, it’d have been a nightmare for them to be processed locally, while screen capture is on. doesnt accept mp3 too (and prolly other audio formats also).&lt;/p&gt;
+&lt;p&gt;i’ll try sending the final snapshot. dont know how effective that is going to be, but is prolly the only option i have.&lt;/p&gt;
+&lt;p&gt;also, the image and the user prompt will have to be pretexted by some context as to what the application is and, and idk what.&lt;/p&gt;
+&lt;p&gt;for the prompt, i will take in the user audio - use a speech to text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[3 july 2025] [1300 hrs]&lt;/p&gt;
+&lt;p&gt;the above approach is more or less okay but definitely not the best. ideally, what i would want to achieve is the screen being recorded continuously. everything that has been recorded before the user’s questions goes to an visual llm for understanding, which is then summarised, ie, a summary of everything that has happened since the starting/last prompt till now. the summary should then be passed along with the latest frame and the user’s prompt.&lt;/p&gt;
+&lt;p&gt;the common thing between both the two approaches is the latter part, ie, the last frame and the user prompt.&lt;/p&gt;
+&lt;p&gt;so for the first iteration, i’ll use the first approach - basic context, last frame and user prompt. for the second iteration - summary of all activities till now, last frame and user prompt.&lt;/p&gt;
+&lt;p&gt;let the hacking begin!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;version-01&#34;&gt;version 0.1&lt;/h3&gt;
+&lt;hr&gt;
+&lt;p&gt;[3 july 2025] [1307 hrs]&lt;/p&gt;
+&lt;p&gt;so now, i need to think of a pipeline for screen capture at the final frame and user input.&lt;/p&gt;
+&lt;p&gt;let me just have text input for starters.&lt;/p&gt;
+&lt;p&gt;the flow should look like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart LR;
+A[shortcut]---&amp;gt;|opens overlay|B[app interface]---&amp;gt;|user entered prompt|D[llm]
+B---&amp;gt;|last frame screenshot|D---&amp;gt;|response|B
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;visual highlighting of the steps involved might be complex. but koina, kar lenge.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[1800 hrs]&lt;/p&gt;
+&lt;p&gt;found a way to run multimodal gemma 3n locally, using hugging face transformers.&lt;/p&gt;
+&lt;p&gt;here’s the documentation: &lt;a href=&#34;https://ai.google.dev/gemma/docs/core/huggingface_inference&#34;&gt;https://ai.google.dev/gemma/docs/core/huggingface_inference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;the issue here is, i do not have much experience with hugging face and especially local models.&lt;/p&gt;
+&lt;p&gt;what i’ve understood till now is, i have to login via a huggingface token, create a pipeline and then pass the img, text to the pipeline.&lt;/p&gt;
+&lt;p&gt;upon doing the above, it gives an error&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;OSError: We couldn&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t connect to &amp;#39;&lt;/span&gt;https://huggingface.co&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; to load the files, and couldn&amp;#39;&lt;/span&gt;t find them in the cached files.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Check your internet connection or see how to run the library in offline mode at &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://huggingface.co/docs/transformers/installation#offline-mode&amp;#39;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;fixed - there was an issue with the hf token i had initialised. created a new one and got it done.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[4 july 2025] [0015 hrs]&lt;/p&gt;
+&lt;p&gt;so i have been able to come up with a very very barebones version (version 0.0000001):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;it uses the &lt;code&gt;pyautogui&lt;/code&gt; library to take a screenshot whenever the script is run,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pipeline&lt;/code&gt; from hugging face’s &lt;code&gt;transformers&lt;/code&gt; library to create a pipeline of &lt;code&gt;gemma-3n-E2B-it&lt;/code&gt; model,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;and &lt;code&gt;tkinter&lt;/code&gt; for the gui.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;code&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tkinter &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; tk
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; tkinter &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; scrolledtext, messagebox
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pyautogui
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; tempfile
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; PIL &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Image, ImageTk
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; transformers &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pipeline
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; huggingface_hub &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; login
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; threading
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HF_TOKEN &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MODEL_ID &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;google/gemma-3n-E2B-it&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;login(HF_TOKEN)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pipe &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pipeline(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image-text-to-text&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    model&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;MODEL_ID,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    device&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cpu&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;capture_screenshot&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; str:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    temp_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tempfile&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;gettempdir()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    screenshot_path &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(temp_dir, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gemma_screenshot.png&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    screenshot &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pyautogui&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;screenshot()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    screenshot&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;save(screenshot_path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; screenshot_path
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;generate_response&lt;/span&gt;(prompt: str, image_path: str) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; str:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        img &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;open(image_path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Image loaded successfully&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;raise&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RuntimeError&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed to open image: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;e&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    chat_prompt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;role&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;: prompt},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;image&amp;#34;&lt;/span&gt;: img}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Chat prompt created successfully&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        output &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pipe(chat_prompt)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Inference completed successfully&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;raise&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RuntimeError&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Failed to generate response: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;e&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; output[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;][&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;generated_text&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ScreenshotGemmaApp&lt;/span&gt;(tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Tk):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;__init__&lt;/span&gt;(self):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        super()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;__init__&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gemma hack&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;geometry(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;300x900&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;screenshot_path &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; capture_screenshot()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Show screenshot preview&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            img &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Image&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;open(self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;screenshot_path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            img &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; img&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;resize((&lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;))  &lt;span style=&#34;color:#75715e&#34;&gt;# Resize for preview&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tk_img &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ImageTk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;PhotoImage(img)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;preview_label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Label(self, image&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tk_img)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;preview_label&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pack(pady&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;⚠️ Failed to show preview:&amp;#34;&lt;/span&gt;, e)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;prompt_box &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Text(self, height&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, font&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arial&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;prompt_box&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pack(padx&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, pady&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;), fill&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;submit_button &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Button(self, text&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Submit&amp;#34;&lt;/span&gt;, font&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arial&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;), command&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;on_submit)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;submit_button&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pack(padx&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, pady&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;output_box &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; scrolledtext&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ScrolledText(self, font&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Arial&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;output_box&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pack(padx&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, pady&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;), fill&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;both&amp;#34;&lt;/span&gt;, expand&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;on_submit&lt;/span&gt;(self):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        prompt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;prompt_box&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;, tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;END)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; prompt:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            messagebox&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;showwarning(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Missing Prompt&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Please enter a prompt.&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;submit_button&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;config(state&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;disabled&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;output_box&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;delete(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;, tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;END)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        threading&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Thread(target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;_run_inference_thread, args&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(prompt,), daemon&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;start()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_run_inference_thread&lt;/span&gt;(self, prompt: str):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;starting inference&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; generate_response(prompt, self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;screenshot_path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;response received&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;output_box&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;insert(tk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;END, response)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;response:&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(response)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;end of response&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            messagebox&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;showerror(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;, str(e))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;finally&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;submit_button&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;config(state&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;normal&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; __name__ &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    app &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ScreenshotGemmaApp()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    app&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mainloop()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;on running it, it wasnt giving any response. so i added a couple of lines to help me debug.&lt;/p&gt;
+&lt;p&gt;and guess what, the code is absolutely correct, down to the last inch, it is google to blame.&lt;/p&gt;
+&lt;p&gt;the model is running slow, like insanely slow. i tried switching over to my gpu by setting &lt;code&gt;device&lt;/code&gt; equal to &lt;code&gt;0&lt;/code&gt;, and boom my computer went for a crash. it used something called an MPS, not CUDA ofc because my dearest gpu wasn’t manufactured in nvidia furnaces. so the error was due to my memory capacity not being enough.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RuntimeError: MPS backend out of memory &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;MPS allocated: 5.73 GB, other allocations: 384.00 KB, max allowed: 9.07 GB&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Tried to allocate 3.75 GB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.0 to disable upper limit &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; memory allocations &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;may cause system failure&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i went back to cpu then, and after an eternity (8 mins) i have now recd the following response:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;i had also added a cap on the tokens, for now, to make it run faster. and yes, 8 mins was with a token limit of a mere 128.&lt;/p&gt;
+&lt;p&gt;i think there would be a fix to this problem. the very reason google came up with gemma 3n was so it could run on edge devices including mobile phones, which, even the best ones, arent even 30% as beefy as my mac (not saying that ts is great).&lt;/p&gt;
+&lt;p&gt;google’s edge ai app works on androids and does image inference. i will look into it in the morning and see how they do it. secondly, i’ll revisit this &lt;a href=&#34;https://github.com/OminousIndustries/Gemma3n-TTS&#34;&gt;repo&lt;/a&gt; i used as reference earlier. third, i’ll look into the documentation again, and maybe what other people are doing for this.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i may have to later pivot to this not being truly local (while still using gemma 3n for hackathon purposes) and even further to a better, sota cloud model.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;here are the tasks for morning now:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure out how to run it faster
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; go through google edge ai&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; go through gemma documentation&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; go through this &lt;a href=&#34;https://github.com/OminousIndustries/Gemma3n-TTS&#34;&gt;repo&lt;/a&gt; (talked about it above) and its corresponding yt vid&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; chat gpt in case nothing works&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;tasks for later&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; look into cluely’s (not open source so fake cluely’s) source code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;using the code given in gemma documentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;the only difference in my current code and the one given in gemma’s documentation is this one line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;torch_dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;torch&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;bfloat16
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i have added this to the pipeline args. lets see how it does now.&lt;/p&gt;
+&lt;p&gt;dont think it’s making much of a difference. taking more than 10 secs so not there. will update the final time when i receive the response.&lt;/p&gt;
+&lt;p&gt;also, for some reason the response is still cut off at the end.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;using the code in this &lt;a href=&#34;https://github.com/OminousIndustries/Gemma3n-TTS&#34;&gt;repo&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;until now, i have called the model using a pipeline. now, using the above repo as reference, i’ll call it in a different way and see if it helps.&lt;/li&gt;
+&lt;li&gt;running into many errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;i donot understand what the issue is. i know it can be fixed, i know that for a fact. but how is something i havent been able to figure out yet. i know for sure that it’s hidden in plain sight.&lt;/p&gt;
+&lt;p&gt;ok, fukkit. truly locla is hard to achieve, atleast for now. i ll chnage it to online inference.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[7 july 2025][0036 hrs]&lt;/p&gt;
+&lt;p&gt;very long time since i last updated this blog or whatever this is. so i’ve been running it on online inference for now, using the gemini-2.0-flash-exp, which i plan on changing to 2.5-flash atleast.&lt;/p&gt;
+&lt;p&gt;i also vibecoded a slick looking ui; i tried integrating the concepts of glasmorphism, taking inspiration from apple (&lt;em&gt;good artists copy, great artists steal (jobs))&lt;/em&gt;. surely isnt as goated as apple’s liquid glass but it does it’s job to some extent. here’s how it looks:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image1.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image2.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;there are a few ui changes im still to make:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; allow repositioning&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; answer streaming isnt smooth&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; corners do not have the same curvature&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a copy button for code in the answer box&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; an icon for enter&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a settings hamburger menu&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; drastic change: possibly come up with some completely new interface; take inspiration from apple intelligence maybe (oml apple is so goated all my inspirations come from them)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;honestly, while going through all the ui stuff, i was loving it. i have always had a knack for design; kinda ocd-ish sometimes, especially when symmetry is involved. and oh reading about glassmorphism, neumorphism, such an interesting, creative pursuit design is. also read about scandinavian design, just beautiful.&lt;/p&gt;
+&lt;p&gt;i resonate deep with steve when he says - &lt;em&gt;it’s technology, married with liberal arts, married with the humanities, that yields us the results that make our hearts sing.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;ok now, on the technology side of things. the backend is shitty. there is absolutely no system instruction, i added some debugging lines that are still being printed. and some other issues too. so do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; add system instructions&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; get rid of the debugging statements&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; the screenshot is clicked on each enter, ie, it also has the widget in it; need to change it to be clicked before the widget is shown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;— i think up till here will complete most part of this app, then i shall put all focus into doing the visual guide part - the most important bit of this.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[7 july 2025][1826 hrs]&lt;/p&gt;
+&lt;p&gt;the screenshot issue hasnt been fixed. rn what is happening is that the screenshot is clicked at the press of ‘enter’. which is fine from the user’s perspective because the screenshot contains the latest version of what’s on the screen. but is an issue as the screenshot also contains the ask bar, and incase of a followup, also the answer. which makes it hard to see what is behind it on the actual screen.&lt;/p&gt;
+&lt;p&gt;i looked at what other apps are doing:&lt;/p&gt;
+&lt;p&gt;horizon - clicks the ss right after the tool shortcut is called, ie, before the chat box appears.&lt;/p&gt;
+&lt;p&gt;glass - works a lot better. it takes updates real time, and also stays consistently over all desktops. also, the responses are a lot better. ig that is the difference between a fun project and a startup.&lt;/p&gt;
+&lt;p&gt;after trying around a variety of things, i’ve finally settled on making the widget disappear for a while for the screenshot to be captured and then the answer be displayed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;this isnt the most efficient approach. for the final version, the guide, i plan on making a different ui and taking inspiration from &lt;a href=&#34;https://github.com/sohzm/cheating-daddy&#34;&gt;cheatingdaddy&lt;/a&gt; to ensure the above in a more streamlined way.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;now, i’ll just make it ready for deployment. put in on github and focus on the other bits.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[8 july 2025][1700 hrs]&lt;/p&gt;
+&lt;p&gt;i have pushed it to github. there are a few issues with it, but i have asked a friend to make the changes required to make it fully deployable while i focus on the main bit — the actual model.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[8 july 2025][1701 hrs]&lt;/p&gt;
+&lt;p&gt;i need to firstly analyse how agents work.&lt;/p&gt;
+&lt;p&gt;as of now, i have come up with the following pipeline:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+  screen --&amp;gt; |screenshot or live screencast|omniparser --&amp;gt; |identifies, maps key ui elements|llm
+  prompt --&amp;gt; llm --&amp;gt; |action to be performed|visual_cues --&amp;gt;|user| action --&amp;gt; |real time feedback|screen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).&lt;/p&gt;
+&lt;p&gt;what i am thinking would be the best is having a list of broad steps to be outputted first, followed by detailed descriptions for each step one by one, being displayed after the previous one has been executed.&lt;/p&gt;
+&lt;p&gt;i think creating an agent is easier than creating a guide as now, people have autonomy to do things, which means, one ill step and the ai gets confused and starts malfunctioning.&lt;/p&gt;
+&lt;p&gt;ok let it be. i’ll study more about agents and then see where this goes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[8 july 1800 hrs]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; check out browser-use&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; check out warm wind&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; check out omni parser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image3.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;^^warmwind&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image4.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;^^skyvern&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;some yt video:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/drive/1GV4VzhfI8l2uEBm2H9hQ2fs12_iFiYlQ?usp=sharing#scrollTo=x1Edd6dsflaa&#34;&gt;https://colab.research.google.com/drive/1GV4VzhfI8l2uEBm2H9hQ2fs12_iFiYlQ?usp=sharing#scrollTo=x1Edd6dsflaa&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=Qnp4PQTE1Ag&#34;&gt;https://www.youtube.com/watch?v=Qnp4PQTE1Ag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;os atlas:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;also a library like omniparser, but this returns the pixel coords of the gui element.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/OS-Copilot/OS-Atlas&#34;&gt;https://github.com/OS-Copilot/OS-Atlas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;browser_use:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image5.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[9 july 2025][1615 hrs]&lt;/p&gt;
+&lt;p&gt;i have tried to understand how different computer use agents work and have linked a few repos, screenshots and descriptions above of the ones i found useful.&lt;/p&gt;
+&lt;p&gt;the pipeline i had made above, wasnt very off. the area’s where it was off, were actually the areas i was confused in. so i’ll make the requisite changes, and let the hacking begin!&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+  user--&amp;gt;|keyboard shortcut|A[user interface] --&amp;gt; |user prompt|B[planner llm]
+  A--&amp;gt;|screenshot*|B
+  B--&amp;gt;|task plan|C[task list]--&amp;gt;|single task|D[llm]
+  A--&amp;gt;|screenshot*|D--&amp;gt;|detailed action description + button/field indices|E[visual cue]
+  D--&amp;gt;|pixel coords of action spot|E[visual cue]--&amp;gt;A
+  D--&amp;gt;|update|C
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;+feedback loop to be added&lt;/p&gt;
+&lt;p&gt;*screenshots pass through omniparser&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/145e733e-62f7-4fdb-9326-59b17d4e0132.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;^^ easier to understand. i still love pen an pencil over these plastic keycaps.&lt;/p&gt;
+&lt;p&gt;validator - success, inaction, failure.&lt;/p&gt;
+&lt;p&gt;here’s a written version of what i have thought:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;1.&lt;/span&gt; the user calls the app using a shortcut, types their issue (prompt) on the interface
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;2.&lt;/span&gt; the app takes a screenshot, gives it to omniparser which annotates the image to index and tag interactive ui elements
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;3.&lt;/span&gt; the annotated screenshot and prompt goes to the planning llm (llm #1) which devises a list of tasks to be performed to achieve the goal. each tasks include 1 action at max. (for eg: for export to pdf the tasks are - go to file menu, go to export, choose pdf, save)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;4.&lt;/span&gt; these tasks then go one by one to llm #2 along with a screenshot of the current state of the screen. the decides what action is to be done to complete the task (eg: for &amp;#39;go to export&amp;#39; - click &amp;#39;export&amp;#39; button) and also gives the coordinates of the button.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;5.&lt;/span&gt; this description (click &amp;#39;export&amp;#39; button) and coordinates is used to highlight the respective button and show it to the user.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;6.&lt;/span&gt; the app waits for user action. once done, it moves forward to sending the next task to llm#2 and this continues till all the tasks are done
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ok so for the first version, i’m gonna let cursor do it. i need to understand how these various libraries work and get an idea of how it will all play together. i know the code wont be neat and debugging would be a nightmare for me cuz i haven’t coded it out. but i think it’ll do well for starters, to make me understand the technicalities of it and then later i can code it out with my bare hands.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;vib(code)ing&lt;/p&gt;
+&lt;p&gt;this is the task list cursor came up with after i gave my pipeline:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;technical task list&lt;/p&gt;
+&lt;h3 id=&#34;1electron-overlayapp&#34;&gt;&lt;strong&gt;1. Electron Overlay App&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Set up Electron app with cross-platform build (Mac/Windows).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Implement global keyboard shortcut listener.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create overlay UI for prompt input and step-by-step guidance.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Implement overlay rendering for highlights and descriptions (transparent, click-through except for UI).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ensure overlay can be shown/hidden and does not interfere with normal app usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2screenshotcapture&#34;&gt;&lt;strong&gt;2. Screenshot Capture&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Implement cross-platform screenshot capture (Node.js native modules or external tools).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ensure screenshot is of the correct display (multi-monitor support).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3omniparser-integration&#34;&gt;&lt;strong&gt;3. Omniparser Integration&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Integrate with Omniparser (Python or API) to send screenshots and receive annotated UI elements.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Parse and store Omniparser output for downstream use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4llm1-task-planning&#34;&gt;&lt;strong&gt;4. LLM #1: Task Planning&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Integrate with Gemini API (or other LLM) for planning.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Send prompt + annotated screenshot, receive ordered list of atomic tasks.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Parse and store task list.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5llm2-action-elementlocalization&#34;&gt;&lt;strong&gt;5. LLM #2: Action &amp;amp; Element Localization&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; For each task, send current screenshot + task to LLM #2.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Receive action description and UI element coordinates.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Parse and store action/coordinates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6visual-guidance-user-interaction&#34;&gt;&lt;strong&gt;6. Visual Guidance &amp;amp; User Interaction&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Render highlight around UI element at given coordinates.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Display action description in overlay.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Track user actions (mouse clicks, keyboard events) to detect when the correct action is performed.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Handle edge cases (user clicks wrong element, window focus changes, etc.).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;7taskprogression-logic&#34;&gt;&lt;strong&gt;7. Task Progression Logic&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Manage task queue and progression.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; On correct user action, advance to next task.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; On completion, show success message and dismiss overlay.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;8cross-processcommunication&#34;&gt;&lt;strong&gt;8. Cross-Process Communication&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Set up IPC (inter-process communication) between Electron (Node.js) and Python (Omniparser, LLM calls).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Ensure robust error handling and fallback for communication failures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9cross-platformpackaging-deployment&#34;&gt;&lt;strong&gt;9. Cross-Platform Packaging &amp;amp; Deployment&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Package the app for Mac and Windows (Electron Builder, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Bundle Python dependencies and ensure they run on both platforms (PyInstaller, virtualenv, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Handle permissions (screen recording, accessibility APIs) for both OSes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;10configuration-extensibility&#34;&gt;&lt;strong&gt;10. Configuration &amp;amp; Extensibility&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Configurable keyboard shortcut.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Modular architecture for swapping out LLMs or UI parsers.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Logging and error reporting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;^^ looks pretty robust, i’ll let it start coding.&lt;/p&gt;
+&lt;p&gt;ok this is f-ing my brains inside out. it feels like a blackbox, i dont understand a thing and the only thing i can do is plead like a begger to have cursor solve the errors. yet, despite the errors im gonna let it continue. so that i atleast know how its trying to integrate all of various things and then i’ll start myself.&lt;/p&gt;
+&lt;p&gt;ok so the final thing isnt working due to a hell lot of errors, but here is a technical report i asked cursor to make, so my understanding about what it did in the mvp is bettered.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://1rvinn.github.io/img/build/bubble/report_-_bubble_v2.pdf&#34;&gt;report - bubble_v2.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;[11 july 2025][2222 hrs]&lt;/p&gt;
+&lt;p&gt;so, last 1.5 ish days, i have been learning js. and i think i have understood it’s basics well. on second thought, i shouldve have spent this much time, the real output has pretty much been 0, as i thought of it to be pretty similar apart from the basic syntax level differences. also, at this point i think, if you have a decent hold over one programming language, it shouldnt be hard to understand others and a more effecient way to go about it would be just to build a project and learn on the fly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; im just gonna go through the basics of electron really quick, and then get started with coding.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ok, some basics covered, rest will be dealt with by referring to the documentation.&lt;/p&gt;
+&lt;p&gt;here’s a great github repo having a ton of boilerplates, tutorials and demo code:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/sindresorhus/awesome-electron&#34;&gt;https://github.com/sindresorhus/awesome-electron&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;this could be referred to for screenshots/sharing:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hokein/electron-screen-recorder&#34;&gt;https://github.com/hokein/electron-screen-recorder&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; next, i need to cover asyncio&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; and backend hosting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;also then, i need to look into how cheating daddy works, majorly focusing on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; how are screenshots captured? is it a live stream (using gemini live) or screenshots when the prompt is asked&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; how do they make it resilient to screensharing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;[13 july 2025][1800 hrs]&lt;/p&gt;
+&lt;p&gt;time to get my fingertips dirty, let the hacking begin!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;screenshot parsing&lt;/p&gt;
+&lt;p&gt;i tried object detection via gemini as mentioned in their documentation but it didn’t work well. so i’ll just try setting up omniparser.&lt;/p&gt;
+&lt;p&gt;for now, i’ll just run it off hf transformers, later i might set up an hf inference end point and call it via cloud.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;[17 july 2025][1118 hrs]&lt;/p&gt;
+&lt;p&gt;i have pretty much wasted the last 3-4 days. need to lock in now.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;screenshot parsing&lt;/p&gt;
+&lt;p&gt;i tried integrating omniparser but no luck. need to do the following, if it still doesn’t go through after this, then we skip to a different model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ask claude for help&lt;/p&gt;
+&lt;p&gt;^gives the same old shit&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;i’ve given omniparser a lot of time, but no avail. i even tried to run the entire code by cloning the repo but even that refused to work. so now, im looking to switch over to something else.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; look into browser-use’s screenshot parsing mech&lt;/p&gt;
+&lt;p&gt;^^they use playwright which only works for browsers so cant be implemented&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ok nvm, omniparser worked. i was running into a variety of different module errors and despite multiple tries, i wasnt able to figure it out, but at the end, i prevailed.&lt;/p&gt;
+&lt;p&gt;for now, it runs on gradio and o boy gradio is amazing. i can literally use the live link to run omniparser through any device while using my laptop for processing. also, i can use it as an api pretty easily.&lt;/p&gt;
+&lt;p&gt;however, there are a few issues with this currently:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;the process takes a lot of time, 30 to 300 secs for images with less and more icons respectively. it isnt the detection algorithm that takes this much time but the caption model instead that takes up most of the time. the former takes less than a second.&lt;/p&gt;
+&lt;p&gt;the model being used to generate captions is &lt;code&gt;florence2&lt;/code&gt; or &lt;code&gt;blip2&lt;/code&gt; which are vision language models, so ofc are bound to take time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;i tried running it using the gradio api hosted on hf spaces by microsoft itself, which is returning the result quick, however i am not able to access the image being generated by it. this is what it returns: &lt;code&gt;&#39;/private/var/folders/60/w....wgn/T/gradio/2...adfa/image.webp&#39;&lt;/code&gt; which means it’s just returning the local path on the server and not the image.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;it is imperative to solve these things, but later. for now, i’ll code rest of the app and then finally find a fix to the above, prolly by hosting it somewhere - &lt;a href=&#34;http://fly.io&#34;&gt;fly.io&lt;/a&gt; or hf spaces.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;[20 jul 2025][1450 hrs]&lt;/p&gt;
+&lt;p&gt;i’ll start building the planner llm. just a regular gemini 2.5 flash call along with the screenshot being sent.&lt;/p&gt;
+&lt;p&gt;i tested it out by sending a screenshot of the chatgpt interface without any annotations and gave this prompt &lt;code&gt;how do i start a new chat and upload a photo to it?&lt;/code&gt; . here’s the response i got, pretty happy with it for now.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image6.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;next, i ll work on making the second llm - the action selector.&lt;/p&gt;
+&lt;p&gt;the prompt was &lt;code&gt;Click the &#39;+&#39; button next to the &#39;Ask anything&#39; text input field.&lt;/code&gt; and it correctly gave me the right icon to be selected.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image7.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;next steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; create a screenshot capturer&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; combine planner and action selector&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;one thing i’ve realised is that the captions being generated aren’t very precise and in fact making the action_selector select the wrong element.
+secondly the caption generation model is the reason for such slow responses. i am thinking to let it go, and my hypothesis is that the action_selector will only get more proficient in doing so. however, i do need to test this hypothesis.&lt;/p&gt;
+&lt;p&gt;ok, now how do i go about removing the captions? in the model i run locally, it is pretty easy since i can play with the code. however, since the model is being called using an api endpoint here, i can’t possibly change the code and neither do i see an option to disable captions being generated.
+so maybe i’ll just deploy it locally and use it as an api (possible with gradio)&lt;/p&gt;
+&lt;p&gt;i have been able to remove the captioning and it takes way lesser than what it used to earlier, with only the annotation happening right now. however, the icon selection is still a little haywire.&lt;/p&gt;
+&lt;p&gt;before fixing that, i think a couple of other things need to be done:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; make the planner llm only give out broad descriptions not precise ones (exact button presses not needed)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; make the action selector llm decide the specifics of the atomic tasks to be performed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;the above plan didnt work out, since one task of the planner’s plan can possibly contain multiple actions to be performed. so, i’ve added an atomic generator model that takes in tasks, one by one from the plan, and divides them into actions to be performed based on the screenshot input&lt;/p&gt;
+&lt;p&gt;so they new pipeline looks as follows&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/Mermaid_Chart_-_Create_complex_visual_diagrams_with_text._A_smarter_way_of_creating_diagrams.-2025-07-25-093021.svg&#34; alt=&#34;Mermaid Chart - Create complex, visual diagrams with text. A smarter way of creating diagrams.-2025-07-25-093021.svg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this is working way better.&lt;/p&gt;
+&lt;p&gt;next, i need to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure out a way to get the image returned as well&lt;/p&gt;
+&lt;p&gt;^^ for this, i changed the api’s output from returning a pil image to the base64 string of that image&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; integrate the cue and automatic screenshots&lt;/p&gt;
+&lt;p&gt;^^ i have used the keystroke &lt;code&gt;ctrl+shift+0&lt;/code&gt; to click a screenshot before every step be converted to atomic steps.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; create 2 versions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; one with the planner&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; one without the planner - only the atomic generator deciding what is to be done on the basis of current state, end goal and previous actions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;i think the second version is bound to work better. currently the planner is working on foresight. it is predicting what must be done without having access to the current state. it just takes the initial state and decides the plan. in the case without the planner, the current step is only decided on the basis of the current state, the user intent and current history.
+barring the foresight problem, there is also the issue of inefficiency. currently we are employing two models just to decide on the atomic tasks that need to be completed as opposed to one in case the planner is dropped.&lt;/p&gt;
+&lt;p&gt;hence, i feel its imperative to make the second version the main one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;the second version is up and running, and it works pretty damn well. way better than the first/planner one.&lt;/p&gt;
+&lt;p&gt;there are a few improvements yet to be made:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; integrate a validator that verifies whether the previous action has been completed successfully or the user messed up&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; need to be very specific on which button to click in case of multiple buttons with the same label&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;i’ll do the above later. for now, i’ll focus on getting the frontend ready.&lt;/p&gt;
+&lt;p&gt;the frontend will be made using electron js, exact designs for which i havent figured yet.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.electronjs.org/docs/latest&#34;&gt;https://www.electronjs.org/docs/latest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;^^ keeping the documentation link here for easy access.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;so i’ve been able to come up with a raw frontend. not the most aesthetically pleasing app, however, it suffices for the hackathon submission atleast.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image8.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;however, there still are a few issues with this, which i need to fix:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; instead of image , upload base 64 upload to omniparser&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; colors and aesthetics improve&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; make sure bounding boxes are complete /neat and adjust the vertical alignment in the bounding box&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; bounding box moves /shifts if user scrolls in between. can we fix that -
+A) make the process very fast
+B) control the webpage (not relevant now)&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; integrate a validator that verifies whether the previous action has been completed successfully or the user messed up&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; need to be very specific on which button to click in case of multiple buttons with the same label&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; giving the user flexibility to choose/fill, in case of forms.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ctrl+shift+0 for next step ctrl+shift+1 for retry&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; improve latency
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; change gemini calls also to base64&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; remove the drop shadow at the center of the screen&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; rename ‘processing’ messages&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; disappearance on click&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; clickthough not errorless&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; rephrase task descriptions&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; completed message&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; make it windows compatible&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; doesnt enter typing mode on first open, fix that&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; remove the settings button&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; press crtl+shift+0 for next step&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; fix history handling&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; thinking box visible in screenshots&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; remove ctrl+shift+f ctrl /&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; make click global&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; description being cutoff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; add glow to border&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; fix ‘input focused’ wording and positioning&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; task completed positioning - vertical and horizontal both&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; scrolling&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; instead of the bounding box, make the description box emerge from the place/button that needs to be interacted with, like a comment box.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ctrl+shift+0 not working properly&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; vertical offset in windows&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; entire pipeline should restart when task gets completed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;pretty much ready for the submission.&lt;/p&gt;
+&lt;p&gt;here is the final pipeline being used:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart TD;
+A[user prompt]--&amp;gt;D[atomic task generator]
+C[current screen state]--&amp;gt;D
+B[task history]--&amp;gt;D
+D--&amp;gt;|next atomic task to be executed|E[element selector]
+C--&amp;gt;F[omniparser]--&amp;gt;|annotated image|E--&amp;gt;|element coordinates|G[gui/frontend]
+D--&amp;gt;|task description|G--&amp;gt;|execution success/failure|B
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;here are a few snapshots:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image9.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image10.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image11.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image12.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image13.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/bubble/image14.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;pushing to github:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; create 2 repos:
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; bubble_v2&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; bubble_omni (for the omniparser backend)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; check requirements.txt&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; readme
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; banner&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; short description&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; video demo&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; pipeline&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; how to operate
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ctrl/cmd+shift+g to call the app&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ctrl/cmd+shift+0 for the next step&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ctrl/cmd+shift+1 to retry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; how to run locally - instructions to run locally
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; venv, install reqs at backend/requirements.txt&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; env, add hf token, gemini api key&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; run the omni backend, get endpoint url, update in backend/omni_api
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; venv, install reqs&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; login using hf token - hugging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; npm install, npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;done&#34;&gt;done!&lt;/h3&gt;
+</content>
+    </item>
+    
     <item>
       <title>mitm attacks</title>
       <link>https://1rvinn.github.io/build/mitm_attacks/</link>
@@ -153,33 +809,6 @@ C[&#34;target device&#34;]---&gt;|&#34;packet&#34;|B[&#34;your device&#34;]---&g
 &lt;p&gt;&lt;img src=&#34;https://1rvinn.github.io/img/build/mitm_attacks/image%2015.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;then go over to wireshark to analyse the packets.&lt;/p&gt;
 &lt;p&gt;lol i just intercepted my dad’s computer&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>browseher</title>
-      <link>https://1rvinn.github.io/build/browser/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://1rvinn.github.io/build/browser/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
-&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
-&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;
-&lt;p&gt;doing a bit of research, i have realised that it is kinda hard to do it all from scratch, not only because it is going to be very long but also because of the compute inefficiency of the product you’ll get out with - very laggy, sucking all the juice out your ram.&lt;/p&gt;
-&lt;p&gt;i could build it on top of chromium, but that wont teach me a lot about browsers and networking.&lt;/p&gt;
-&lt;p&gt;so i have decided to do neither and both at the same time. i’ll follow the primer, understand the basics right and then switch over to building over chromium, which i believe is also going to be imperative if i want to integrate ai into it — could be wrong, i dont really know.&lt;/p&gt;
-&lt;p&gt;the best thing would still be to do it all from scratch, but let’s see where reading the primer leads me to and then make a decision likewise.&lt;/p&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;[update] 12/06/25&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;have built a very bare bones version that can display basic web pages (only text lmao not even html). ik, very far away from my final goal, but i have realised how hard it is to build a browser and definitely wouldn&amp;rsquo;t be able to make the one of my dreams from scratch - will have to capitalise on the chromium infra (now i understand the imp of open source). \
-but the process is v.v. cool cuz im learning a hell lot about how the internet functions. it aint all a blackbox anymore.&lt;/p&gt;
-&lt;hr&gt;
 </content>
     </item>
     
@@ -1713,13 +2342,127 @@ on a friend&amp;rsquo;s feedback, i added the functionality of saving the mindma
     </item>
     
     <item>
-      <title></title>
-      <link>https://1rvinn.github.io/build/pi2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>fedexpedite</title>
+      <link>https://1rvinn.github.io/build/fedexpedite/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://1rvinn.github.io/build/pi2/</guid>
-      <description></description>
-      <content></content>
+      <guid>https://1rvinn.github.io/build/fedexpedite/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions &amp;amp; maximise efficiency!
+ps: won 1st place in the fedex smart hackathon.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div id=&#34;ppt-slider&#34; style=&#34;max-width:600px; margin:auto;&#34;&gt;
+     &lt;img id=&#34;slide-img&#34; src=&#34;https://1rvinn.github.io/img/build/fedexpedite/1.png&#34; style=&#34;width:100%&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;display: flex; justify-content: center; gap: 10px; margin-top: 10px;&#34;&gt;
+         &lt;button onclick=&#34;prevSlide()&#34;&gt;Prev&lt;/button&gt;
+         &lt;button onclick=&#34;nextSlide()&#34;&gt;Next&lt;/button&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+let slideIndex = 1;
+const slides = [
+	&#34;/img/build/fedexpedite/1.png&#34;,
+	&#34;/img/build/fedexpedite/2.png&#34;,
+	&#34;/img/build/fedexpedite/3.png&#34;,
+    &#34;/img/build/fedexpedite/4.png&#34;,
+    &#34;/img/build/fedexpedite/5.png&#34;,
+    &#34;/img/build/fedexpedite/6.png&#34;,
+    &#34;/img/build/fedexpedite/7.png&#34;,
+    &#34;/img/build/fedexpedite/8.png&#34;,
+    &#34;/img/build/fedexpedite/9.png&#34;,
+    &#34;/img/build/fedexpedite/10.png&#34;,
+    &#34;/img/build/fedexpedite/11.png&#34;,
+    &#34;/img/build/fedexpedite/12.png&#34;,
+    &#34;/img/build/fedexpedite/13.png&#34;,
+    &#34;/img/build/fedexpedite/14.png&#34;,
+    &#34;/img/build/fedexpedite/15.png&#34;,
+    &#34;/img/build/fedexpedite/16.png&#34;,
+    &#34;/img/build/fedexpedite/17.png&#34;
+];
+function showSlide(n) {
+	const img = document.getElementById(&#39;slide-img&#39;);
+	if (n &lt; 1) slideIndex = slides.length;
+	else if (n &gt; slides.length) slideIndex = 1;
+	else slideIndex = n;
+	img.src = slides[slideIndex - 1];
+}
+function prevSlide() { showSlide(slideIndex - 1); }
+function nextSlide() { showSlide(slideIndex + 1); }
+&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/1rvinn/FedExpedite&#34;&gt;github repo&lt;/a&gt;&lt;/p&gt;</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions &amp;amp; maximise efficiency!
+ps: won 1st place in the fedex smart hackathon.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div id=&#34;ppt-slider&#34; style=&#34;max-width:600px; margin:auto;&#34;&gt;
+     &lt;img id=&#34;slide-img&#34; src=&#34;https://1rvinn.github.io/img/build/fedexpedite/1.png&#34; style=&#34;width:100%&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;display: flex; justify-content: center; gap: 10px; margin-top: 10px;&#34;&gt;
+         &lt;button onclick=&#34;prevSlide()&#34;&gt;Prev&lt;/button&gt;
+         &lt;button onclick=&#34;nextSlide()&#34;&gt;Next&lt;/button&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+let slideIndex = 1;
+const slides = [
+	&#34;/img/build/fedexpedite/1.png&#34;,
+	&#34;/img/build/fedexpedite/2.png&#34;,
+	&#34;/img/build/fedexpedite/3.png&#34;,
+    &#34;/img/build/fedexpedite/4.png&#34;,
+    &#34;/img/build/fedexpedite/5.png&#34;,
+    &#34;/img/build/fedexpedite/6.png&#34;,
+    &#34;/img/build/fedexpedite/7.png&#34;,
+    &#34;/img/build/fedexpedite/8.png&#34;,
+    &#34;/img/build/fedexpedite/9.png&#34;,
+    &#34;/img/build/fedexpedite/10.png&#34;,
+    &#34;/img/build/fedexpedite/11.png&#34;,
+    &#34;/img/build/fedexpedite/12.png&#34;,
+    &#34;/img/build/fedexpedite/13.png&#34;,
+    &#34;/img/build/fedexpedite/14.png&#34;,
+    &#34;/img/build/fedexpedite/15.png&#34;,
+    &#34;/img/build/fedexpedite/16.png&#34;,
+    &#34;/img/build/fedexpedite/17.png&#34;
+];
+function showSlide(n) {
+	const img = document.getElementById(&#39;slide-img&#39;);
+	if (n &lt; 1) slideIndex = slides.length;
+	else if (n &gt; slides.length) slideIndex = 1;
+	else slideIndex = n;
+	img.src = slides[slideIndex - 1];
+}
+function prevSlide() { showSlide(slideIndex - 1); }
+function nextSlide() { showSlide(slideIndex + 1); }
+&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/1rvinn/FedExpedite&#34;&gt;github repo&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>browseher</title>
+      <link>https://1rvinn.github.io/build/browser/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/build/browser/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
+&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;10/05/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;i dont know why but recently i’ve been getting this urge to build a browser of my own. something that’s bespoke to my needs - has ai inbuilt, is junk free and everything is the way i want it. yeah maybe if it turns out to be amazing, i may plan on launching it but that’s for me to worry about later.&lt;/p&gt;
+&lt;p&gt;i found this &lt;a href=&#34;https://browser.engineering/&#34;&gt;primer&lt;/a&gt; which is in and out of what a browser entails and how to build it on your own.&lt;/p&gt;
+&lt;p&gt;doing a bit of research, i have realised that it is kinda hard to do it all from scratch, not only because it is going to be very long but also because of the compute inefficiency of the product you’ll get out with - very laggy, sucking all the juice out your ram.&lt;/p&gt;
+&lt;p&gt;i could build it on top of chromium, but that wont teach me a lot about browsers and networking.&lt;/p&gt;
+&lt;p&gt;so i have decided to do neither and both at the same time. i’ll follow the primer, understand the basics right and then switch over to building over chromium, which i believe is also going to be imperative if i want to integrate ai into it — could be wrong, i dont really know.&lt;/p&gt;
+&lt;p&gt;the best thing would still be to do it all from scratch, but let’s see where reading the primer leads me to and then make a decision likewise.&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;[update] 12/06/25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;have built a very bare bones version that can display basic web pages (only text lmao not even html). ik, very far away from my final goal, but i have realised how hard it is to build a browser and definitely wouldn&amp;rsquo;t be able to make the one of my dreams from scratch - will have to capitalise on the chromium infra (now i understand the imp of open source). \
+but the process is v.v. cool cuz im learning a hell lot about how the internet functions. it aint all a blackbox anymore.&lt;/p&gt;
+&lt;hr&gt;
+</content>
     </item>
     
   </channel>

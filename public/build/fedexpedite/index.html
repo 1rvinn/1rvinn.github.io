@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   
-    <title></title>
+    <title>fedexpedite</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions & maximise efficiency! 
+ ps: won 1st place in the fedex smart hackathon" />
 <meta name="keywords" content="test" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="https://1rvinn.github.io/build/pi2/" />
+<link rel="canonical" href="https://1rvinn.github.io/build/fedexpedite/" />
 
 
 
@@ -48,10 +49,11 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="">
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://1rvinn.github.io/build/pi2/" />
-<meta property="og:site_name" content="" />
+<meta property="og:title" content="fedexpedite">
+<meta property="og:description" content="a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions & maximise efficiency! 
+ ps: won 1st place in the fedex smart hackathon" />
+<meta property="og:url" content="https://1rvinn.github.io/build/fedexpedite/" />
+<meta property="og:site_name" content="fedexpedite" />
 
   
     <meta property="og:image" content="https://1rvinn.github.io/img/favicon/blue.png">
@@ -61,6 +63,7 @@
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2025-01-09 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -72,6 +75,20 @@
 
 
 
+
+
+<script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
 
 
   
@@ -176,12 +193,20 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="https://1rvinn.github.io/build/pi2/"></a>
+    <a href="https://1rvinn.github.io/build/fedexpedite/">fedexpedite</a>
   </h1>
-  <div class="post-meta">
+  <div class="post-meta"><time class="post-date">2025-01-09</time>
     
-<span class="post-reading-time">0 min read (0 words)</span></div>
+<span class="post-reading-time">1 min read (35 words)</span></div>
 
+  
+    <span class="post-tags">
+      
+      #<a href="https://1rvinn.github.io/tags/dev/">dev</a>&nbsp;
+      
+      #<a href="https://1rvinn.github.io/tags/hackathon/">hackathon</a>&nbsp;
+      
+    </span>
   
   
 
@@ -189,7 +214,53 @@
 
   
 
-  <div class="post-content"></div>
+  <div class="post-content"><div>
+        <blockquote>
+<p>a python based route optimiser and emission calculator for FedEx based on the held-karp algorithm. optimise routes, minimise emissions &amp; maximise efficiency!
+ps: won 1st place in the fedex smart hackathon.</p></blockquote>
+<div id="ppt-slider" style="max-width:600px; margin:auto;">
+     <img id="slide-img" src="/img/build/fedexpedite/1.png" style="width:100%">
+     <br>
+     <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+         <button onclick="prevSlide()">Prev</button>
+         <button onclick="nextSlide()">Next</button>
+     </div>
+</div>
+<script>
+let slideIndex = 1;
+const slides = [
+	"/img/build/fedexpedite/1.png",
+	"/img/build/fedexpedite/2.png",
+	"/img/build/fedexpedite/3.png",
+    "/img/build/fedexpedite/4.png",
+    "/img/build/fedexpedite/5.png",
+    "/img/build/fedexpedite/6.png",
+    "/img/build/fedexpedite/7.png",
+    "/img/build/fedexpedite/8.png",
+    "/img/build/fedexpedite/9.png",
+    "/img/build/fedexpedite/10.png",
+    "/img/build/fedexpedite/11.png",
+    "/img/build/fedexpedite/12.png",
+    "/img/build/fedexpedite/13.png",
+    "/img/build/fedexpedite/14.png",
+    "/img/build/fedexpedite/15.png",
+    "/img/build/fedexpedite/16.png",
+    "/img/build/fedexpedite/17.png"
+];
+function showSlide(n) {
+	const img = document.getElementById('slide-img');
+	if (n < 1) slideIndex = slides.length;
+	else if (n > slides.length) slideIndex = 1;
+	else slideIndex = n;
+	img.src = slides[slideIndex - 1];
+}
+function prevSlide() { showSlide(slideIndex - 1); }
+function nextSlide() { showSlide(slideIndex + 1); }
+</script>
+<blockquote>
+<p><a href="https://github.com/1rvinn/FedExpedite">github repo</a></p></blockquote>
+
+      </div></div>
 
   
 

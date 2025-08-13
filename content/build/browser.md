@@ -1,6 +1,6 @@
 ---
 title: 'browseher'
-date: "2025-05-10"
+date: "2024-12-10"
 description: 'building my own browser'
 tags: ["ai", "browser", "network"]
 ---

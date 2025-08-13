@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>bubble</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="your intelligent native gui guide" />
+<meta name="keywords" content="test" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://1rvinn.github.io/build/bubble/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://1rvinn.github.io/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://1rvinn.github.io/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="https://1rvinn.github.io/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="bubble">
+<meta property="og:description" content="your intelligent native gui guide" />
+<meta property="og:url" content="https://1rvinn.github.io/build/bubble/" />
+<meta property="og:site_name" content="bubble" />
+
+  
+    <meta property="og:image" content="https://1rvinn.github.io/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-08-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+
+
+  
+
+
+</head>
+<body class="blue">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    aperture.
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">home</a></li>
+        
+      
+        
+          <li><a href="/crude">crude</a></li>
+        
+      
+        
+          <li><a href="/build">build</a></li>
+        
+      
+        
+          <li><a href="/canvas">canvas</a></li>
+        
+      
+        
+          <li><a href="/readtoreach">read to reach</a></li>
+        
+      
+        
+          <li><a href="/fcketlist">f*cket list</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/" >home</a></li>
+        
+      
+        
+          <li><a href="/crude" >crude</a></li>
+        
+      
+        
+          <li><a href="/build" >build</a></li>
+        
+      
+        
+          <li><a href="/canvas" >canvas</a></li>
+        
+      
+        
+          <li><a href="/readtoreach" >read to reach</a></li>
+        
+      
+        
+          <li><a href="/fcketlist" >f*cket list</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://1rvinn.github.io/build/bubble/">bubble</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-08-06</time>
+    
+<span class="post-reading-time">24 min read (5044 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://1rvinn.github.io/tags/ai/">ai</a>&nbsp;
+      
+      #<a href="https://1rvinn.github.io/tags/dev/">dev</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <hr>
+<div style='text-align:center;'>
+    <h3 style="color: #23affd;"> // the final thing </h3>
+<p>check it out here: <a href="https://github.com/1rvinn/bubble_v2">https://github.com/1rvinn/bubble_v2</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WdP8bOORbTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+</div>
+<hr>
+<div style='text-align:center;'>
+    <br>
+    <h3 style="color: #23affd;"> // building it out - the journey</h3>
+</div>
+for the gemma 3n hackathon by google deepmind, i intend on making a local ai based screen overlay helper that allows people to call it to command wherever and whenever they face an issue in their day to day tasks. 
+<p>the vision is pretty similar to google’s gemini live screen streaming, but with an added layer of ui - a screen overlay that displays the key troubleshooting steps/guide along with proper highlighting of the important elements to be accessed in the process.</p>
+<p>what this possibly could look like is people in photoshop, autocad or matlab, being stuck with finding a particular feature, unable to move ahead. now, instead of laboriously looking for a solution across google, youtube, stack-exchanges and chatgpt, they access our tool via a shortcut, describe their issue in natural language and get the requisite solution along with visual and auditory cues.</p>
+<p>this could further transition into the opportunity of integrating this with core apps such as the ones aforementioned and provide real time assistants (this could be a business opportunity right here).</p>
+<hr>
+<p>[2 july 2025] [1700 hrs]</p>
+<p>i looked at gemini live and also ran it via the terminal using their api. it is pretty much the barebones version of what i wanna achieve, still there is a lot to be done.</p>
+<p>this is how it works using their api:</p>
+<ul>
+<li>
+<p>uses pyaudio to capture audio</p>
+</li>
+<li>
+<p>records screen/video frames using cv2</p>
+</li>
+<li>
+<p>then uses this to create a session with gemini live and the streaming starts</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>client<span style="color:#f92672">.</span>aio<span style="color:#f92672">.</span>live<span style="color:#f92672">.</span>connect(model, config)
+</span></span></code></pre></div></li>
+</ul>
+<p><a href="https://github.com/google-gemini/cookbook/blob/main/quickstarts/Get_started_LiveAPI.py">https://github.com/google-gemini/cookbook/blob/main/quickstarts/Get_started_LiveAPI.py</a></p>
+<p>^^ this is the code for the api implementation</p>
+<p>now, the issue is, this wont work with local models, gemma 3n in this case. why? because gemma does not support this streaming feature which is being leveraged above.</p>
+<p>and local ai, irrespective of the hackathons instructions, is important. you wouldnt want to share everything you do on your pc with google servers sitting around the globe in california.</p>
+<hr>
+<p>[2 july 2025] [2300 hrs]</p>
+<p>cool so gemma 3n does not accept video inputs. and well, even if it did, it’d have been a nightmare for them to be processed locally, while screen capture is on. doesnt accept mp3 too (and prolly other audio formats also).</p>
+<p>i’ll try sending the final snapshot. dont know how effective that is going to be, but is prolly the only option i have.</p>
+<p>also, the image and the user prompt will have to be pretexted by some context as to what the application is and, and idk what.</p>
+<p>for the prompt, i will take in the user audio - use a speech to text.</p>
+<hr>
+<p>[3 july 2025] [1300 hrs]</p>
+<p>the above approach is more or less okay but definitely not the best. ideally, what i would want to achieve is the screen being recorded continuously. everything that has been recorded before the user’s questions goes to an visual llm for understanding, which is then summarised, ie, a summary of everything that has happened since the starting/last prompt till now. the summary should then be passed along with the latest frame and the user’s prompt.</p>
+<p>the common thing between both the two approaches is the latter part, ie, the last frame and the user prompt.</p>
+<p>so for the first iteration, i’ll use the first approach - basic context, last frame and user prompt. for the second iteration - summary of all activities till now, last frame and user prompt.</p>
+<p>let the hacking begin!</p>
+<hr>
+<h3 id="version-01">version 0.1<a href="#version-01" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<hr>
+<p>[3 july 2025] [1307 hrs]</p>
+<p>so now, i need to think of a pipeline for screen capture at the final frame and user input.</p>
+<p>let me just have text input for starters.</p>
+<p>the flow should look like this:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart LR;
+A[shortcut]---&gt;|opens overlay|B[app interface]---&gt;|user entered prompt|D[llm]
+B---&gt;|last frame screenshot|D---&gt;|response|B
+</code></pre><p>visual highlighting of the steps involved might be complex. but koina, kar lenge.</p>
+<hr>
+<p>[1800 hrs]</p>
+<p>found a way to run multimodal gemma 3n locally, using hugging face transformers.</p>
+<p>here’s the documentation: <a href="https://ai.google.dev/gemma/docs/core/huggingface_inference">https://ai.google.dev/gemma/docs/core/huggingface_inference</a></p>
+<p>the issue here is, i do not have much experience with hugging face and especially local models.</p>
+<p>what i’ve understood till now is, i have to login via a huggingface token, create a pipeline and then pass the img, text to the pipeline.</p>
+<p>upon doing the above, it gives an error</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>OSError: We couldn<span style="color:#e6db74">&#39;t connect to &#39;</span>https://huggingface.co<span style="color:#e6db74">&#39; to load the files, and couldn&#39;</span>t find them in the cached files.
+</span></span><span style="display:flex;"><span>Check your internet connection or see how to run the library in offline mode at <span style="color:#e6db74">&#39;https://huggingface.co/docs/transformers/installation#offline-mode&#39;</span>.
+</span></span></code></pre></div><p>fixed - there was an issue with the hf token i had initialised. created a new one and got it done.</p>
+<hr>
+<p>[4 july 2025] [0015 hrs]</p>
+<p>so i have been able to come up with a very very barebones version (version 0.0000001):</p>
+<ul>
+<li>
+<p>it uses the <code>pyautogui</code> library to take a screenshot whenever the script is run,</p>
+</li>
+<li>
+<p><code>pipeline</code> from hugging face’s <code>transformers</code> library to create a pipeline of <code>gemma-3n-E2B-it</code> model,</p>
+</li>
+<li>
+<p>and <code>tkinter</code> for the gui.</p>
+</li>
+<li>
+<p>code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tkinter <span style="color:#66d9ef">as</span> tk
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> scrolledtext, messagebox
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pyautogui
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> tempfile
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image, ImageTk
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> transformers <span style="color:#f92672">import</span> pipeline
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> huggingface_hub <span style="color:#f92672">import</span> login
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> threading
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HF_TOKEN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>  
+</span></span><span style="display:flex;"><span>MODEL_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;google/gemma-3n-E2B-it&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>login(HF_TOKEN)
+</span></span><span style="display:flex;"><span>pipe <span style="color:#f92672">=</span> pipeline(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;image-text-to-text&#34;</span>,
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span>MODEL_ID,
+</span></span><span style="display:flex;"><span>    device<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cpu&#39;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">capture_screenshot</span>() <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>    temp_dir <span style="color:#f92672">=</span> tempfile<span style="color:#f92672">.</span>gettempdir()
+</span></span><span style="display:flex;"><span>    screenshot_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(temp_dir, <span style="color:#e6db74">&#34;gemma_screenshot.png&#34;</span>)
+</span></span><span style="display:flex;"><span>    screenshot <span style="color:#f92672">=</span> pyautogui<span style="color:#f92672">.</span>screenshot()
+</span></span><span style="display:flex;"><span>    screenshot<span style="color:#f92672">.</span>save(screenshot_path)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> screenshot_path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_response</span>(prompt: str, image_path: str) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(image_path)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Image loaded successfully&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">RuntimeError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Failed to open image: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    chat_prompt <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: prompt},
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;image&#34;</span>, <span style="color:#e6db74">&#34;image&#34;</span>: img}
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Chat prompt created successfully&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        output <span style="color:#f92672">=</span> pipe(chat_prompt)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Inference completed successfully&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">RuntimeError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Failed to generate response: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> output[<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#39;generated_text&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScreenshotGemmaApp</span>(tk<span style="color:#f92672">.</span>Tk):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;gemma hack&#34;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>geometry(<span style="color:#e6db74">&#34;300x900&#34;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>screenshot_path <span style="color:#f92672">=</span> capture_screenshot()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Show screenshot preview</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(self<span style="color:#f92672">.</span>screenshot_path)
+</span></span><span style="display:flex;"><span>            img <span style="color:#f92672">=</span> img<span style="color:#f92672">.</span>resize((<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">200</span>))  <span style="color:#75715e"># Resize for preview</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>tk_img <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(img)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>preview_label <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Label(self, image<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>tk_img)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>preview_label<span style="color:#f92672">.</span>pack(pady<span style="color:#f92672">=</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;⚠️ Failed to show preview:&#34;</span>, e)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>prompt_box <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Text(self, height<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, font<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#34;Arial&#34;</span>, <span style="color:#ae81ff">12</span>))
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>prompt_box<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span>(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">10</span>), fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>submit_button <span style="color:#f92672">=</span> tk<span style="color:#f92672">.</span>Button(self, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit&#34;</span>, font<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#34;Arial&#34;</span>, <span style="color:#ae81ff">12</span>), command<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>on_submit)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>submit_button<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>output_box <span style="color:#f92672">=</span> scrolledtext<span style="color:#f92672">.</span>ScrolledText(self, font<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#34;Arial&#34;</span>, <span style="color:#ae81ff">12</span>))
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>output_box<span style="color:#f92672">.</span>pack(padx<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, pady<span style="color:#f92672">=</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>), fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;both&#34;</span>, expand<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_submit</span>(self):
+</span></span><span style="display:flex;"><span>        prompt <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>prompt_box<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;1.0&#34;</span>, tk<span style="color:#f92672">.</span>END)<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> prompt:
+</span></span><span style="display:flex;"><span>            messagebox<span style="color:#f92672">.</span>showwarning(<span style="color:#e6db74">&#34;Missing Prompt&#34;</span>, <span style="color:#e6db74">&#34;Please enter a prompt.&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>submit_button<span style="color:#f92672">.</span>config(state<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disabled&#34;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>output_box<span style="color:#f92672">.</span>delete(<span style="color:#e6db74">&#34;1.0&#34;</span>, tk<span style="color:#f92672">.</span>END)
+</span></span><span style="display:flex;"><span>        threading<span style="color:#f92672">.</span>Thread(target<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_run_inference_thread, args<span style="color:#f92672">=</span>(prompt,), daemon<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>start()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_run_inference_thread</span>(self, prompt: str):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;starting inference&#34;</span>)
+</span></span><span style="display:flex;"><span>            response <span style="color:#f92672">=</span> generate_response(prompt, self<span style="color:#f92672">.</span>screenshot_path)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;response received&#34;</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>output_box<span style="color:#f92672">.</span>insert(tk<span style="color:#f92672">.</span>END, response)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;response:&#34;</span>)
+</span></span><span style="display:flex;"><span>            print(response)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;end of response&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            messagebox<span style="color:#f92672">.</span>showerror(<span style="color:#e6db74">&#34;Error&#34;</span>, str(e))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">finally</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>submit_button<span style="color:#f92672">.</span>config(state<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;normal&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    app <span style="color:#f92672">=</span> ScreenshotGemmaApp()
+</span></span><span style="display:flex;"><span>    app<span style="color:#f92672">.</span>mainloop()
+</span></span></code></pre></div></li>
+</ul>
+<p>on running it, it wasnt giving any response. so i added a couple of lines to help me debug.</p>
+<p>and guess what, the code is absolutely correct, down to the last inch, it is google to blame.</p>
+<p>the model is running slow, like insanely slow. i tried switching over to my gpu by setting <code>device</code> equal to <code>0</code>, and boom my computer went for a crash. it used something called an MPS, not CUDA ofc because my dearest gpu wasn’t manufactured in nvidia furnaces. so the error was due to my memory capacity not being enough.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>RuntimeError: MPS backend out of memory <span style="color:#f92672">(</span>MPS allocated: 5.73 GB, other allocations: 384.00 KB, max allowed: 9.07 GB<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Tried to allocate 3.75 GB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO<span style="color:#f92672">=</span>0.0 to disable upper limit <span style="color:#66d9ef">for</span> memory allocations <span style="color:#f92672">(</span>may cause system failure<span style="color:#f92672">)</span>.
+</span></span></code></pre></div><p>i went back to cpu then, and after an eternity (8 mins) i have now recd the following response:</p>
+<p><img src="/img/build/bubble/image.png" alt="image.png"></p>
+<p>i had also added a cap on the tokens, for now, to make it run faster. and yes, 8 mins was with a token limit of a mere 128.</p>
+<p>i think there would be a fix to this problem. the very reason google came up with gemma 3n was so it could run on edge devices including mobile phones, which, even the best ones, arent even 30% as beefy as my mac (not saying that ts is great).</p>
+<p>google’s edge ai app works on androids and does image inference. i will look into it in the morning and see how they do it. secondly, i’ll revisit this <a href="https://github.com/OminousIndustries/Gemma3n-TTS">repo</a> i used as reference earlier. third, i’ll look into the documentation again, and maybe what other people are doing for this.</p>
+<blockquote>
+<p>i may have to later pivot to this not being truly local (while still using gemma 3n for hackathon purposes) and even further to a better, sota cloud model.</p></blockquote>
+<p>here are the tasks for morning now:</p>
+<ul>
+<li><input disabled="" type="checkbox"> figure out how to run it faster
+<ul>
+<li><input disabled="" type="checkbox"> go through google edge ai</li>
+<li><input checked="" disabled="" type="checkbox"> go through gemma documentation</li>
+<li><input checked="" disabled="" type="checkbox"> go through this <a href="https://github.com/OminousIndustries/Gemma3n-TTS">repo</a> (talked about it above) and its corresponding yt vid</li>
+<li><input disabled="" type="checkbox"> chat gpt in case nothing works</li>
+</ul>
+</li>
+</ul>
+<p>tasks for later</p>
+<ul>
+<li><input disabled="" type="checkbox"> look into cluely’s (not open source so fake cluely’s) source code</li>
+</ul>
+<ol>
+<li>
+<p>using the code given in gemma documentation:</p>
+<ul>
+<li>
+<p>the only difference in my current code and the one given in gemma’s documentation is this one line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>torch_dtype<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>bfloat16
+</span></span></code></pre></div><p>i have added this to the pipeline args. lets see how it does now.</p>
+<p>dont think it’s making much of a difference. taking more than 10 secs so not there. will update the final time when i receive the response.</p>
+<p>also, for some reason the response is still cut off at the end.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>using the code in this <a href="https://github.com/OminousIndustries/Gemma3n-TTS">repo</a></p>
+<ul>
+<li>until now, i have called the model using a pipeline. now, using the above repo as reference, i’ll call it in a different way and see if it helps.</li>
+<li>running into many errors.</li>
+</ul>
+</li>
+</ol>
+<p>i donot understand what the issue is. i know it can be fixed, i know that for a fact. but how is something i havent been able to figure out yet. i know for sure that it’s hidden in plain sight.</p>
+<p>ok, fukkit. truly locla is hard to achieve, atleast for now. i ll chnage it to online inference.</p>
+<hr>
+<p>[7 july 2025][0036 hrs]</p>
+<p>very long time since i last updated this blog or whatever this is. so i’ve been running it on online inference for now, using the gemini-2.0-flash-exp, which i plan on changing to 2.5-flash atleast.</p>
+<p>i also vibecoded a slick looking ui; i tried integrating the concepts of glasmorphism, taking inspiration from apple (<em>good artists copy, great artists steal (jobs))</em>. surely isnt as goated as apple’s liquid glass but it does it’s job to some extent. here’s how it looks:</p>
+<p><img src="/img/build/bubble/image1.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image2.png" alt="image.png"></p>
+<p>there are a few ui changes im still to make:</p>
+<ul>
+<li><input disabled="" type="checkbox"> allow repositioning</li>
+<li><input checked="" disabled="" type="checkbox"> answer streaming isnt smooth</li>
+<li><input disabled="" type="checkbox"> corners do not have the same curvature</li>
+<li><input disabled="" type="checkbox"> a copy button for code in the answer box</li>
+<li><input checked="" disabled="" type="checkbox"> an icon for enter</li>
+<li><input disabled="" type="checkbox"> a settings hamburger menu</li>
+<li><input disabled="" type="checkbox"> drastic change: possibly come up with some completely new interface; take inspiration from apple intelligence maybe (oml apple is so goated all my inspirations come from them)</li>
+</ul>
+<p>honestly, while going through all the ui stuff, i was loving it. i have always had a knack for design; kinda ocd-ish sometimes, especially when symmetry is involved. and oh reading about glassmorphism, neumorphism, such an interesting, creative pursuit design is. also read about scandinavian design, just beautiful.</p>
+<p>i resonate deep with steve when he says - <em>it’s technology, married with liberal arts, married with the humanities, that yields us the results that make our hearts sing.</em></p>
+<p>ok now, on the technology side of things. the backend is shitty. there is absolutely no system instruction, i added some debugging lines that are still being printed. and some other issues too. so do the following:</p>
+<ul>
+<li><input disabled="" type="checkbox"> add system instructions</li>
+<li><input checked="" disabled="" type="checkbox"> get rid of the debugging statements</li>
+<li><input disabled="" type="checkbox"> the screenshot is clicked on each enter, ie, it also has the widget in it; need to change it to be clicked before the widget is shown</li>
+</ul>
+<p>— i think up till here will complete most part of this app, then i shall put all focus into doing the visual guide part - the most important bit of this.</p>
+<hr>
+<p>[7 july 2025][1826 hrs]</p>
+<p>the screenshot issue hasnt been fixed. rn what is happening is that the screenshot is clicked at the press of ‘enter’. which is fine from the user’s perspective because the screenshot contains the latest version of what’s on the screen. but is an issue as the screenshot also contains the ask bar, and incase of a followup, also the answer. which makes it hard to see what is behind it on the actual screen.</p>
+<p>i looked at what other apps are doing:</p>
+<p>horizon - clicks the ss right after the tool shortcut is called, ie, before the chat box appears.</p>
+<p>glass - works a lot better. it takes updates real time, and also stays consistently over all desktops. also, the responses are a lot better. ig that is the difference between a fun project and a startup.</p>
+<p>after trying around a variety of things, i’ve finally settled on making the widget disappear for a while for the screenshot to be captured and then the answer be displayed.</p>
+<blockquote>
+<p>this isnt the most efficient approach. for the final version, the guide, i plan on making a different ui and taking inspiration from <a href="https://github.com/sohzm/cheating-daddy">cheatingdaddy</a> to ensure the above in a more streamlined way.</p></blockquote>
+<p>now, i’ll just make it ready for deployment. put in on github and focus on the other bits.</p>
+<hr>
+<p>[8 july 2025][1700 hrs]</p>
+<p>i have pushed it to github. there are a few issues with it, but i have asked a friend to make the changes required to make it fully deployable while i focus on the main bit — the actual model.</p>
+<hr>
+<p>[8 july 2025][1701 hrs]</p>
+<p>i need to firstly analyse how agents work.</p>
+<p>as of now, i have come up with the following pipeline:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+  screen --&gt; |screenshot or live screencast|omniparser --&gt; |identifies, maps key ui elements|llm
+  prompt --&gt; llm --&gt; |action to be performed|visual_cues --&gt;|user| action --&gt; |real time feedback|screen
+</code></pre><p>however, what is not clear is how the action and feedback loop works, what exactly the llm outputs when asked the prompt — whether it gives the entire process’ task list (improbable) or gives the first step(s) which is(are) most likely to be correct and once that’s done with, reanalyses the screen and then gives the next one(s).</p>
+<p>what i am thinking would be the best is having a list of broad steps to be outputted first, followed by detailed descriptions for each step one by one, being displayed after the previous one has been executed.</p>
+<p>i think creating an agent is easier than creating a guide as now, people have autonomy to do things, which means, one ill step and the ai gets confused and starts malfunctioning.</p>
+<p>ok let it be. i’ll study more about agents and then see where this goes.</p>
+<hr>
+<p>[8 july 1800 hrs]</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> check out browser-use</li>
+<li><input checked="" disabled="" type="checkbox"> check out warm wind</li>
+<li><input checked="" disabled="" type="checkbox"> check out omni parser</li>
+</ul>
+<p><img src="/img/build/bubble/image3.png" alt="image.png"></p>
+<p><strong>^^warmwind</strong></p>
+<p><img src="/img/build/bubble/image4.png" alt="image.png"></p>
+<p><strong>^^skyvern</strong></p>
+<p><strong>some yt video:</strong></p>
+<p><a href="https://colab.research.google.com/drive/1GV4VzhfI8l2uEBm2H9hQ2fs12_iFiYlQ?usp=sharing#scrollTo=x1Edd6dsflaa">https://colab.research.google.com/drive/1GV4VzhfI8l2uEBm2H9hQ2fs12_iFiYlQ?usp=sharing#scrollTo=x1Edd6dsflaa</a>, <a href="https://www.youtube.com/watch?v=Qnp4PQTE1Ag">https://www.youtube.com/watch?v=Qnp4PQTE1Ag</a></p>
+<p><strong>os atlas:</strong></p>
+<p>also a library like omniparser, but this returns the pixel coords of the gui element.</p>
+<p><a href="https://github.com/OS-Copilot/OS-Atlas">https://github.com/OS-Copilot/OS-Atlas</a></p>
+<p><strong>browser_use:</strong></p>
+<p><img src="/img/build/bubble/image5.png" alt="image.png"></p>
+<hr>
+<p>[9 july 2025][1615 hrs]</p>
+<p>i have tried to understand how different computer use agents work and have linked a few repos, screenshots and descriptions above of the ones i found useful.</p>
+<p>the pipeline i had made above, wasnt very off. the area’s where it was off, were actually the areas i was confused in. so i’ll make the requisite changes, and let the hacking begin!</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+  user--&gt;|keyboard shortcut|A[user interface] --&gt; |user prompt|B[planner llm]
+  A--&gt;|screenshot*|B
+  B--&gt;|task plan|C[task list]--&gt;|single task|D[llm]
+  A--&gt;|screenshot*|D--&gt;|detailed action description + button/field indices|E[visual cue]
+  D--&gt;|pixel coords of action spot|E[visual cue]--&gt;A
+  D--&gt;|update|C
+</code></pre><p>+feedback loop to be added</p>
+<p>*screenshots pass through omniparser</p>
+<p><img src="/img/build/bubble/145e733e-62f7-4fdb-9326-59b17d4e0132.png" alt="image.png"></p>
+<p>^^ easier to understand. i still love pen an pencil over these plastic keycaps.</p>
+<p>validator - success, inaction, failure.</p>
+<p>here’s a written version of what i have thought:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> the user calls the app using a shortcut, types their issue (prompt) on the interface
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> the app takes a screenshot, gives it to omniparser which annotates the image to index and tag interactive ui elements
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> the annotated screenshot and prompt goes to the planning llm (llm #1) which devises a list of tasks to be performed to achieve the goal. each tasks include 1 action at max. (for eg: for export to pdf the tasks are - go to file menu, go to export, choose pdf, save)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> these tasks then go one by one to llm #2 along with a screenshot of the current state of the screen. the decides what action is to be done to complete the task (eg: for &#39;go to export&#39; - click &#39;export&#39; button) and also gives the coordinates of the button.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> this description (click &#39;export&#39; button) and coordinates is used to highlight the respective button and show it to the user.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">6.</span> the app waits for user action. once done, it moves forward to sending the next task to llm#2 and this continues till all the tasks are done
+</span></span></code></pre></div><p>ok so for the first version, i’m gonna let cursor do it. i need to understand how these various libraries work and get an idea of how it will all play together. i know the code wont be neat and debugging would be a nightmare for me cuz i haven’t coded it out. but i think it’ll do well for starters, to make me understand the technicalities of it and then later i can code it out with my bare hands.</p>
+<ul>
+<li>
+<p>vib(code)ing</p>
+<p>this is the task list cursor came up with after i gave my pipeline:</p>
+<ul>
+<li>
+<p>technical task list</p>
+<h3 id="1electron-overlayapp"><strong>1. Electron Overlay App</strong><a href="#1electron-overlayapp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Set up Electron app with cross-platform build (Mac/Windows).</li>
+<li><input disabled="" type="checkbox"> Implement global keyboard shortcut listener.</li>
+<li><input disabled="" type="checkbox"> Create overlay UI for prompt input and step-by-step guidance.</li>
+<li><input disabled="" type="checkbox"> Implement overlay rendering for highlights and descriptions (transparent, click-through except for UI).</li>
+<li><input disabled="" type="checkbox"> Ensure overlay can be shown/hidden and does not interfere with normal app usage.</li>
+</ul>
+<h3 id="2screenshotcapture"><strong>2. Screenshot Capture</strong><a href="#2screenshotcapture" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Implement cross-platform screenshot capture (Node.js native modules or external tools).</li>
+<li><input disabled="" type="checkbox"> Ensure screenshot is of the correct display (multi-monitor support).</li>
+</ul>
+<h3 id="3omniparser-integration"><strong>3. Omniparser Integration</strong><a href="#3omniparser-integration" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Integrate with Omniparser (Python or API) to send screenshots and receive annotated UI elements.</li>
+<li><input disabled="" type="checkbox"> Parse and store Omniparser output for downstream use.</li>
+</ul>
+<h3 id="4llm1-task-planning"><strong>4. LLM #1: Task Planning</strong><a href="#4llm1-task-planning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Integrate with Gemini API (or other LLM) for planning.</li>
+<li><input disabled="" type="checkbox"> Send prompt + annotated screenshot, receive ordered list of atomic tasks.</li>
+<li><input disabled="" type="checkbox"> Parse and store task list.</li>
+</ul>
+<h3 id="5llm2-action-elementlocalization"><strong>5. LLM #2: Action &amp; Element Localization</strong><a href="#5llm2-action-elementlocalization" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> For each task, send current screenshot + task to LLM #2.</li>
+<li><input disabled="" type="checkbox"> Receive action description and UI element coordinates.</li>
+<li><input disabled="" type="checkbox"> Parse and store action/coordinates.</li>
+</ul>
+<h3 id="6visual-guidance-user-interaction"><strong>6. Visual Guidance &amp; User Interaction</strong><a href="#6visual-guidance-user-interaction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Render highlight around UI element at given coordinates.</li>
+<li><input disabled="" type="checkbox"> Display action description in overlay.</li>
+<li><input disabled="" type="checkbox"> Track user actions (mouse clicks, keyboard events) to detect when the correct action is performed.</li>
+<li><input disabled="" type="checkbox"> Handle edge cases (user clicks wrong element, window focus changes, etc.).</li>
+</ul>
+<h3 id="7taskprogression-logic"><strong>7. Task Progression Logic</strong><a href="#7taskprogression-logic" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Manage task queue and progression.</li>
+<li><input disabled="" type="checkbox"> On correct user action, advance to next task.</li>
+<li><input disabled="" type="checkbox"> On completion, show success message and dismiss overlay.</li>
+</ul>
+<h3 id="8cross-processcommunication"><strong>8. Cross-Process Communication</strong><a href="#8cross-processcommunication" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Set up IPC (inter-process communication) between Electron (Node.js) and Python (Omniparser, LLM calls).</li>
+<li><input disabled="" type="checkbox"> Ensure robust error handling and fallback for communication failures.</li>
+</ul>
+<h3 id="9cross-platformpackaging-deployment"><strong>9. Cross-Platform Packaging &amp; Deployment</strong><a href="#9cross-platformpackaging-deployment" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Package the app for Mac and Windows (Electron Builder, etc.).</li>
+<li><input disabled="" type="checkbox"> Bundle Python dependencies and ensure they run on both platforms (PyInstaller, virtualenv, etc.).</li>
+<li><input disabled="" type="checkbox"> Handle permissions (screen recording, accessibility APIs) for both OSes.</li>
+</ul>
+<h3 id="10configuration-extensibility"><strong>10. Configuration &amp; Extensibility</strong><a href="#10configuration-extensibility" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><input disabled="" type="checkbox"> Configurable keyboard shortcut.</li>
+<li><input disabled="" type="checkbox"> Modular architecture for swapping out LLMs or UI parsers.</li>
+<li><input disabled="" type="checkbox"> Logging and error reporting.</li>
+</ul>
+</li>
+</ul>
+<p>^^ looks pretty robust, i’ll let it start coding.</p>
+<p>ok this is f-ing my brains inside out. it feels like a blackbox, i dont understand a thing and the only thing i can do is plead like a begger to have cursor solve the errors. yet, despite the errors im gonna let it continue. so that i atleast know how its trying to integrate all of various things and then i’ll start myself.</p>
+<p>ok so the final thing isnt working due to a hell lot of errors, but here is a technical report i asked cursor to make, so my understanding about what it did in the mvp is bettered.</p>
+<p><a href="/img/build/bubble/report_-_bubble_v2.pdf">report - bubble_v2.pdf</a></p>
+</li>
+</ul>
+<hr>
+<p>[11 july 2025][2222 hrs]</p>
+<p>so, last 1.5 ish days, i have been learning js. and i think i have understood it’s basics well. on second thought, i shouldve have spent this much time, the real output has pretty much been 0, as i thought of it to be pretty similar apart from the basic syntax level differences. also, at this point i think, if you have a decent hold over one programming language, it shouldnt be hard to understand others and a more effecient way to go about it would be just to build a project and learn on the fly.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> im just gonna go through the basics of electron really quick, and then get started with coding.</li>
+</ul>
+<p>ok, some basics covered, rest will be dealt with by referring to the documentation.</p>
+<p>here’s a great github repo having a ton of boilerplates, tutorials and demo code:</p>
+<p><a href="https://github.com/sindresorhus/awesome-electron">https://github.com/sindresorhus/awesome-electron</a></p>
+<p>this could be referred to for screenshots/sharing:</p>
+<p><a href="https://github.com/hokein/electron-screen-recorder">https://github.com/hokein/electron-screen-recorder</a></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> next, i need to cover asyncio</li>
+<li><input disabled="" type="checkbox"> and backend hosting</li>
+</ul>
+<p>also then, i need to look into how cheating daddy works, majorly focusing on:</p>
+<ul>
+<li><input disabled="" type="checkbox"> how are screenshots captured? is it a live stream (using gemini live) or screenshots when the prompt is asked</li>
+<li><input disabled="" type="checkbox"> how do they make it resilient to screensharing</li>
+</ul>
+<hr>
+<p>[13 july 2025][1800 hrs]</p>
+<p>time to get my fingertips dirty, let the hacking begin!</p>
+<ul>
+<li>
+<p>screenshot parsing</p>
+<p>i tried object detection via gemini as mentioned in their documentation but it didn’t work well. so i’ll just try setting up omniparser.</p>
+<p>for now, i’ll just run it off hf transformers, later i might set up an hf inference end point and call it via cloud.</p>
+</li>
+</ul>
+<hr>
+<p>[17 july 2025][1118 hrs]</p>
+<p>i have pretty much wasted the last 3-4 days. need to lock in now.</p>
+<ul>
+<li>
+<p>screenshot parsing</p>
+<p>i tried integrating omniparser but no luck. need to do the following, if it still doesn’t go through after this, then we skip to a different model.</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> ask claude for help</p>
+<p>^gives the same old shit</p>
+</li>
+</ul>
+<p>i’ve given omniparser a lot of time, but no avail. i even tried to run the entire code by cloning the repo but even that refused to work. so now, im looking to switch over to something else.</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> look into browser-use’s screenshot parsing mech</p>
+<p>^^they use playwright which only works for browsers so cant be implemented</p>
+</li>
+</ul>
+<p>ok nvm, omniparser worked. i was running into a variety of different module errors and despite multiple tries, i wasnt able to figure it out, but at the end, i prevailed.</p>
+<p>for now, it runs on gradio and o boy gradio is amazing. i can literally use the live link to run omniparser through any device while using my laptop for processing. also, i can use it as an api pretty easily.</p>
+<p>however, there are a few issues with this currently:</p>
+<ol>
+<li>
+<p>the process takes a lot of time, 30 to 300 secs for images with less and more icons respectively. it isnt the detection algorithm that takes this much time but the caption model instead that takes up most of the time. the former takes less than a second.</p>
+<p>the model being used to generate captions is <code>florence2</code> or <code>blip2</code> which are vision language models, so ofc are bound to take time.</p>
+</li>
+<li>
+<p>i tried running it using the gradio api hosted on hf spaces by microsoft itself, which is returning the result quick, however i am not able to access the image being generated by it. this is what it returns: <code>'/private/var/folders/60/w....wgn/T/gradio/2...adfa/image.webp'</code> which means it’s just returning the local path on the server and not the image.</p>
+</li>
+</ol>
+<p>it is imperative to solve these things, but later. for now, i’ll code rest of the app and then finally find a fix to the above, prolly by hosting it somewhere - <a href="http://fly.io">fly.io</a> or hf spaces.</p>
+</li>
+</ul>
+<hr>
+<p>[20 jul 2025][1450 hrs]</p>
+<p>i’ll start building the planner llm. just a regular gemini 2.5 flash call along with the screenshot being sent.</p>
+<p>i tested it out by sending a screenshot of the chatgpt interface without any annotations and gave this prompt <code>how do i start a new chat and upload a photo to it?</code> . here’s the response i got, pretty happy with it for now.</p>
+<p><img src="/img/build/bubble/image6.png" alt="image.png"></p>
+<p>next, i ll work on making the second llm - the action selector.</p>
+<p>the prompt was <code>Click the '+' button next to the 'Ask anything' text input field.</code> and it correctly gave me the right icon to be selected.</p>
+<p><img src="/img/build/bubble/image7.png" alt="image.png"></p>
+<p>next steps:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> create a screenshot capturer</li>
+<li><input checked="" disabled="" type="checkbox"> combine planner and action selector</li>
+</ul>
+<p>one thing i’ve realised is that the captions being generated aren’t very precise and in fact making the action_selector select the wrong element.
+secondly the caption generation model is the reason for such slow responses. i am thinking to let it go, and my hypothesis is that the action_selector will only get more proficient in doing so. however, i do need to test this hypothesis.</p>
+<p>ok, now how do i go about removing the captions? in the model i run locally, it is pretty easy since i can play with the code. however, since the model is being called using an api endpoint here, i can’t possibly change the code and neither do i see an option to disable captions being generated.
+so maybe i’ll just deploy it locally and use it as an api (possible with gradio)</p>
+<p>i have been able to remove the captioning and it takes way lesser than what it used to earlier, with only the annotation happening right now. however, the icon selection is still a little haywire.</p>
+<p>before fixing that, i think a couple of other things need to be done:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> make the planner llm only give out broad descriptions not precise ones (exact button presses not needed)</li>
+<li><input checked="" disabled="" type="checkbox"> make the action selector llm decide the specifics of the atomic tasks to be performed</li>
+</ul>
+<p>the above plan didnt work out, since one task of the planner’s plan can possibly contain multiple actions to be performed. so, i’ve added an atomic generator model that takes in tasks, one by one from the plan, and divides them into actions to be performed based on the screenshot input</p>
+<p>so they new pipeline looks as follows</p>
+<p><img src="/img/build/bubble/Mermaid_Chart_-_Create_complex_visual_diagrams_with_text._A_smarter_way_of_creating_diagrams.-2025-07-25-093021.svg" alt="Mermaid Chart - Create complex, visual diagrams with text. A smarter way of creating diagrams.-2025-07-25-093021.svg"></p>
+<p>this is working way better.</p>
+<p>next, i need to</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> figure out a way to get the image returned as well</p>
+<p>^^ for this, i changed the api’s output from returning a pil image to the base64 string of that image</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> integrate the cue and automatic screenshots</p>
+<p>^^ i have used the keystroke <code>ctrl+shift+0</code> to click a screenshot before every step be converted to atomic steps.</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> create 2 versions:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> one with the planner</li>
+<li><input checked="" disabled="" type="checkbox"> one without the planner - only the atomic generator deciding what is to be done on the basis of current state, end goal and previous actions</li>
+</ul>
+</li>
+</ul>
+<p>i think the second version is bound to work better. currently the planner is working on foresight. it is predicting what must be done without having access to the current state. it just takes the initial state and decides the plan. in the case without the planner, the current step is only decided on the basis of the current state, the user intent and current history.
+barring the foresight problem, there is also the issue of inefficiency. currently we are employing two models just to decide on the atomic tasks that need to be completed as opposed to one in case the planner is dropped.</p>
+<p>hence, i feel its imperative to make the second version the main one.</p>
+<hr>
+<p>the second version is up and running, and it works pretty damn well. way better than the first/planner one.</p>
+<p>there are a few improvements yet to be made:</p>
+<ul>
+<li><input disabled="" type="checkbox"> integrate a validator that verifies whether the previous action has been completed successfully or the user messed up</li>
+<li><input disabled="" type="checkbox"> need to be very specific on which button to click in case of multiple buttons with the same label</li>
+</ul>
+<p>i’ll do the above later. for now, i’ll focus on getting the frontend ready.</p>
+<p>the frontend will be made using electron js, exact designs for which i havent figured yet.</p>
+<p><a href="https://www.electronjs.org/docs/latest">https://www.electronjs.org/docs/latest</a></p>
+<p>^^ keeping the documentation link here for easy access.</p>
+<hr>
+<p>so i’ve been able to come up with a raw frontend. not the most aesthetically pleasing app, however, it suffices for the hackathon submission atleast.</p>
+<p><img src="/img/build/bubble/image8.png" alt="image.png"></p>
+<p>however, there still are a few issues with this, which i need to fix:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> instead of image , upload base 64 upload to omniparser</li>
+<li><input checked="" disabled="" type="checkbox"> colors and aesthetics improve</li>
+<li><input checked="" disabled="" type="checkbox"> make sure bounding boxes are complete /neat and adjust the vertical alignment in the bounding box</li>
+<li><input disabled="" type="checkbox"> bounding box moves /shifts if user scrolls in between. can we fix that -
+A) make the process very fast
+B) control the webpage (not relevant now)</li>
+<li><input checked="" disabled="" type="checkbox"> integrate a validator that verifies whether the previous action has been completed successfully or the user messed up</li>
+<li><input checked="" disabled="" type="checkbox"> need to be very specific on which button to click in case of multiple buttons with the same label</li>
+<li><input checked="" disabled="" type="checkbox"> giving the user flexibility to choose/fill, in case of forms.</li>
+<li><input checked="" disabled="" type="checkbox"> ctrl+shift+0 for next step ctrl+shift+1 for retry</li>
+<li><input disabled="" type="checkbox"> improve latency
+<ul>
+<li><input disabled="" type="checkbox"> change gemini calls also to base64</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> remove the drop shadow at the center of the screen</li>
+<li><input checked="" disabled="" type="checkbox"> rename ‘processing’ messages</li>
+<li><input checked="" disabled="" type="checkbox"> disappearance on click</li>
+<li><input checked="" disabled="" type="checkbox"> clickthough not errorless</li>
+<li><input disabled="" type="checkbox"> rephrase task descriptions</li>
+<li><input checked="" disabled="" type="checkbox"> completed message</li>
+<li><input checked="" disabled="" type="checkbox"> make it windows compatible</li>
+<li><input checked="" disabled="" type="checkbox"> doesnt enter typing mode on first open, fix that</li>
+<li><input checked="" disabled="" type="checkbox"> remove the settings button</li>
+<li><input checked="" disabled="" type="checkbox"> press crtl+shift+0 for next step</li>
+<li><input checked="" disabled="" type="checkbox"> fix history handling</li>
+<li><input checked="" disabled="" type="checkbox"> thinking box visible in screenshots</li>
+<li><input checked="" disabled="" type="checkbox"> remove ctrl+shift+f ctrl /</li>
+<li><input disabled="" type="checkbox"> make click global</li>
+<li><input checked="" disabled="" type="checkbox"> description being cutoff</li>
+<li><input disabled="" type="checkbox"> add glow to border</li>
+<li><input checked="" disabled="" type="checkbox"> fix ‘input focused’ wording and positioning</li>
+<li><input checked="" disabled="" type="checkbox"> task completed positioning - vertical and horizontal both</li>
+<li><input checked="" disabled="" type="checkbox"> scrolling</li>
+<li><input checked="" disabled="" type="checkbox"> instead of the bounding box, make the description box emerge from the place/button that needs to be interacted with, like a comment box.</li>
+<li><input checked="" disabled="" type="checkbox"> ctrl+shift+0 not working properly</li>
+<li><input disabled="" type="checkbox"> vertical offset in windows</li>
+<li><input checked="" disabled="" type="checkbox"> entire pipeline should restart when task gets completed</li>
+</ul>
+<p>pretty much ready for the submission.</p>
+<p>here is the final pipeline being used:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD;
+A[user prompt]--&gt;D[atomic task generator]
+C[current screen state]--&gt;D
+B[task history]--&gt;D
+D--&gt;|next atomic task to be executed|E[element selector]
+C--&gt;F[omniparser]--&gt;|annotated image|E--&gt;|element coordinates|G[gui/frontend]
+D--&gt;|task description|G--&gt;|execution success/failure|B
+</code></pre><p>here are a few snapshots:</p>
+<p><img src="/img/build/bubble/image9.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image10.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image11.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image12.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image13.png" alt="image.png"></p>
+<p><img src="/img/build/bubble/image14.png" alt="image.png"></p>
+<hr>
+<p>pushing to github:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> create 2 repos:
+<ul>
+<li><input checked="" disabled="" type="checkbox"> bubble_v2</li>
+<li><input checked="" disabled="" type="checkbox"> bubble_omni (for the omniparser backend)</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> check requirements.txt</li>
+<li><input checked="" disabled="" type="checkbox"> readme
+<ul>
+<li><input checked="" disabled="" type="checkbox"> banner</li>
+<li><input checked="" disabled="" type="checkbox"> short description</li>
+<li><input checked="" disabled="" type="checkbox"> video demo</li>
+<li><input checked="" disabled="" type="checkbox"> pipeline</li>
+<li><input checked="" disabled="" type="checkbox"> how to operate
+<ul>
+<li><input checked="" disabled="" type="checkbox"> ctrl/cmd+shift+g to call the app</li>
+<li><input checked="" disabled="" type="checkbox"> ctrl/cmd+shift+0 for the next step</li>
+<li><input checked="" disabled="" type="checkbox"> ctrl/cmd+shift+1 to retry</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> how to run locally - instructions to run locally
+<ul>
+<li><input checked="" disabled="" type="checkbox"> venv, install reqs at backend/requirements.txt</li>
+<li><input checked="" disabled="" type="checkbox"> env, add hf token, gemini api key</li>
+<li><input checked="" disabled="" type="checkbox"> run the omni backend, get endpoint url, update in backend/omni_api
+<ul>
+<li><input checked="" disabled="" type="checkbox"> venv, install reqs</li>
+<li><input checked="" disabled="" type="checkbox"> login using hf token - hugging</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> npm install, npm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="done">done!<a href="#done" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2025 - irvin sachdeva</span>
+    
+      <span>:: <a href="https://github.com/1rvinn" target="_blank">github</a> | 
+         <a href="https://www.linkedin.com/in/irvin-sachdeva-95569716a/" target="_blank">linkedin</a> |
+         <a href="https://medium.com/@irvinsachdeva5" target="_blank">medium</a> | 
+         <a href="https://www.instagram.com/_1rvin__/" target="_blank">instagram</a> |
+         <a href="mailto:irvinsachdeva5@gmail.com" target="_blank">mail</a></span> <br>
+         veni. vidi. vici.
+      </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
