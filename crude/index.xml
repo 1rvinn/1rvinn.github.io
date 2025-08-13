@@ -6,7 +6,26 @@
     <description>Recent content in crude on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/crude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://1rvinn.github.io/crude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai sec intern</title>
+      <link>https://1rvinn.github.io/crude/ai_sec/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://1rvinn.github.io/crude/ai_sec/</guid>
+      <description>&lt;p&gt;so i&amp;rsquo;ve finally started an ai security intern. will keep on updating my findings and learnings here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;worked on llmguard [2025-08-11]&lt;/li&gt;
+&lt;li&gt;working on promptfoo [2025-08-13]*&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;p&gt;so i&amp;rsquo;ve finally started an ai security intern. will keep on updating my findings and learnings here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;worked on llmguard [2025-08-11]&lt;/li&gt;
+&lt;li&gt;working on promptfoo [2025-08-13]*&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>project proposal - federated learning</title>
       <link>https://1rvinn.github.io/crude/project-proposal---federated-learning/</link>
